@@ -60,7 +60,7 @@ export default function MindMap({ root, branches }: Props) {
       viewBox={`0 0 ${W} ${H}`}
       role="img"
       aria-label={`Mapa conceptual: ${root}`}
-      style={{ width: '100%', height: 'auto', minWidth: 560 }}
+      style={{ width: '100%', height: 'auto', display: 'block' }}
     >
       {/* conexiones ramas */}
       {branches.map((_, i) => (

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { MODULES } from '../data/content'
-import MindMap from '../components/MindMap'
+import MindMapViewer from '../components/MindMapViewer'
 
 // ============================================================
 // Galería de mentefactos y mapas conceptuales de todos los
@@ -17,7 +17,8 @@ export default function Mentefactos() {
       <h1>Mentefactos y mapas conceptuales</h1>
       <p>
         Representaciones visuales de los conceptos principales de cada módulo, sus relaciones y
-        diferencias. Debajo de cada mapa hay una explicación textual accesible.
+        diferencias. Usa «Ver ampliado» para estudiar cada mapa a pantalla completa; debajo de
+        cada mapa hay una explicación textual accesible.
       </p>
 
       {lessonsWithMap.map(({ m, l }) => (
@@ -26,9 +27,7 @@ export default function Mentefactos() {
             <Link to={`/leccion/${l.id}`}>{l.title}</Link>
           </h2>
           <p style={{ fontSize: 'var(--fs-sm)', color: 'var(--ink-500)' }}>{m.title}</p>
-          <div className="mindmap-wrap">
-            <MindMap root={l.mindmap.root} branches={l.mindmap.branches} />
-          </div>
+          <MindMapViewer root={l.mindmap.root} branches={l.mindmap.branches} />
           <details className="detail" style={{ marginTop: 12 }}>
             <summary>Explicación textual del mapa</summary>
             <div className="detail-body">

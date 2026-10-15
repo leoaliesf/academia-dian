@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import { MODULES, ACTIVITY_BY_ID, FLASHCARDS, QUESTIONS } from '../data/content'
 import { useApp } from '../store/AppContext'
 import { SectionView, Callout, NormStatusChip } from '../components/ui'
-import MindMap from '../components/MindMap'
+import MindMapViewer from '../components/MindMapViewer'
 import QuizSession from '../components/QuizSession'
 import FlashcardDeck from '../components/FlashcardDeck'
 import { indicatorLabel } from '../data/indicators'
@@ -195,9 +195,7 @@ export default function Leccion() {
 
           <div className="card">
             <h2>Mentefacto</h2>
-            <div className="mindmap-wrap">
-              <MindMap root={lesson.mindmap.root} branches={lesson.mindmap.branches} />
-            </div>
+            <MindMapViewer root={lesson.mindmap.root} branches={lesson.mindmap.branches} />
             <details className="detail" style={{ marginTop: 12 }}>
               <summary>Explicación textual del mapa (accesible)</summary>
               <div className="detail-body">
