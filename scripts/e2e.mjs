@@ -49,8 +49,8 @@ try {
   await page.click('a[href="#/leccion/m01-l01"]')
   await page.waitForSelector('h1:has-text("La DIAN: naturaleza")')
   record('Vista de lección carga', true)
-  const svg = await page.locator('svg.mindmap-svg').count()
-  record('Mentefacto SVG presente en lección', svg > 0)
+  const svg = await page.locator('.mentefacto').count()
+  record('Mentefacto presente en lección', svg > 0)
 
   // 4. Cuestionario de lección: responder y calificar
   await page.click('button:has-text("Presentar cuestionario final")')

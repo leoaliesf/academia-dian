@@ -590,17 +590,88 @@ table.data-table {
   color: var(--bad-700);
 }
 
-/* ---------- Mentefacto (SVG) ---------- */
-.mindmap-wrap {
-  overflow-x: auto;
+/* ---------- Mentefacto (HTML/CSS, fluye con el contenido) ---------- */
+.mentefacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   background: #fff;
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  padding: var(--sp-4);
+  padding: var(--sp-4) var(--sp-3);
 }
 
-.mindmap-svg text {
-  font-family: var(--font);
+.mf-root {
+  background: var(--navy-800);
+  color: #fff;
+  font-weight: 700;
+  font-size: var(--fs-md);
+  text-align: center;
+  padding: 10px 24px;
+  border-radius: 12px;
+  max-width: 460px;
+  line-height: 1.4;
+}
+
+.mf-connector-v {
+  width: 2px;
+  height: 22px;
+  background: var(--ink-300);
+}
+
+.mf-connector-sm {
+  height: 10px;
+}
+
+.mf-branches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--sp-4);
+  width: 100%;
+}
+
+.mf-branch {
+  flex: 1 1 180px;
+  min-width: 160px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mf-branch-title {
+  width: 100%;
+  background: var(--teal-500);
+  color: #04302c;
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  text-align: center;
+  padding: 8px 14px;
+  border-radius: 10px;
+  line-height: 1.35;
+}
+
+.mf-leaves {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mf-leaves li {
+  background: var(--navy-50);
+  border: 1px solid var(--navy-500);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: var(--fs-xs);
+  color: var(--navy-700);
+  text-align: center;
+  line-height: 1.4;
 }
 
 /* ---------- KPI tiles ---------- */

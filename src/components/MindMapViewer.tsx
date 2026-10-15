@@ -30,13 +30,11 @@ export default function MindMapViewer({ root, branches }: Props) {
 
   return (
     <div>
-      <div className="mindmap-wrap">
-        <MindMap root={root} branches={branches} />
-        <div style={{ marginTop: 10, textAlign: 'right' }}>
-          <button className="btn btn-sm btn-outline" onClick={() => setExpanded(true)}>
-            🔍 Ver ampliado
-          </button>
-        </div>
+      <MindMap root={root} branches={branches} />
+      <div style={{ marginTop: 10, textAlign: 'right' }}>
+        <button className="btn btn-sm btn-outline" onClick={() => setExpanded(true)}>
+          🔍 Ver ampliado
+        </button>
       </div>
 
       {expanded && (
@@ -77,7 +75,7 @@ export default function MindMapViewer({ root, branches }: Props) {
             >
               ✕ Cerrar
             </button>
-            <div style={{ overflowX: 'auto' }}>
+            <div style={{ marginTop: 28 }}>
               <MindMap root={root} branches={branches} />
             </div>
           </div>

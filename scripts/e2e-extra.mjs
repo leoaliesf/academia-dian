@@ -42,8 +42,8 @@ try {
   // Mentefactos
   await page.goto(BASE + '#/mentefactos')
   await page.waitForSelector('h1:has-text("Mentefactos")')
-  const maps = await page.locator('svg.mindmap-svg').count()
-  record('Galería de mentefactos con mapas SVG', maps >= 10, `${maps} mapas`)
+  const maps = await page.locator('.mentefacto').count()
+  record('Galería de mentefactos completa', maps >= 10, `${maps} mapas`)
 
   // Simulacro de 5 preguntas completo (entrega real)
   await page.goto(BASE + '#/simulacros')
