@@ -24,6 +24,7 @@ const NAV_SECTIONS: { title: string; links: { to: string; label: string }[] }[] 
     title: 'Evaluación',
     links: [
       { to: '/banco', label: '❓ Banco de preguntas' },
+      { to: '/documental', label: '🗂️ Colección documental' },
       { to: '/simulacros', label: '⏱️ Simulacros' },
       { to: '/examen-final', label: '🎯 Examen final integral' },
       { to: '/diagnostico', label: '📋 Diagnóstico y plan' },

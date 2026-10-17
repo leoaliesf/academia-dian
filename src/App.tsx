@@ -15,6 +15,7 @@ const Actividades = lazy(() => import('./views/Actividades'))
 const ActividadRunner = lazy(() => import('./views/ActividadRunner'))
 const ModoEstudio = lazy(() => import('./views/ModoEstudio'))
 const Banco = lazy(() => import('./views/Banco'))
+const Documental = lazy(() => import('./views/Documental'))
 const Simulacros = lazy(() => import('./views/Simulacros'))
 const ExamenFinal = lazy(() => import('./views/ExamenFinal'))
 const Diagnostico = lazy(() => import('./views/Diagnostico'))
@@ -47,6 +48,7 @@ export default function App() {
           <Route path="/actividad/:activityId" element={<ActividadRunner />} />
           <Route path="/modo-estudio" element={<ModoEstudio />} />
           <Route path="/banco" element={<Banco />} />
+          <Route path="/documental" element={<Documental />} />
           <Route path="/simulacros" element={<Simulacros />} />
           <Route path="/examen-final" element={<ExamenFinal />} />
           <Route path="/diagnostico" element={<Diagnostico />} />

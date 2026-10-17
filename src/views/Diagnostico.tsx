@@ -67,6 +67,22 @@ export default function Diagnostico() {
       .slice(0, 8)
   }, [stats.failedStats])
 
+  // Temas con más fallos acumulados (agrupación por topic de la pregunta)
+  const topicErrors = useMemo(() => {
+    const map: Record<string, { fails: number; attempts: number; indicator: string }> = {}
+    for (const [qid, v] of Object.entries(stats.failedStats)) {
+      if (v.fails === 0) continue
+      const q = QUESTION_BY_ID[qid]
+      if (!q) continue
+      const rec = (map[q.topic] ??= { fails: 0, attempts: 0, indicator: q.indicator })
+      rec.fails += v.fails
+      rec.attempts += v.attempts
+    }
+    return Object.entries(map)
+      .sort((a, b) => b[1].fails - a[1].fails)
+      .slice(0, 8)
+  }, [stats.failedStats])
+
   const evol = evolution(state)
 
   const dominados = INDICATORS.filter((i) => (stats.indicatorStats[i.id].pct ?? 0) >= DOMINADO_UMBRAL && (stats.indicatorStats[i.id].total ?? 0) >= MIN_RESPUESTAS_INDICADOR)
@@ -255,6 +271,31 @@ export default function Diagnostico() {
                     </li>
                   )
                 })}
+              </ul>
+            )}
+          </div>
+
+          {/* Temas con más fallos */}
+          <div className="card">
+            <h3>Temas donde te equivocas más</h3>
+            {topicErrors.length === 0 ? (
+              <p style={{ color: 'var(--ink-500)' }}>
+                Presenta ejercicios para que la plataforma identifique tus temas débiles.
+              </p>
+            ) : (
+              <ul>
+                {topicErrors.map(([topic, v]) => (
+                  <li key={topic}>
+                    <strong>{topic}</strong> — {v.fails} fallo{v.fails === 1 ? '' : 's'} en{' '}
+                    {v.attempts} intento{v.attempts === 1 ? '' : 's'}{' '}
+                    <Link to={`/modo-estudio?tema=${encodeURIComponent(topic)}`} className="btn btn-sm btn-teal">
+                      Practicar este tema
+                    </Link>{' '}
+                    <Link to={`/modo-estudio?indicador=${v.indicator}`} className="btn btn-sm btn-outline">
+                      Por indicador
+                    </Link>
+                  </li>
+                ))}
               </ul>
             )}
           </div>

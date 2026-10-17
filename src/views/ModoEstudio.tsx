@@ -16,6 +16,7 @@ export default function ModoEstudio() {
   const [params] = useSearchParams()
   const { state } = useApp()
   const [indicator, setIndicator] = useState<string>(params.get('indicador') ?? 'todos')
+  const [tema, setTema] = useState<string>(params.get('tema') ?? '')
   const [moduleId, setModuleId] = useState<string>('todos')
   const [difficulty, setDifficulty] = useState<string>('todas')
   const [onlyFailed, setOnlyFailed] = useState(false)
@@ -33,12 +34,13 @@ export default function ModoEstudio() {
   const pool = useMemo(() => {
     return QUESTIONS.filter((q) => {
       if (indicator !== 'todos' && q.indicator !== indicator) return false
+      if (tema.trim() && !q.topic.toLowerCase().includes(tema.trim().toLowerCase())) return false
       if (moduleId !== 'todos' && q.moduleId !== moduleId) return false
       if (difficulty !== 'todas' && q.difficulty !== difficulty) return false
       if (onlyFailed && !failedIds.includes(q.id)) return false
       return true
     })
-  }, [indicator, moduleId, difficulty, onlyFailed, failedIds])
+  }, [indicator, tema, moduleId, difficulty, onlyFailed, failedIds])
 
   if (running && pool.length > 0) {
     return (
@@ -96,6 +98,17 @@ export default function ModoEstudio() {
                 </option>
               ))}
             </select>
+          </label>
+          <label>
+            <strong>Tema (palabra clave)</strong>
+            <input
+              type="search"
+              className="search-input"
+              value={tema}
+              onChange={(e) => setTema(e.target.value)}
+              placeholder="Ej.: RUT, facturación, IVA…"
+              style={{ marginTop: 6 }}
+            />
           </label>
           <label>
             <strong>Dificultad</strong>

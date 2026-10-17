@@ -182,3 +182,31 @@ export interface PdfDocumentSummary {
   chapters: PdfChapterSummary[]
   differencesNote?: string
 }
+
+// ============================================================
+// Colección documental: preguntas extraídas de materiales de
+// práctica (pruebas pasadas y simulacros aportados por el
+// usuario). NO son preguntas oficiales de la DIAN ni de la CNSC
+// y NO entran al banco de práctica aleatorio.
+// ============================================================
+
+export interface DocQuestion {
+  id: string
+  /** Archivo de origen (nombre del documento del usuario) */
+  sourceFile: string
+  /** Página(s) en el documento original */
+  page?: string
+  statement: string
+  /** Opciones A-D cuando el documento las incluye */
+  options?: string[]
+  /** Respuesta indicada en el documento, si aparece */
+  correct?: number
+  /** true = la respuesta viene del material o se verificó; false = dudosa/pendiente */
+  correctVerified: boolean
+  /** Observaciones: ambigüedad, norma desactualizada, respuesta dudosa… */
+  note?: string
+  /** Indicador de la convocatoria relacionado, cuando es asignable */
+  indicator?: string
+  /** Explicación presente en el documento, si la hay */
+  explanation?: string
+}

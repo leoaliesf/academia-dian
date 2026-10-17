@@ -11,7 +11,8 @@ Plataforma web estática de estudio para la preparación del examen de la convoc
 - **Lecciones completas** — objetivos, explicación desde cero, definiciones, resúmenes, conceptos para memorizar, cuadros comparativos, ejemplos, errores frecuentes, normas con estado de verificación, fuentes oficiales, mentefacto (mapa SVG + explicación textual accesible), fichas, actividad guiada y cuestionario final.
 - **Biblioteca de los PDF** — resumen general y por unidad/capítulo de ambos documentos, con páginas de origen, indicadores relacionados y diferencias entre documentos.
 - **Mentefactos y mapas conceptuales** — diagramas SVG propios (sin librerías externas).
-- **Banco de preguntas ABCD** — organizadas por indicador, módulo, tema y dificultad (básica/intermedia/avanzada), con justificación de la correcta y explicación de por qué cada opción incorrecta lo es; favoritas ★ y notas personales.
+- **Banco de preguntas ABCD** — 340 preguntas organizadas por indicador, módulo, tema y dificultad (básica/intermedia/avanzada), con justificación de la correcta y explicación de por qué cada opción incorrecta lo es; favoritas ★ y notas personales.
+- **Colección documental** — 176 preguntas extraídas de los materiales de práctica aportados (pruebas anteriores), conservadas con su archivo y página de origen, respuesta indicada y estado de verificación, diferenciadas del banco de práctica y sin presentarse como preguntas oficiales.
 - **Actividades guiadas** — relacionar, ordenar etapas, casos hipotéticos, detección de inconsistencias, interpretación de tablas, razonamiento analítico y juicio situacional, con retroalimentación paso a paso.
 - **Modo de estudio** — sin límite de tiempo, explicación inmediata tras cada respuesta, filtros por indicador/módulo/dificultad/preguntas falladas.
 - **Fichas de memoria** — con repetición espaciada simple (cajas 0-5).
@@ -89,7 +90,7 @@ npm run validate:content   # integridad del contenido (tsx + cargador SSR de Vit
 npm run test:e2e           # pruebas E2E de navegación y flujos (Playwright/Chromium)
 ```
 
-- **Validador de contenido** (`scripts/validate-content.ts`): verifica que los 26 indicadores tengan preguntas, que cada pregunta tenga 4 opciones y 4 explicaciones, que las referencias de lecciones/actividades/fichas sean válidas y que no haya identificadores duplicados. Resultado final: **0 errores** (15 módulos, 60 lecciones, 264 preguntas, 181 fichas, 28 actividades).
+- **Validador de contenido** (`scripts/validate-content.ts`): verifica que los 26 indicadores tengan preguntas, que cada pregunta tenga 4 opciones y 4 explicaciones, que las referencias de lecciones/actividades/fichas/documental sean válidas y que no haya identificadores duplicados. Resultado final: **0 errores** (15 módulos, 60 lecciones, 340 preguntas, 181 fichas, 28 actividades, 176 preguntas documentales).
 - **Pruebas E2E** (`scripts/e2e.mjs` y `scripts/e2e-extra.mjs`): navegación por hash en GitHub Pages, calificación de cuestionarios, confirmación antes de entregar, cronómetro, persistencia en localStorage tras recargar, favoritos, fichas con volteo, exportación de progreso, borrado con confirmación, simulacro completo, diagnóstico con plan de estudio, buscador, biblioteca y ausencia de desbordes en móvil. Resultado final: **30/30 pruebas OK**.
 - **Build**: `tsc -b` sin errores + `vite build` correcto (shell ~269 KB + chunk de contenido ~1.6 MB / 424 KB gzip, por diseño: todo el contenido viaja en el sitio estático).
 

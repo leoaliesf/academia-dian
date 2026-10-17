@@ -12,7 +12,8 @@ const content = await server.ssrLoadModule('/src/data/content.ts')
 const indicatorsMod = await server.ssrLoadModule('/src/data/indicators.ts')
 await server.close()
 
-const { MODULES, QUESTIONS, FLASHCARDS, ACTIVITIES, ACTIVITY_BY_ID } = content as typeof import('../src/data/content')
+const { MODULES, QUESTIONS, FLASHCARDS, ACTIVITIES, ACTIVITY_BY_ID, DOC_QUESTIONS } =
+  content as typeof import('../src/data/content')
 const { INDICATORS, INDICATOR_BY_ID } = indicatorsMod as typeof import('../src/data/indicators')
 
 const errors: string[] = []
@@ -107,6 +108,23 @@ for (const a of ACTIVITIES) {
     errors.push(`Actividad ${a.id} (${a.kind}): sin escenario`)
 }
 
+// ---------- Colección documental ----------
+const docIds = new Set<string>()
+for (const d of DOC_QUESTIONS) {
+  if (docIds.has(d.id)) errors.push(`Pregunta documental duplicada: ${d.id}`)
+  docIds.add(d.id)
+  if (!d.sourceFile.trim()) errors.push(`Documental ${d.id}: sin archivo de origen`)
+  if (!d.statement.trim()) errors.push(`Documental ${d.id}: sin enunciado`)
+  if (d.correct !== undefined && (d.correct < 0 || d.correct > 3))
+    errors.push(`Documental ${d.id}: correct fuera de rango`)
+  if (d.correct !== undefined && d.options && d.correct >= d.options.length)
+    errors.push(`Documental ${d.id}: correct ${d.correct} no coincide con ${d.options.length} opciones`)
+  if (d.indicator && !indicatorIds.has(d.indicator))
+    errors.push(`Documental ${d.id}: indicador inválido ${d.indicator}`)
+  if (d.correctVerified && d.correct === undefined)
+    errors.push(`Documental ${d.id}: correctVerified=true sin respuesta`)
+}
+
 // ---------- Resumen ----------
 const totalQuestions = QUESTIONS.length
 const totalLessons = MODULES.reduce((a, m) => a + m.lessons.length, 0)
@@ -121,6 +139,7 @@ console.log(`Lecciones:      ${totalLessons}`)
 console.log(`Preguntas:      ${totalQuestions}`)
 console.log(`Fichas:         ${totalCards}`)
 console.log(`Actividades:    ${totalActivities}`)
+console.log(`Documental:     ${DOC_QUESTIONS.length} preguntas extraídas`)
 console.log(`Indicadores con preguntas: ${Object.keys(perIndicatorQuestions).length}/${INDICATORS.length}`)
 console.log('------------------------------')
 if (warnings.length) {
