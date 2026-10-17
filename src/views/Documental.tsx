@@ -73,47 +73,73 @@ export default function Documental() {
           {filtered.map((q, i) => (
             <details className="card detail" key={q.id} style={{ marginTop: 12 }}>
               <summary style={{ fontSize: 'var(--fs-sm)', fontWeight: 600, color: 'var(--ink-900)' }}>
-                {i + 1}. {q.statement.slice(0, 150)}
-                {q.statement.length > 150 ? '…' : ''}
+                Pregunta {i + 1} · {q.sourceFile.replace(/\.pdf$/i, '')}
               </summary>
               <div className="detail-body">
-                <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 10 }}>
-                  <span className="chip chip-navy">📄 {q.sourceFile}</span>
-                  {q.page && <span className="chip">pág. {q.page}</span>}
-                  {q.indicator && <span className="chip chip-teal">{indicatorLabel(q.indicator)}</span>}
-                  {q.correct !== undefined && (
-                    q.correctVerified ? (
-                      <span className="chip chip-ok">respuesta indicada: {String.fromCharCode(65 + q.correct)}</span>
-                    ) : (
-                      <span className="chip chip-warn">respuesta indicada: {String.fromCharCode(65 + q.correct)} (dudosa)</span>
-                    )
-                  )}
-                  {q.correct === undefined && <span className="chip chip-bad">sin clave de respuesta</span>}
-                </div>
+                <p style={{ fontSize: 'var(--fs-md)', fontWeight: 600, marginBottom: 12 }}>
+                  {q.statement}
+                </p>
 
-                {q.options && (
-                  <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 10px' }}>
-                    {q.options.map((opt, j) => (
-                      <li
-                        key={j}
-                        style={{
-                          padding: '6px 12px',
-                          border: '1px solid var(--line)',
-                          borderRadius: 8,
-                          marginBottom: 6,
-                          fontSize: 'var(--fs-sm)',
-                          background: q.correct === j ? 'var(--ok-100)' : '#fff',
-                        }}
-                      >
-                        <strong>{String.fromCharCode(65 + j)}.</strong> {opt}
-                        {q.correct === j && q.correctVerified && <span> ✓ (según el material)</span>}
-                      </li>
-                    ))}
-                  </ul>
+                {q.options && q.options.length > 0 && (
+                  <>
+                    <h4 style={{ margin: '12px 0 8px', fontSize: 'var(--fs-sm)', textTransform: 'uppercase', letterSpacing: '0.04em', color: 'var(--ink-500)' }}>
+                      Opciones del documento
+                    </h4>
+                    <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 12px' }}>
+                      {q.options.map((opt, j) => {
+                        const isAnswer = q.correct === j
+                        return (
+                          <li
+                            key={j}
+                            style={{
+                              padding: '8px 12px',
+                              border: isAnswer
+                                ? q.correctVerified
+                                  ? '1.5px solid var(--ok-700)'
+                                  : '1.5px dashed var(--warn-700)'
+                                : '1px solid var(--line)',
+                              borderRadius: 8,
+                              marginBottom: 6,
+                              fontSize: 'var(--fs-sm)',
+                              background: isAnswer
+                                ? q.correctVerified
+                                  ? 'var(--ok-100)'
+                                  : 'var(--warn-100)'
+                                : '#fff',
+                            }}
+                          >
+                            <strong>{String.fromCharCode(65 + j)}.</strong> {opt}
+                            {isAnswer && (
+                              <span style={{ fontWeight: 700, marginLeft: 6 }}>
+                                {q.correctVerified ? '✓ respuesta según el material' : '⚠ respuesta dudosa del material'}
+                              </span>
+                            )}
+                          </li>
+                        )
+                      })}
+                    </ul>
+                  </>
+                )}
+
+                {q.correct !== undefined && q.options && q.options[q.correct] && (
+                  <div className={`callout ${q.correctVerified ? 'callout-memoriza' : 'callout-aviso'}`}>
+                    <strong className="ct-title">
+                      {q.correctVerified ? 'Respuesta indicada por el material' : 'Respuesta indicada (sin verificar)'}
+                    </strong>
+                    <strong>{String.fromCharCode(65 + q.correct)}.</strong>{' '}
+                    {q.options[q.correct]}
+                  </div>
+                )}
+                {q.correct === undefined && (
+                  <div className="callout callout-aviso">
+                    <strong className="ct-title">Sin clave de respuesta</strong>
+                    Este documento no incluye la respuesta en el texto disponible; la pregunta se
+                    conserva como material de lectura.
+                  </div>
                 )}
 
                 {q.explanation && (
-                  <p style={{ fontSize: 'var(--fs-sm)' }}>
+                  <p style={{ fontSize: 'var(--fs-sm)', marginTop: 10 }}>
                     <strong>Explicación del material:</strong> {q.explanation}
                   </p>
                 )}
@@ -123,6 +149,12 @@ export default function Documental() {
                     {q.note}
                   </div>
                 )}
+
+                <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginTop: 12, borderTop: '1px solid var(--line)', paddingTop: 10 }}>
+                  <span className="chip chip-navy">📄 {q.sourceFile}</span>
+                  {q.page && <span className="chip">pág. {q.page}</span>}
+                  {q.indicator && <span className="chip chip-teal">{indicatorLabel(q.indicator)}</span>}
+                </div>
               </div>
             </details>
           ))}
