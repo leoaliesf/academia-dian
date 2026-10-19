@@ -46,10 +46,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una sociedad vendió mercancías gravadas con IVA en diciembre de 2025 y expidió la factura el 28 de diciembre de 2025, pero solo presentó y pagó la declaración en febrero de 2026. ¿En qué momento nació la obligación sustancial?',
     options: [
-      'En febrero de 2026, cuando presentó y pagó la declaración.',
+      'En febrero de 2026, porque la presentación de la declaración y el pago son los hechos que hacen exigible la obligación.',
       'El 28 de diciembre de 2025, con la causación del impuesto al emitirse la factura, aunque su declaración y pago se hicieran después.',
-      'El 31 de diciembre de 2025, por el cierre del período gravable del IVA.',
-      'En enero de 2026, por el vencimiento del plazo para declarar.',
+      'El 31 de diciembre de 2025, porque el cierre del período bimestral del IVA determina la causación del impuesto.',
+      'En enero de 2026, porque el vencimiento del plazo para declarar marca el nacimiento de la obligación sustancial.',
     ],
     correct: 1,
     justification:
@@ -72,10 +72,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una empresa paga honorarios el 20 de diciembre pero abona en cuenta el valor al proveedor el 5 de enero siguiente. ¿Cuándo se causa la retención en la fuente?',
     options: [
-      'El 20 de diciembre, porque la orden de pago es la que genera la retención.',
+      'El 20 de diciembre, porque la orden de pago es la que genera la retención, con independencia del abono en cuenta.',
       'El 5 de enero, porque la retención se causa en el momento del pago o abono en cuenta, el que ocurra primero.',
-      'El 31 de diciembre, por el cierre del año gravable.',
-      'Cuando se expida el certificado de retención, en enero del año siguiente.',
+      'El 31 de diciembre, porque el cierre del año gravable depura las cuentas y define el momento de la retención.',
+      'Cuando se expida el certificado de retención, porque ese documento acredita la práctica de la retención.',
     ],
     correct: 1,
     justification:
@@ -99,9 +99,9 @@ export const QUESTIONS: Question[] = [
       '¿Cuál de las siguientes afirmaciones distingue correctamente la firmeza de la declaración y el mérito ejecutivo de los actos de determinación?',
     options: [
       'La firmeza impide que la administración modifique la liquidación privada; el mérito ejecutivo habilita el cobro coactivo del saldo a pagar determinado en la declaración o en el acto (art. 828 E.T.).',
-      'La firmeza y el mérito ejecutivo son lo mismo: ambos se producen a los tres años de presentada la declaración.',
-      'El mérito ejecutivo se produce con la notificación del requerimiento especial y la firmeza con la liquidación de revisión.',
-      'La firmeza se predica de los actos de la administración y el mérito ejecutivo de las sanciones exclusivamente.',
+      'La firmeza y el mérito ejecutivo son lo mismo: ambos se producen a los tres años de presentada la declaración y habilitan el cobro coactivo por la DIAN.',
+      'El mérito ejecutivo se produce con la notificación del requerimiento especial y la firmeza con la liquidación de revisión, pues ambos actos cierran la discusión.',
+      'La firmeza se predica exclusivamente de los actos de la administración y el mérito ejecutivo solo de las sanciones, no de los saldos a pagar por impuestos.',
     ],
     correct: 0,
     justification:
@@ -150,10 +150,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'El Registro Único Tributario (RUT) es…',
     options: [
-      '…el registro mercantil de las cámaras de comercio, obligatorio para todas las personas naturales.',
+      '…el registro mercantil que llevan las cámaras de comercio, obligatorio para todas las personas naturales y jurídicas que desarrollan actividad económica.',
       '…el mecanismo único para identificar, ubicar y clasificar a los sujetos de obligaciones administradas por la DIAN, administrado por esa entidad.',
-      '…el sistema de facturación electrónica de la DIAN.',
-      '…el registro de los importadores y exportadores que lleva la Superintendencia de Sociedades.',
+      '…el sistema de facturación electrónica de la DIAN, con el que se identifican los contribuyentes y se validan sus documentos.',
+      '…el registro de los importadores y exportadores que lleva la Superintendencia de Sociedades para el control del comercio exterior.',
     ],
     correct: 1,
     justification:
@@ -176,10 +176,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Sobre la factura electrónica de venta, es correcto afirmar que…',
     options: [
-      '…es obligatoria solo para las grandes empresas con ingresos superiores a 100.000 UVT.',
+      '…es obligatoria solo para las grandes empresas con ingresos superiores a 100.000 UVT, mientras las demás pueden seguir facturando en papel sin validación previa.',
       '…se expide con validación previa de la DIAN y se entiende expedida cuando es validada y entregada al adquirente; excepcionalmente, por inconvenientes tecnológicos, se puede facturar por talonario o en papel.',
-      '…puede expedirse en cualquier formato y su validación ante la DIAN es voluntaria.',
-      '…reemplazó todos los documentos equivalentes, que ya no pueden utilizarse en ningún caso.',
+      '…puede expedirse en cualquier formato, incluido el papel, y su validación ante la DIAN es voluntaria para los obligados a facturar, salvo que el adquirente la solicite.',
+      '…reemplazó todos los documentos equivalentes, que ya no pueden utilizarse en ningún caso, ni siquiera en las operaciones de transporte.',
     ],
     correct: 1,
     justification:
@@ -202,10 +202,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una empresa vende mercancías a otra y no expide la factura ni un documento equivalente. ¿Cuál es la consecuencia fiscal más relevante para el comprador?',
     options: [
-      'Ninguna, porque el comprador ya pagó el precio y la operación es válida civilmente.',
+      'Ninguna, porque el comprador ya pagó el precio y la operación es válida civilmente, de modo que el costo puede reconocerse en la contabilidad.',
       'El comprador no puede reconocer fiscalmente el costo o la deducción si no acredita la existencia de la factura con el lleno de los requisitos legales.',
-      'El comprador debe asumir la sanción por no facturar del vendedor.',
-      'El comprador debe facturar la operación en lugar del vendedor para poder deducir el costo.',
+      'El comprador debe asumir la sanción por no facturar del vendedor, porque la DIAN cobra la sanción a quien se beneficia del costo.',
+      'El comprador debe expedir la factura en lugar del vendedor para poder deducir el costo y descontar el IVA de la operación.',
     ],
     correct: 1,
     justification:
@@ -228,10 +228,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'La información exógena es…',
     options: [
-      '…la información que el contribuyente incluye en su propia declaración de renta.',
+      '…la información que el contribuyente incluye en su propia declaración de renta y que se conoce como información endógena.',
       '…la información sobre operaciones de los contribuyentes que suministran terceros y entidades obligadas a reportar, para el control de la DIAN.',
-      '…la contabilidad que llevan los comerciantes conforme a las NIF.',
-      '…la información de los estados financieros que se publica en la página web de las sociedades.',
+      '…la contabilidad que llevan los comerciantes conforme a las NIF y que se reporta anualmente a la DIAN a través de los formatos de información exógena.',
+      '…la información de los estados financieros que las sociedades publican en su página web y que la DIAN utiliza para el control.',
     ],
     correct: 1,
     justification:
@@ -254,10 +254,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una sociedad obligada a llevar contabilidad obtuvo ingresos brutos de 30.000 UVT en el año. ¿Debe presentar la conciliación fiscal por los servicios informáticos electrónicos de la DIAN?',
     options: [
-      'Sí, porque todos los obligados a llevar contabilidad deben presentarla por servicios informáticos.',
+      'Sí, porque todos los obligados a llevar contabilidad deben presentar la conciliación fiscal por servicios informáticos, sin importar su nivel de ingresos, como requisito para que la declaración de renta se entienda presentada.',
       'No, porque solo están obligados por servicios informáticos los contribuyentes obligados a llevar contabilidad con ingresos brutos iguales o superiores a 45.000 UVT; sin embargo, puede ser requerida por la administración.',
-      'No, porque la conciliación fiscal solo la deben presentar las personas naturales.',
-      'Sí, pero solo si la DIAN lo solicita mediante requerimiento especial.',
+      'No, porque la conciliación fiscal solo la deben presentar las personas naturales obligadas a llevar contabilidad y con ingresos altos, mientras las sociedades la conservan sin reportarla.',
+      'Sí, pero solo si la DIAN lo solicita mediante requerimiento especial o emplazamiento dentro de un proceso de fiscalización.',
     ],
     correct: 1,
     justification:
@@ -280,10 +280,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una empresa pagó en efectivo 300 UVT en un solo pago por la compra de mercancía y pretende deducir el costo. Sobre la procedencia fiscal de esa deducción, es correcto afirmar que…',
     options: [
-      '…procede, porque el proveedor es el obligado a facturar y los medios de pago no afectan el reconocimiento del costo.',
+      '…procede, porque el proveedor es el obligado a facturar y los medios de pago no afectan el reconocimiento del costo, siempre que exista factura válida.',
       '…no procede, porque los pagos individuales en efectivo que superan el límite previsto en el artículo 771-5 E.T. no son fiscalmente aceptados para el reconocimiento de costos, deducciones, pasivos e impuestos descontables.',
-      '…procede, porque el límite de efectivo se calcula por el total del año y no por cada pago.',
-      '…no procede, porque ningún pago en efectivo es aceptado fiscalmente en Colombia desde 2016.',
+      '…procede, porque el límite de efectivo del artículo 771-5 E.T. se calcula por el total anual de pagos y no por cada pago individual del pagador.',
+      '…no procede, porque ningún pago en efectivo es aceptado fiscalmente en Colombia desde 2016, cuando se eliminó el régimen gradual de bancarización.',
     ],
     correct: 1,
     justification:
@@ -307,9 +307,9 @@ export const QUESTIONS: Question[] = [
       'La diferencia entre contribuyente y responsable es que…',
     options: [
       '…el contribuyente realiza el hecho generador y el responsable, sin ser contribuyente, debe cumplir por disposición expresa de la ley las obligaciones atribuidas a este.',
-      '…el contribuyente paga y el responsable solo informa.',
-      '…el responsable siempre responde subsidiariamente y el contribuyente solidariamente.',
-      '…en todos los impuestos los términos son sinónimos.',
+      '…el contribuyente paga y el responsable solo informa las operaciones a la DIAN, sin asumir el pago del impuesto.',
+      '…el responsable siempre responde de manera subsidiaria y el contribuyente de manera solidaria, por los artículos 573 y 793 E.T.',
+      '…en todos los impuestos los términos son sinónimos, porque ambas figuras realizan el hecho generador y responden por el tributo.',
     ],
     correct: 0,
     justification:
@@ -332,10 +332,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una sociedad pagó honorarios por 40 millones y no practicó la retención que correspondía. ¿Cuál es la consecuencia para la sociedad?',
     options: [
-      'Ninguna, porque la retención solo se causa si el beneficiario del pago es contribuyente declarante.',
+      'Ninguna, porque la retención solo se causa si el beneficiario del pago es contribuyente declarante y presenta la declaración de renta en el mismo año.',
       'La DIAN puede exigirle el valor dejado de retener con los intereses de mora y las sanciones que correspondan, porque el agente retenedor responde por los valores que debió retener y no retuvo.',
-      'La sociedad solo debe expedir el certificado de retención sin consecuencias económicas.',
-      'La sociedad debe pagar el impuesto de renta del profesional por su cuenta y sin recargo.',
+      'La sociedad solo debe expedir el certificado de retención y anotar el pago en su contabilidad, sin consecuencias económicas ni intereses.',
+      'La sociedad debe pagar el impuesto de renta del profesional por su cuenta y sin recargo, porque lo sustituye en la obligación sustancial como responsable solidario.',
     ],
     correct: 1,
     justification:
@@ -384,10 +384,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un socio de una sociedad limitada en pleno funcionamiento recibe un requerimiento de la DIAN por los impuestos de la sociedad argumentando que, como socio, responde solidariamente. ¿Es procedente el requerimiento?',
     options: [
-      'Sí, porque todos los socios responden solidariamente por las deudas de la sociedad.',
+      'Sí, porque todos los socios responden solidariamente por las deudas de la sociedad, sin límite distinto del monto de sus aportes según el artículo 793 E.T.',
       'No, en principio, porque la solidaridad tributaria solo existe en los casos expresamente previstos en la ley (art. 793 E.T.) y no por la sola calidad de socio de una sociedad en funcionamiento.',
-      'Sí, porque la solidaridad se presume cuando la sociedad tiene más de dos socios.',
-      'No, porque los socios nunca responden por las deudas tributarias de la sociedad.',
+      'Sí, porque la solidaridad se presume cuando la sociedad tiene más de dos socios y la DIAN puede cobrar a cualquiera de ellos la deuda de la sociedad.',
+      'No, porque los socios nunca responden por las deudas tributarias de la sociedad, cualquiera sea la causa de su disolución o liquidación irregular.',
     ],
     correct: 1,
     justification:
@@ -410,10 +410,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una persona fallece en 2025 adeudando el impuesto de renta de 2023. La sucesión se liquida y se adjudican bienes a dos herederos por 300 y 200 millones respectivamente. ¿Cómo opera la responsabilidad por la deuda tributaria?',
     options: [
-      'Los herederos responden solidariamente por el total de la deuda, sin límite alguno, con su patrimonio personal.',
+      'Los herederos responden solidariamente por el total de la deuda, sin límite alguno, con su patrimonio personal, porque la obligación se transmite íntegra.',
       'Los herederos responden solidariamente por las obligaciones del causante hasta el monto de la distribución recibida; la sucesión ilíquida responde con los bienes de la herencia mientras no se adjudique.',
-      'La deuda se extingue con la muerte del causante porque las obligaciones tributarias son personalísimas.',
-      'Solo responde el albacea, porque es el representante de la sucesión.',
+      'La deuda se extingue con la muerte del causante, porque las obligaciones tributarias son personalísimas y no se transmiten a los herederos.',
+      'Solo responde el albacea, porque es el representante legal de la sucesión y concentra la administración de los bienes de la herencia.',
     ],
     correct: 1,
     justification:
@@ -436,10 +436,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'La determinación del tributo puede ser privada, oficial o mixta. La determinación privada se concreta en…',
     options: [
-      '…la liquidación oficial de revisión.',
+      '…la liquidación oficial de revisión expedida por la administración para modificar la declaración.',
       '…la declaración tributaria que presenta el contribuyente o responsable (autoliquidación).',
-      '…la liquidación de aforo que expide la DIAN.',
-      '…la resolución sanción por no declarar.',
+      '…la liquidación de aforo que expide la DIAN cuando el contribuyente no presenta la declaración.',
+      '…la resolución sanción por no declarar, que cuantifica el tributo y la sanción a cargo del incumplido.',
     ],
     correct: 1,
     justification:
@@ -540,10 +540,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Sobre la liquidación provisional, es correcto afirmar que…',
     options: [
-      '…fue creada por la Ley 1819 de 2016, solo procede respecto de contribuyentes que el año anterior declararon ingresos brutos de hasta 15.000 UVT o patrimonio bruto de hasta 30.000 UVT, y si el contribuyente la rechaza reemplaza al requerimiento especial, al emplazamiento previo por no declarar o al pliego de cargos.',
-      '…fue creada por la Ley 2010 de 2019 y reemplaza a la liquidación oficial de revisión en todos los casos.',
-      '…procede respecto de cualquier contribuyente y el contribuyente solo puede aceptarla, sin opción de rechazarla.',
-      '…es un acto del contribuyente, equivalente a una corrección de su declaración.',
+      '…fue creada por la Ley 1819 de 2016, solo procede contra contribuyentes que el año anterior declararon ingresos brutos de hasta 15.000 UVT o patrimonio bruto de hasta 30.000 UVT; si la rechazan, reemplaza al requerimiento especial, al emplazamiento por no declarar o al pliego de cargos.',
+      '…fue creada por la Ley 2010 de 2019 y reemplaza a la liquidación oficial de revisión en todos los casos, de modo que el contribuyente no puede solicitar su modificación porque esa ley eliminó el requerimiento especial.',
+      '…procede respecto de cualquier contribuyente, sin límite de ingresos ni patrimonio, y solo puede aceptarse o solicitar su modificación una vez, porque la rechazada se convierte automáticamente en liquidación oficial de revisión.',
+      '…es un acto del contribuyente equivalente a una corrección de su declaración, que se presenta con la sanción por corrección y produce firmeza inmediata sin necesidad de aceptación de la DIAN.',
     ],
     correct: 0,
     justification:
@@ -566,10 +566,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un contribuyente recibe la factura del impuesto sobre la renta que expidió la DIAN con base en el artículo 616-5 E.T. y no está de acuerdo con los valores allí determinados. ¿Qué debe hacer?',
     options: [
-      'Presentar recurso de reposición contra la factura dentro de los diez días siguientes.',
+      'Presentar recurso de reposición contra la factura dentro de los diez días siguientes a su notificación, para que la DIAN revise los valores determinados y los ajuste antes de que adquiera firmeza.',
       'Presentar la declaración del impuesto incluyendo los valores de su realidad económica dentro de los dos meses siguientes a la notificación, junto con la sanción por extemporaneidad procedente; con esa presentación la factura pierde fuerza ejecutoria.',
-      'Esperar a que la factura quede en firme y demandarla ante la jurisdicción ordinaria.',
-      'Solicitar a la DIAN que archive la factura sin presentar declaración, porque la facturación solo procede con autorización del contribuyente.',
+      'Esperar a que la factura quede en firme y demandarla ante la jurisdicción ordinaria, porque la facturación es un acto sujeto al control judicial posterior sin necesidad de presentar declaración.',
+      'Solicitar a la DIAN que archive la factura sin presentar declaración, porque la facturación solo procede con autorización previa del contribuyente y de su contador.',
     ],
     correct: 1,
     justification:

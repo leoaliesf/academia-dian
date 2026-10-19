@@ -44,10 +44,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Antes de proceder a la eliminación de documentos que cumplieron sus tiempos de retención, la entidad debe:',
     options: [
-      'Destruir los documentos de inmediato para liberar espacio.',
+      'Destruir los documentos de inmediato para liberar espacio, porque los tiempos de retención ya se cumplieron.',
       'Contar con las TRD/TVD convalidadas, el inventario documental correspondiente y publicar el proceso de eliminación, conforme al procedimiento del Archivo General de la Nación.',
-      'Eliminar únicamente los documentos en papel, conservando los digitales.',
-      'Solicitar permiso al funcionario que produjo los documentos.',
+      'Eliminar únicamente los documentos en papel, conservando los digitales, por considerarse el soporte digital más seguro y de menor costo.',
+      'Solicitar permiso al funcionario que produjo los documentos y dejar constancia escrita en el expediente antes de destruirlos.',
     ],
     correct: 1,
     justification:
@@ -70,10 +70,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Frente a la articulación de la gestión documental con el Modelo Integrado de Planeación y Gestión (MIPG), la entidad debe:',
     options: [
-      'Manejar la gestión documental como un proceso aislado del resto de la gestión institucional.',
+      'Manejar la gestión documental como un proceso aislado del resto de la gestión institucional y de sus planes.',
       'Articular la gestión documental con las políticas de gestión y desempeño de MIPG: planeación institucional, información y comunicación, y control interno.',
-      'Delegar toda la gestión documental al Archivo General de la Nación.',
-      'Limitar la gestión documental al archivo de correspondencia.',
+      'Delegar toda la gestión documental al Archivo General de la Nación, por ser el ente rector del sistema.',
+      'Limitar la gestión documental al archivo de correspondencia y a los documentos de gestión.',
     ],
     correct: 1,
     justification:
@@ -96,10 +96,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'A un servidor le asignan un expediente de fiscalización de una empresa donde trabaja un familiar cercano. La conducta acorde con el Código de Integridad es:',
     options: [
-      'Tramitar el caso sin mencionar la relación para no entorpecer el proceso.',
+      'Tramitar el caso sin mencionar la relación para no entorpecer el proceso ni generar suspicacias.',
       'Declarar oportunamente el conflicto de interés y apartarse del conocimiento o decisión del asunto, por los canales institucionales.',
-      'Consultar informalmente con compañeros y decidir según su criterio.',
-      'Tramitar el caso, pero con especial rigor para demostrar imparcialidad.',
+      'Consultar informalmente con compañeros y decidir según su criterio, para contrastar puntos de vista.',
+      'Tramitar el caso, pero con especial rigor para demostrar imparcialidad frente a los demás.',
     ],
     correct: 1,
     justification:
@@ -122,10 +122,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'En una capacitación, un servidor afirma públicamente que todos sus trámites cumplen los tiempos legales, pero en privado sabe que tiene tres casos vencidos sin gestionar. ¿Qué conducta corresponde al nivel 1 de Comportamiento ético?',
     options: [
-      'Mantener la afirmación pública, porque nadie conoce los casos vencidos.',
+      'Mantener la afirmación pública, porque nadie conoce los casos vencidos y ya se están gestionando.',
       'Reconocer la situación real y ponerla en conocimiento de su superior, actuando con congruencia entre lo que dice y lo que hace.',
-      'Guardar silencio y resolver los casos en silencio sin informar a nadie.',
-      'Justificar los vencimientos argumentando carga laboral excesiva.',
+      'Guardar silencio y resolver los casos en silencio sin informar a nadie, para no alarmar al área.',
+      'Justificar los vencimientos argumentando carga laboral excesiva y falta de recursos del equipo.',
     ],
     correct: 1,
     justification:
@@ -148,10 +148,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'En su equipo se ha vuelto costumbre presentar a la Dirección solo los indicadores favorables, omitiendo los desfavorables "para no desgastar al área". Usted advierte la práctica. ¿Qué conducta corresponde al nivel 4 de Comportamiento ético?',
     options: [
-      'Abstenerse de participar, sin mencionar el tema al equipo.',
-      'Presentar un informe completo por su cuenta y archivar el asunto.',
+      'Abstenerse de participar en la práctica, sin mencionar el tema al equipo, para no afectar la confianza interna y evitar conflictos.',
+      'Presentar un informe completo por su cuenta y archivar el asunto, cumpliendo así con el deber de transparencia sin involucrar al equipo.',
       'Promover en el equipo un criterio común de reporte completo y veraz, acordar la forma de presentar los resultados y sostener la práctica con el ejemplo, de modo que la entidad reciba información fiel.',
-      'Denunciar al equipo ante control disciplinario antes de intentar cambiar la práctica.',
+      'Denunciar al equipo ante control disciplinario antes de intentar cambiar la práctica, por tratarse de una falta grave y reiterada.',
     ],
     correct: 2,
     justification:
@@ -174,10 +174,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Debe informar a un área interna que su solicitud de recursos será negada. Sabe que la decisión es incómoda para su colega. ¿Qué conducta corresponde al nivel 2 de Comunicación efectiva?',
     options: [
-      'Posponer la comunicación para no afectar la relación, hasta que el colega pregunte.',
-      'Enviar un correo impersonal con la negativa, sin dar explicaciones.',
+      'Posponer la comunicación para no afectar la relación, hasta que el colega pregunte por el estado de su solicitud.',
+      'Enviar un correo impersonal con la negativa, sin dar explicaciones ni abrir espacio a réplica o revisión posterior del caso.',
       'Comunicar la decisión con claridad y asertividad, explicando el fundamento, escuchando los argumentos del otro y dejando claro el canal para revisar el caso si hay nueva evidencia.',
-      'Suavizar la información hasta hacerla incomprensible, para no incomodar.',
+      'Suavizar la información hasta hacerla incomprensible, para no incomodar al colega con la negativa y mantener la relación.',
     ],
     correct: 2,
     justification:
@@ -200,10 +200,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'El equipo acordó entregar cada parte del informe el miércoles en un formato común. Usted prefiere su formato personal, que considera más eficiente. ¿Qué conducta corresponde al nivel 1 de Trabajo en equipo?',
     options: [
-      'Entregar su parte en su formato personal, explicando que es mejor.',
+      'Entregar su parte en su formato personal, explicando al equipo que resulta más eficiente y que no afecta el contenido del informe.',
       'Cumplir el acuerdo: entregar el miércoles en el formato común y, si tiene una propuesta de mejora, plantearla en el espacio del equipo para la siguiente ocasión.',
-      'Entregar después del miércoles para ganar tiempo de calidad.',
-      'Pedir a su superior que lo exonere del formato común.',
+      'Entregar después del miércoles para ganar tiempo de calidad, informando la demora al equipo con antelación.',
+      'Pedir a su superior que lo exonere del formato común y le permita usar su plantilla personal por razones de eficiencia.',
     ],
     correct: 1,
     justification:
@@ -252,10 +252,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un ciudadano llega confundido con un requerimiento que no comprende, minutos antes del cierre de la jornada. ¿Qué conducta corresponde al valor de Compromiso?',
     options: [
-      'Indicarle que regrese al día siguiente, porque el horario de atención está por terminar.',
+      'Indicarle que regrese al día siguiente, porque el horario de atención está por terminar y el sistema se cerrará.',
       'Atenderlo con disposición, escuchar su situación sin distracciones, orientarlo con claridad y asegurarse de que sepa qué debe hacer.',
-      'Resolver el trámite por él para que no tenga que volver.',
-      'Remitirlo a otro punto de atención sin verificar que allí le orienten.',
+      'Resolver el trámite por él para que no tenga que volver, aunque no sea lo que le corresponde.',
+      'Remitirlo a otro punto de atención sin verificar que allí le orienten sobre el requerimiento.',
     ],
     correct: 1,
     justification:
@@ -278,10 +278,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Dos contribuyentes presentan casos idénticos. Uno es una gran empresa con apoderados influyentes; el otro, un pequeño comerciante insistente y descortés. ¿Qué conducta corresponde al valor de Justicia?',
     options: [
-      'Resolver primero el caso del comerciante para que deje de insistir.',
-      'Resolver primero el caso de la gran empresa por la cordialidad de sus apoderados.',
+      'Resolver primero el caso del comerciante para que deje de insistir y libere la carga de trabajo.',
+      'Resolver primero el caso de la gran empresa por la cordialidad de sus apoderados y su disponibilidad.',
       'Decidir ambos casos con base en los hechos y la norma, en igualdad de condiciones, sin dejarse influir por simpatías, antipatías ni presiones.',
-      'Delegar uno de los casos para no tener que decidir entre los dos.',
+      'Delegar uno de los casos para no tener que decidir entre dos situaciones tan distintas.',
     ],
     correct: 2,
     justification:
@@ -304,10 +304,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un ciudadano alterado lo insulta mientras usted le explica una decisión. ¿Qué conducta corresponde al valor de Respeto?',
     options: [
-      'Responder en el mismo tono para imponer la autoridad de la entidad.',
+      'Responder en el mismo tono para imponer la autoridad de la entidad y poner límites al ciudadano.',
       'Mantener el trato digno, no devolver la agresión verbal y explicar la decisión y los recursos con argumentos y lenguaje respetuoso, sin ironías.',
-      'Negarse a atenderlo hasta que se disculpe.',
-      'Llamar de inmediato a seguridad sin dar explicación alguna.',
+      'Negarse a atenderlo hasta que se disculpe por el insulto proferido durante la explicación.',
+      'Llamar de inmediato a seguridad sin dar explicación alguna sobre la decisión adoptada.',
     ],
     correct: 1,
     justification:
@@ -330,10 +330,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Está por vencer el término legal para resolver una solicitud y tiene tres casos más en la misma situación; no alcanzará a resolverlos todos con el análisis que requieren. ¿Qué conducta corresponde al valor de Diligencia?',
     options: [
-      'Dejar vencer los términos en silencio, esperando que nadie lo note.',
-      'Resolverlos a la carrera con análisis incompleto para cumplir formalmente.',
+      'Dejar vencer los términos en silencio, esperando que nadie lo note entre los demás casos pendientes del despacho.',
+      'Resolverlos a la carrera con análisis incompleto para cumplir formalmente con el término legal, sin importar la calidad.',
       'Priorizar conforme a los términos, reportar oportunamente la situación a quien corresponda y asegurar que ningún caso quede sin gestión, sin evadir la función.',
-      'Trasladar los casos a un compañero sin informarle el contexto.',
+      'Trasladar los casos a un compañero sin informarle el contexto ni los términos pendientes.',
     ],
     correct: 2,
     justification:
@@ -356,10 +356,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Usted defendió durante años un criterio técnico que una nueva doctrina institucional cambió, con argumentos que inicialmente no compartía. ¿Qué conducta corresponde al nivel 2 de Adaptabilidad?',
     options: [
-      'Mantener su criterio anterior mientras la doctrina no se lo exija caso por caso.',
-      'Aplicar el nuevo criterio en silencio, quejándose informalmente con compañeros.',
+      'Mantener su criterio anterior mientras la nueva doctrina no se lo exija caso por caso y así lo confirme una circular.',
+      'Aplicar el nuevo criterio en silencio, quejándose informalmente con los compañeros del área por la pérdida del criterio propio.',
       'Evaluar las distintas posturas, revisar la solidez de su propia certeza ante los nuevos argumentos y ajustar su actuación al criterio institucional vigente.',
-      'Solicitar por escrito la reconsideración de la doctrina antes de aplicarla.',
+      'Solicitar por escrito la reconsideración de la doctrina antes de aplicarla en los expedientes a su cargo.',
     ],
     correct: 2,
     justification:
@@ -382,10 +382,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Explica a un ciudadano un procedimiento de tres pasos. El ciudadano asiente, pero usted nota que no tomó nota. ¿Qué conducta corresponde al nivel 1 de Comunicación efectiva?',
     options: [
-      'Dar por cumplida la función, porque la información ya se entregó.',
-      'Entregarle un folleto sin verificar nada más.',
+      'Dar por cumplida la función, porque la información ya se entregó y el ciudadano asintió.',
+      'Entregarle un folleto con los pasos y no verificar nada más, porque el material escrito es suficiente.',
       'Verificar la comprensión: pedirle que repita los pasos o confirmar los datos críticos antes de que se retire.',
-      'Decirle que consulte la página web si tiene dudas.',
+      'Decirle que consulte la página web si tiene dudas y que allí encontrará los pasos.',
     ],
     correct: 2,
     justification:
@@ -408,10 +408,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un ciudadano llama alterado por una demora y, al explicarle, usted confirma que parte de su reclamo tiene fundamento. ¿Qué conducta corresponde al nivel 1 de Orientación al usuario y al ciudadano?',
     options: [
-      'Defender la actuación de la entidad sin reconocer el error parcial.',
+      'Defender la actuación de la entidad sin reconocer el error parcial, para preservar su credibilidad.',
       'Escuchar con respeto, reconocer lo que procede del reclamo, explicar con claridad los pasos siguientes y los tiempos, y dejar el caso en gestión verificable.',
-      'Transferir la llamada a otra área sin explicación.',
-      'Prometer una solución inmediata sin verificar si es posible.',
+      'Transferir la llamada a otra área sin explicación, para que allí continúen el trámite y atiendan la demora.',
+      'Prometer una solución inmediata sin verificar si es posible, para calmar al ciudadano y cerrar la llamada.',
     ],
     correct: 1,
     justification:

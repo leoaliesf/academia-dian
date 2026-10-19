@@ -12,9 +12,9 @@ export const QUESTIONS: Question[] = [
     statement: 'Conforme al artículo 10 del Estatuto Tributario, ¿cuándo se considera residente fiscal una persona natural?',
     options: [
       'Cuando permanece en el país más de 183 días calendario en el año o período gravable, o dentro de los 365 días consecutivos, entre otros criterios',
-      'Únicamente cuando nace en Colombia, sin importar su permanencia en el país',
-      'Cuando obtiene cualquier renta de fuente nacional, aunque viva en el exterior durante todo el año',
-      'Cuando permanece en el país más de 30 días continuos en el año',
+      'Únicamente cuando nace en Colombia, sin importar su permanencia en el país, porque la nacionalidad determina de manera automática la residencia fiscal.',
+      'Cuando obtiene cualquier renta de fuente nacional, aunque viva en el exterior durante todo el año, pues la fuente de la renta sustituye al criterio de permanencia.',
+      'Cuando permanece en el país más de 30 días continuos en el año, término que la doctrina de la DIAN ha considerado suficiente para consolidar la residencia.',
     ],
     correct: 0,
     justification:
@@ -63,9 +63,9 @@ export const QUESTIONS: Question[] = [
     statement: '¿Cuál es la diferencia fundamental entre un contribuyente residente y uno no residente para efectos del impuesto sobre la renta?',
     options: [
       'El residente tributa sobre su renta mundial; el no residente solo sobre sus rentas y ganancias ocasionales de fuente nacional',
-      'El residente solo tributa sobre su renta de fuente nacional y el no residente sobre su renta mundial',
-      'El residente no está obligado a declarar y el no residente sí',
-      'No hay diferencia: ambos tributan sobre su renta mundial',
+      'El residente solo tributa sobre su renta de fuente nacional y el no residente sobre su renta mundial, porque la residencia desplaza la potestad tributaria del país.',
+      'El residente no está obligado a declarar y el no residente sí, dado que la declaración se exige únicamente a quienes tienen rentas de fuente extranjera.',
+      'No hay diferencia: ambos tributan sobre su renta mundial, pues el artículo 9 del ET aplica el principio de renta mundial sin distinguir la residencia.',
     ],
     correct: 0,
     justification:
@@ -112,9 +112,9 @@ export const QUESTIONS: Question[] = [
     kind: 'conceptual',
     statement: '¿Cuál de las siguientes situaciones NO configura por sí sola vinculación económica para efectos de precios de transferencia?',
     options: [
-      'Una sociedad subordinada a su matriz extranjera',
-      'Dos sociedades que conforman un grupo empresarial',
-      'Una sucursal en Colombia de una sociedad del exterior',
+      'Una sociedad subordinada a su matriz extranjera, porque la subordinación societaria permite a la matriz orientar las decisiones de la subordinada.',
+      'Dos sociedades que conforman un grupo empresarial, por la unidad de propósito y dirección que exige la ley para presumir el control.',
+      'Una sucursal en Colombia de una sociedad del exterior, porque carece de personalidad jurídica propia y depende económicamente de su casa matriz.',
       'Dos sociedades independientes que celebran entre sí una única compraventa internacional de mercancías en condiciones de mercado',
     ],
     correct: 3,
@@ -138,10 +138,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'En un estudio de precios de transferencia, el margen de utilidad de operación de una distribuidora vinculada se ubica por debajo del cuartil inferior del rango intercuartil de las comparables. ¿Qué consecuencia tiene esa posición en la fiscalización?',
     options: [
-      'Ninguna: cualquier margen superior a cero se considera de plena competencia',
+      'Ninguna: cualquier margen superior a cero se considera de plena competencia, porque la ley presume que la operación vinculada busca utilidad.',
       'La DIAN puede ajustar el margen a la mediana del rango intercuartil, con la consecuente liquidación oficial y sanción por inexactitud si se afecta el impuesto',
-      'La DIAN debe aceptar el margen del contribuyente y solo puede sancionarlo formalmente por no documentar',
-      'Se debe reemplazar el método aplicable por el de partición de utilidades, sin ajuste alguno',
+      'La DIAN debe aceptar el margen del contribuyente y solo puede sancionarlo formalmente por no documentar, ya que el ajuste exige acuerdo previo.',
+      'Se debe reemplazar el método aplicable por el de partición de utilidades, sin ajuste alguno, por ser el método residual preferente en estos casos.',
     ],
     correct: 1,
     justification:
@@ -163,10 +163,10 @@ export const QUESTIONS: Question[] = [
     kind: 'conceptual',
     statement: '¿Cuál de los siguientes NO es uno de los métodos de precios de transferencia previstos en el artículo 260-3 del Estatuto Tributario?',
     options: [
-      'Precio comparable no controlado',
-      'Costo adicionado',
-      'Precio de reventa',
-      'Valoración por flujo de caja descontado',
+      'Precio comparable no controlado, que contrasta el precio de la operación vinculada con el de operaciones comparables entre partes independientes.',
+      'Costo adicionado, que determina el precio de plena competencia a partir del costo más un margen de utilidad apropiado.',
+      'Precio de reventa, que parte del precio de reventa a un tercero independiente y le resta el margen de comercialización.',
+      'La valoración por flujo de caja descontado, técnica financiera de valoración y no método legal de precios de transferencia.',
     ],
     correct: 3,
     justification:
@@ -216,7 +216,7 @@ export const QUESTIONS: Question[] = [
       'El informe maestro describe el grupo multinacional (estructura, negocios, intangibles y situación financiera) y el informe país por país presenta información desagregada por jurisdicción',
       'El informe país por país describe la estructura del grupo y el informe maestro detalla las operaciones de la entidad colombiana',
       'El informe local se presenta ante la DIAN dentro de los dos meses siguientes al cierre del ejercicio, sin excepción',
-      'El informe maestro reemplaza al informe local en todos los casos',
+      'El informe maestro reemplaza al informe local en todos los casos, porque contiene la información global del grupo y hace innecesaria la documentación de la entidad colombiana.',
     ],
     correct: 0,
     justification:
@@ -265,9 +265,9 @@ export const QUESTIONS: Question[] = [
     statement: '¿Cuál de las siguientes conductas está sancionada por el artículo 260-11 del Estatuto Tributario?',
     options: [
       'No presentar la declaración informativa de precios de transferencia y no preparar o no suministrar la documentación comprobatoria',
-      'Presentar la declaración de renta de forma extemporánea sin pago',
-      'No inscribirse en el RUT antes de iniciar actividades',
-      'No reportar las operaciones de cambio en la declaración de cambio cambiaria',
+      'Presentar la declaración de renta de forma extemporánea sin pago, porque el artículo 260-11 remite al régimen general de sanciones formales.',
+      'No inscribirse en el RUT antes de iniciar actividades, por tratarse de un incumplimiento del deber formal que afecta el control de las operaciones internacionales.',
+      'No reportar las operaciones de cambio en la declaración de cambio cambiaria, conducta que el artículo 260-11 asimila a la falta de documentación comprobatoria.',
     ],
     correct: 0,
     justification:
@@ -290,10 +290,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un inversionista de un país sin convenio con Colombia constituye una sociedad en un país con convenio, sin oficinas, empleados ni actividad distinta de recibir los dividendos colombianos. La sociedad invoca el convenio para solicitar la tarifa reducida de retención. ¿Cómo debe analizar la DIAN el caso?',
     options: [
-      'Debe reconocer el beneficio, porque la sociedad está constituida y es residente del país con convenio',
+      'Debe reconocer el beneficio, porque la sociedad está constituida y es residente del país con convenio, y la residencia formal es el único requisito para aplicar la tarifa reducida.',
       'Puede desconocer el beneficio por tratarse de una sociedad canalizadora sin sustancia económica (treaty shopping), aplicando las cláusulas antiabuso del convenio y las reglas sobre beneficiario efectivo',
-      'Debe reconocer el beneficio, pero imponer una sanción equivalente al 100 % del monto de los dividendos',
-      'Debe remitir el caso al Banco de la República por tratarse de una operación de inversión extranjera',
+      'Debe reconocer el beneficio, pero imponer una sanción equivalente al 100 % del monto de los dividendos por la falta de sustancia económica de la sociedad.',
+      'Debe remitir el caso al Banco de la República por tratarse de una operación de inversión extranjera, autoridad competente para verificar el beneficiario efectivo.',
     ],
     correct: 1,
     justification:

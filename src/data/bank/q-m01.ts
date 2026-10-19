@@ -15,10 +15,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Según el Decreto 1071 de 1999, el objeto de la DIAN consiste en coadyuvar a garantizar la seguridad fiscal del Estado colombiano y la protección del orden público económico nacional mediante…',
     options: [
-      '…el recaudo exclusivo de los impuestos nacionales y territoriales.',
+      '…el recaudo y la administración de todos los impuestos, incluidos los departamentales y municipales, por ser la entidad recaudadora del Estado.',
       '…la administración y control del debido cumplimiento de las obligaciones tributarias, aduaneras y cambiarias, y la facilitación de las operaciones de comercio exterior.',
-      '…la administración del presupuesto general de la Nación.',
-      '…la vigilancia del sistema financiero y del mercado de valores.',
+      '…la administración del presupuesto general de la Nación, por ser la entidad que centraliza el recaudo de las rentas públicas.',
+      '…la vigilancia del sistema financiero y del mercado de valores, para garantizar la estabilidad de los recursos que administra el Estado.',
     ],
     correct: 1,
     justification:
@@ -38,10 +38,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'La DIAN es una Unidad Administrativa Especial del orden nacional. ¿Cuál de las siguientes características corresponde a esa naturaleza?',
     options: [
-      'Carece de personería jurídica y depende orgánicamente de la CNSC.',
-      'Es un órgano del sector descentralizado por servicios, sin patrimonio propio.',
+      'Carece de personería jurídica y de patrimonio propio, y depende orgánicamente de la CNSC, que administra su planta de personal.',
+      'Es un órgano del sector descentralizado por servicios, con autonomía administrativa pero sin patrimonio propio ni presupuesto independiente.',
       'Tiene personería jurídica, autonomía administrativa y presupuestal y patrimonio propio, y está adscrita al Ministerio de Hacienda y Crédito Público.',
-      'Es una superintendencia con funciones de inspección, vigilancia y control sobre los contribuyentes.',
+      'Es una superintendencia con funciones de inspección, vigilancia y control sobre los contribuyentes, con personería jurídica y adscripción al sector Hacienda.',
     ],
     correct: 2,
     justification:
@@ -61,10 +61,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Además de los ámbitos tributario, aduanero y cambiario, la DIAN administra los derechos de explotación y gastos de administración sobre…',
     options: [
-      '…los servicios públicos domiciliarios.',
+      '…los servicios públicos domiciliarios, cuyas tarifas y contribuciones de solidaridad recauda la DIAN.',
       '…los juegos de suerte y azar explotados por entidades públicas del orden nacional.',
-      '…las regalías minero-energéticas.',
-      '…las concesiones de infraestructura vial.',
+      '…las regalías minero-energéticas, por ser rentas de la explotación de recursos naturales no renovables.',
+      '…las concesiones de infraestructura vial, en las que la DIAN verifica los pagos al Estado.',
     ],
     correct: 1,
     justification:
@@ -84,10 +84,10 @@ export const QUESTIONS: Question[] = [
     statement:
       '¿Cuál es la secuencia normativa correcta sobre la creación y organización de la DIAN?',
     options: [
-      'Decreto 1742 de 2020 la crea; Decreto 2117 de 1992 la organiza; Decreto 4048 de 2008 la reestructura.',
+      'El Decreto 1742 de 2020 la crea y la organiza, el Decreto 2117 de 1992 la reestructura y el Decreto 4048 de 2008 fija su estructura orgánica actual.',
       'Decreto 2117 de 1992 la crea al fusionar la DIN y la DAN; Decreto 1071 de 1999 la organiza; Decreto 4048 de 2008 la reestructura; Decreto 1742 de 2020 define su estructura vigente.',
-      'Ley 1607 de 2012 la crea; Decreto 1742 de 2020 la organiza.',
-      'Decreto 4048 de 2008 la crea al separar impuestos de aduanas; Decreto 1742 de 2020 la suprime.',
+      'La Ley 1607 de 2012 crea la DIAN al fusionar las direcciones de impuestos y aduanas, y el Decreto 1742 de 2020 la organiza y la adscribe.',
+      'El Decreto 4048 de 2008 la crea al separar la administración de impuestos de la de aduanas, y el Decreto 1742 de 2020 la suprime para integrarla al Ministerio de Hacienda.',
     ],
     correct: 1,
     justification:
@@ -107,10 +107,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'A la Dirección de Gestión de Fiscalización de la DIAN le corresponde, entre otras funciones:',
     options: [
-      'Administrar las devoluciones de impuestos y gestionar el recaudo voluntario, funciones que corresponden a la Dirección de Gestión de Ingresos dentro del nivel central.',
+      'Administrar las devoluciones de impuestos, gestionar el recaudo voluntario y suscribir los actos que reconocen saldos a favor, funciones que corresponden a la Dirección de Gestión de Ingresos en el nivel central.',
       'Dirigir, administrar, supervisar y controlar las acciones de prevención, investigación, penalización, determinación, aplicación y liquidación de los tributos nacionales, derechos de aduana y comercio exterior, y aplicar sanciones por infracciones a los regímenes tributario, aduanero y cambiario.',
-      'Expedir el régimen cambiario aplicable a residentes y no residentes, competencia que la Constitución atribuye a la Junta Directiva del Banco de la República.',
-      'Representar judicialmente a la Nación en los procesos tributarios, función que en el ordenamiento corresponde a la Agencia Nacional de Defensa Jurídica del Estado.'
+      'Expedir el régimen cambiario aplicable a residentes y no residentes y definir las sanciones por su incumplimiento, competencia que la Constitución y la Ley 9 de 1991 atribuyen a la Junta Directiva del Banco de la República.',
+      'Representar judicialmente a la Nación en los procesos tributarios y aduaneros y ejercer la defensa del Estado en el exterior, función que corresponde a la Agencia Nacional de Defensa Jurídica del Estado.'
     ],
     correct: 1,
     justification:
@@ -154,9 +154,9 @@ export const QUESTIONS: Question[] = [
       'La presencia territorial de la DIAN incluye, entre otras, las siguientes dependencias:',
     options: [
       '30 Direcciones Seccionales de Impuestos y Aduanas (DSIA), 6 Direcciones Seccionales de Aduanas, 7 Direcciones Seccionales de Impuestos y 7 Direcciones Seccionales Delegadas de Impuestos y Aduanas.',
-      '32 direcciones departamentales y una dirección distrital en Bogotá.',
-      'Una sede por cada municipio capital del país.',
-      'Únicamente 6 gerencias regionales ubicadas en las ciudades principales.',
+      '32 direcciones departamentales, una por cada departamento, más una dirección distrital especial en Bogotá D.C., con dependencia jerárquica de la Dirección General.',
+      'Una sede en cada municipio capital de departamento y en los municipios con más de 100.000 habitantes, coordinadas por la Dirección General.',
+      'Únicamente 6 gerencias regionales ubicadas en las ciudades principales, con competencia tributaria y aduanera en todo el país.',
     ],
     correct: 0,
     justification:
@@ -176,10 +176,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Sobre la relación entre la DIAN y la UIAF es correcto afirmar que:',
     options: [
-      'La UIAF es una dependencia de la DIAN encargada de sancionar el lavado de activos.',
+      'La UIAF es una dependencia de la DIAN encargada de analizar y sancionar el lavado de activos, con base en la información que recibe de los obligados a reportar.',
       'La DIAN debe suministrar a la UIAF la información que repose en sus archivos y que esta requiera para documentar los reportes de operaciones sospechosas.',
-      'La UIAF expide la normativa aduanera que aplica la DIAN.',
-      'No existe relación alguna porque la UIAF depende del sector financiero privado.',
+      'La UIAF expide la normativa aduanera y cambiaria que aplica la DIAN, y por eso es la entidad rectora del comercio exterior.',
+      'No existe relación alguna, porque la UIAF es un organismo privado del sector financiero que no puede recibir información oficial.',
     ],
     correct: 1,
     justification:
@@ -199,10 +199,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'En materia cambiaria, la distribución correcta de competencias es:',
     options: [
-      'La DIAN expide el régimen cambiario y el Banco de la República lo sanciona.',
+      'La DIAN expide el régimen cambiario mediante resoluciones de carácter general y el Banco de la República se encarga de investigar y sancionar a los infractores.',
       'La Junta Directiva del Banco de la República es la autoridad cambiaria que expide el régimen; la DIAN controla su cumplimiento y adelanta las investigaciones y sanciones administrativas de su competencia.',
-      'La Superintendencia Financiera expide el régimen cambiario y la DIAN lo ejecuta.',
-      'El Ministerio de Comercio expide el régimen cambiario y la DIAN recauda los aranceles.',
+      'La Superintendencia Financiera expide el régimen cambiario y la DIAN se limita a ejecutar las instrucciones que aquella imparte a los intermediarios.',
+      'El Ministerio de Comercio, Industria y Turismo expide el régimen cambiario y la DIAN recauda los aranceles derivados de las operaciones de comercio exterior.',
     ],
     correct: 1,
     justification:
@@ -222,10 +222,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'El Decreto 1742 de 2020 faculta al Director General de la DIAN para:',
     options: [
-      'Crear tributos nacionales mediante resolución.',
+      'Crear tributos nacionales y fijar sus tarifas mediante resolución, cuando el Congreso lo faculte para atender una emergencia económica.',
       'Expedir resoluciones para distribuir funciones entre las dependencias de la entidad, de acuerdo con los artículos 81 y siguientes.',
-      'Modificar la planta de personal del Congreso de la República.',
-      'Nombrar y remover al Ministro de Hacienda.',
+      'Modificar la planta de personal del Congreso de la República y de los órganos de control, por tratarse de una unidad administrativa especial.',
+      'Nombrar y remover al Ministro de Hacienda, por ser la DIAN una unidad administrativa especial adscrita a ese despacho.',
     ],
     correct: 1,
     justification:

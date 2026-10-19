@@ -71,10 +71,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una ordenanza departamental crea una contribución para recuperar el costo de un servicio y delega en el gobernador la fijación de la tarifa. ¿Es válida esa delegación?',
     options: [
-      'No, porque la tarifa es siempre un elemento que solo el Congreso puede fijar mediante ley.',
-      'Sí, sin ninguna condición: la fijación de tarifas es una facultad discrecional de las autoridades administrativas.',
+      'No, porque la tarifa es siempre un elemento del tributo que solo el Congreso puede fijar mediante ley, incluso en las tasas y contribuciones territoriales por recuperación de costos.',
+      'Sí, sin ninguna condición: la fijación de tarifas es una facultad discrecional de las autoridades administrativas, que pueden apartarse del sistema y el método fijados en la ordenanza.',
       'Sí, siempre que el sistema y el método para definir los costos y beneficios y la forma de repartirlos estén fijados por la ley, la ordenanza o el acuerdo, y la contribución se cobre como recuperación de costos.',
-      'No, porque las contribuciones territoriales solo pueden crearse por ley de la República.',
+      'No, porque las contribuciones territoriales solo pueden crearse por ley de la República y las ordenanzas únicamente pueden desarrollar los elementos cuantitativos de la ley que las autoriza.',
     ],
     correct: 2,
     justification:
@@ -201,10 +201,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una empresa paga los aportes de sus trabajadores al SENA, al ICBF y a la caja de compensación familiar. Un auditor afirma que se trata de impuestos nacionales. ¿Cuál es la calificación correcta?',
     options: [
-      'Son impuestos nacionales, porque su recaudo se incorpora al presupuesto general de la Nación.',
-      'Son tasas, porque la empresa recibe un servicio directo de cada entidad.',
+      'Son impuestos nacionales, porque su recaudo se incorpora al presupuesto general de la Nación y lo administra la DIAN como tributo de destinación general.',
+      'Son tasas, porque la empresa recibe un servicio directo de cada entidad y el pago corresponde a una contraprestación individualizada.',
       'Son contribuciones parafiscales con destinación sectorial: la ley las autoriza en casos y condiciones especiales y su producto no se incorpora al presupuesto nacional.',
-      'Son contribuciones de valorización, porque benefician a un grupo de propietarios.',
+      'Son contribuciones de valorización, porque benefician a un grupo de propietarios y se destinan exclusivamente a las obras que generan el beneficio.',
     ],
     correct: 2,
     justification:
@@ -279,10 +279,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una consultora contrata el 1 de marzo, termina el servicio el 20 de abril, expide la factura el 25 de abril y recibe el pago el 10 de mayo. ¿Cuándo se causa el IVA?',
     options: [
-      'El 1 de marzo, por la firma del contrato.',
+      'El 1 de marzo, porque la firma del contrato es el momento en que nace la obligación y se entiende prestado el servicio.',
       'El 20 de abril, porque es la fecha anterior entre la factura (25 de abril), la terminación del servicio (20 de abril) y el pago (10 de mayo).',
-      'El 25 de abril, porque el impuesto se causa con la emisión de la factura en todos los casos.',
-      'El 10 de mayo, porque en los servicios el IVA se causa al momento del pago.',
+      'El 25 de abril, porque el impuesto se causa siempre con la emisión de la factura, sin importar la fecha de terminación del servicio.',
+      'El 10 de mayo, porque en los servicios el IVA se causa con el pago efectivo o el abono en cuenta, sin otras fechas alternativas.',
     ],
     correct: 1,
     justification:
@@ -331,10 +331,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'En el impuesto sobre las ventas, la afirmación «el responsable del IVA es el sujeto pasivo de derecho, pero el consumidor final es el sujeto pasivo económico» significa que…',
     options: [
-      '…el consumidor debe declarar y pagar el IVA cuando el vendedor no lo hace.',
+      '…el consumidor debe declarar y pagar el IVA cuando el vendedor no lo hace, porque el sujeto pasivo económico responde ante la DIAN.',
       '…el responsable está obligado a declarar y pagar el impuesto, mientras que el consumidor lo soporta económicamente dentro del precio.',
-      '…el vendedor y el consumidor son codeudores solidarios de la obligación tributaria.',
-      '…el consumidor puede solicitar la devolución del IVA que pagó en sus compras.',
+      '…el vendedor y el consumidor son codeudores solidarios de la obligación tributaria, y la DIAN puede cobrarle el impuesto a cualquiera de los dos.',
+      '…el consumidor puede solicitar la devolución del IVA que pagó en sus compras, porque soportó económicamente el impuesto.',
     ],
     correct: 1,
     justification:
@@ -357,10 +357,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una importación tiene un valor en aduana de 10.000 dólares; los derechos de aduana ascienden a 1.500 dólares. La base gravable del IVA en la importación es…',
     options: [
-      '…10.000 dólares, porque la base es el valor en aduana de la mercancía.',
+      '…10.000 dólares, porque la base del IVA es el valor en aduana de la mercancía, sin adicionar los tributos aduaneros ya pagados.',
       '…11.500 dólares, porque la base corresponde a la base de los derechos de aduana adicionada con el valor de esos derechos.',
-      '…1.500 dólares, porque solo se gravan los derechos de aduana.',
-      '…8.500 dólares, porque se descuentan los derechos del valor en aduana.',
+      '…1.500 dólares, porque el IVA de la importación se liquida únicamente sobre los derechos de aduana causados.',
+      '…8.500 dólares, porque del valor en aduana se descuentan los derechos de aduana para evitar la doble tributación.',
     ],
     correct: 1,
     justification:
@@ -383,10 +383,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Sobre el ámbito de aplicación del régimen aduanero colombiano, es correcto afirmar que…',
     options: [
-      '…se aplica a mercancías y a todo tipo de intangibles, incluidos los servicios transfronterizos.',
+      '…se aplica a mercancías y a todo tipo de intangibles, incluidos los servicios transfronterizos y los derechos de propiedad intelectual.',
       '…su ámbito es el territorio nacional, que se subdivide en zonas francas y depósitos habilitados, los cuales no hacen parte del territorio aduanero nacional.',
-      '…solo se aplica a las zonas francas y a los depósitos habilitados.',
-      '…se aplica exclusivamente a las importaciones, no a las exportaciones.',
+      '…solo se aplica a las zonas francas y a los depósitos habilitados, porque son las únicas áreas con tratamiento aduanero especial.',
+      '…se aplica exclusivamente a las importaciones, pues las exportaciones están sujetas al régimen cambiario y no al aduanero.',
     ],
     correct: 1,
     justification:
@@ -436,9 +436,9 @@ export const QUESTIONS: Question[] = [
       'Respecto de la obligación aduanera, ¿cuál de las siguientes afirmaciones es correcta?',
     options: [
       'Es el vínculo entre la administración aduanera y las personas relacionadas directa o indirectamente con una operación aduanera, y comprende trámites, pago de tributos y obligaciones derivadas de las actuaciones de la autoridad.',
-      'Es exclusivamente la obligación de pagar los derechos de aduana, y no incluye trámites ni sanciones.',
-      'Solo vincula a los importadores, no a los exportadores ni a las agencias de aduanas.',
-      'Nace con la presentación de la declaración de importación y no con la introducción de la mercancía al territorio aduanero nacional.',
+      'Es exclusivamente la obligación de pagar los derechos de aduana, y no incluye los trámites ni las sanciones, que son obligaciones formales independientes regidas por el régimen sancionatorio.',
+      'Solo vincula a los importadores, pues son ellos quienes realizan el hecho generador; los exportadores y las agencias de aduanas quedan sujetos únicamente al régimen sancionatorio.',
+      'Nace con la presentación de la declaración de importación y no con la introducción de la mercancía al territorio aduanero nacional, porque la declaración es el acto que la formaliza.',
     ],
     correct: 0,
     justification:
@@ -539,9 +539,9 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una empresa exportadora recibe el pago de su venta al exterior en una cuenta bancaria abierta en el exterior sin registrarla como cuenta de compensación y por fuera de los intermediarios del mercado cambiario. La operación era de obligatoria canalización. ¿Qué consecuencia corresponde?',
     options: [
-      'Ninguna, porque la empresa es libre de recibir sus divisas donde quiera.',
+      'Ninguna, porque la empresa es libre de recibir sus divisas donde quiera y el Banco de la República solo registra las cuentas de compensación.',
       'La DIAN puede adelantar la investigación y aplicar el régimen sancionatorio cambiario del Decreto 2245 de 2011, sin perjuicio de las normas tributarias y aduaneras aplicables.',
-      'La sanción corresponde exclusivamente al Banco de la República, que sanciona a los residentes por incumplir el régimen que expide.',
+      'La sanción corresponde exclusivamente al Banco de la República, que sanciona a los residentes por incumplir el régimen que expide y delega el cobro en la DIAN.',
       'La Superintendencia Financiera sanciona al banco del exterior y la DIAN archiva el caso por falta de competencia.',
     ],
     correct: 1,
@@ -565,10 +565,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'La declaración de cambio es…',
     options: [
-      '…el formulario en el que se reporta al Banco de la República la posición propia de las divisas de los bancos.',
+      '…el formulario en el que los bancos reportan al Banco de la República su posición propia de divisas y el cumplimiento de los límites de inversión en moneda extranjera.',
       '…la declaración juramentada, contenida en un formulario, en la que se consigna la información sobre el monto, las características y las demás condiciones de una operación de cambio canalizada a través del mercado cambiario.',
-      '…el documento con el que se declaran los impuestos aduaneros de una importación.',
-      '…el registro que hacen los viajeros ante la DIAN al ingresar al país.',
+      '…el documento con el que se declaran los impuestos aduaneros de una importación, por lo que se presenta ante la autoridad aduanera junto con la declaración de importación.',
+      '…el registro que hacen los viajeros ante la DIAN al ingresar al país, en el que declaran las divisas que portan y su origen, y que sirve de base para el control cambiario.',
     ],
     correct: 1,
     justification:
@@ -592,9 +592,9 @@ export const QUESTIONS: Question[] = [
       'Un funcionario de la DIAN recibe información sobre un hotel que no exige ni conserva el conocimiento del cliente en operaciones de cambio, un importador que subfactura y un profesional que compra y vende divisas sin autorización. ¿Cuál norma le permite fundamentar las tres actuaciones de control?',
     options: [
       'El artículo 3 del Decreto 1742 de 2020, que le asigna funciones de control y vigilancia cambiaria, incluida la competencia residual y la autorización de profesionales de compra y venta de divisas.',
-      'La Resolución Externa 1 de 2018, que faculta a la DIAN para expedir el régimen cambiario.',
-      'El Decreto 1165 de 2019, que le atribuye el control aduanero de las operaciones de cambio.',
-      'La Ley 1609 de 2013, que le asigna funciones de policía judicial en materia de divisas.',
+      'La Resolución Externa 1 de 2018, que faculta a la DIAN para expedir el régimen cambiario y le atribuye la vigilancia de los intermediarios del mercado.',
+      'El Decreto 1165 de 2019, que le atribuye el control aduanero de las operaciones de cambio y el régimen sancionatorio aplicable a los residentes.',
+      'La Ley 1609 de 2013, que le asigna funciones de policía judicial en materia de divisas y la facultad de autorizar a los profesionales de compra y venta.',
     ],
     correct: 0,
     justification:

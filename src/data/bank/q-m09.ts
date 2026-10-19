@@ -63,9 +63,9 @@ export const QUESTIONS: Question[] = [
     statement: 'En materia aduanera, ¿quiénes son obligados directos?',
     options: [
       'Los usuarios aduaneros que intervienen en el movimiento de mercancías por las fronteras: importador, exportador, declarante, agente de aduanas y transportador',
-      'Únicamente el importador o exportador titular de la mercancía',
-      'Los bancos autorizados que recaudan los tributos aduaneros',
-      'Todas las personas que hayan intervenido de manera indirecta en la operación aduanera o sean requeridas por la autoridad',
+      'Únicamente el importador o exportador titular de la mercancía, porque es quien adquiere el compromiso de pago de los tributos aduaneros y responde por la operación.',
+      'Los bancos autorizados que recaudan los tributos aduaneros, pues al recibir el pago asumen la calidad de obligados frente a la Nación.',
+      'Todas las personas que hayan intervenido de manera indirecta en la operación aduanera o sean requeridas por la autoridad, ya que la ley equipara a todos los intervinientes de la cadena.',
     ],
     correct: 0,
     justification:
@@ -168,7 +168,7 @@ export const QUESTIONS: Question[] = [
     options: [
       'Abrir un proceso de decomiso ordinario con traslado a la dirección seccional y esperar la decisión de fondo',
       'Practicar el decomiso directo en la misma diligencia, otorgando al interesado la oportunidad de aportar los documentos que impidan el decomiso',
-      'Imponer solo una multa en UVT y entregar la mercancía al interesado',
+      'Imponer solo una multa en UVT y entregar la mercancía al interesado, por tratarse de una infracción administrativa que no genera pérdida de la mercancía.',
       'Remitir el caso a la Fiscalía General de la Nación y abstenerse de actuar sobre la mercancía',
     ],
     correct: 1,
@@ -192,9 +192,9 @@ export const QUESTIONS: Question[] = [
     statement: '¿Cuál de las siguientes afirmaciones sobre el requerimiento especial aduanero es correcta?',
     options: [
       'Debe expedirse dentro de los 30 días siguientes a la fecha en que se estableció la presunta infracción o se identificó la inexactitud, y se responde dentro de los 15 días hábiles siguientes a su notificación',
-      'Puede expedirse en cualquier tiempo mientras la declaración no esté en firme, y se responde dentro de los 2 meses siguientes',
-      'Se elabora únicamente en el proceso de decomiso y sustituye al acta de aprehensión',
-      'Contra él procede el recurso de apelación ante el Director General de la DIAN',
+      'Puede expedirse en cualquier tiempo mientras la declaración no esté en firme, y se responde dentro de los 2 meses siguientes, término que se cuenta desde la notificación del requerimiento.',
+      'Se elabora únicamente en el proceso de decomiso y sustituye al acta de aprehensión, de modo que con su notificación se entiende iniciada la actuación sancionatoria.',
+      'Contra él procede el recurso de apelación ante el Director General de la DIAN, sin necesidad de agotar la reposición ante el funcionario que lo profirió.',
     ],
     correct: 0,
     justification:
@@ -242,10 +242,10 @@ export const QUESTIONS: Question[] = [
     kind: 'conceptual',
     statement: '¿En qué término caduca la facultad de la autoridad aduanera para imponer sanciones administrativas?',
     options: [
-      'En 1 año contado desde la comisión del hecho',
+      'En 1 año contado desde la comisión del hecho, porque la facultad sancionatoria aduanera sigue el término general de caducidad de las infracciones administrativas.',
       'En 3 años contados desde la comisión del hecho o la omisión, término dentro del cual el acto sancionatorio debe estar expedido y notificado; en los delitos enumerados por la ley, en 8 años',
-      'En 5 años, término que se suspende con la notificación del requerimiento especial aduanero',
-      'En 10 años, por tratarse de sanciones con efectos patrimoniales',
+      'En 5 años, término que se suspende con la notificación del requerimiento especial aduanero, de manera que la autoridad puede decidir después de ese plazo.',
+      'En 10 años, por tratarse de sanciones con efectos patrimoniales que exigen un plazo amplio para garantizar la investigación y la defensa.',
     ],
     correct: 1,
     justification:
@@ -268,10 +268,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un usuario aduanero habilitado introduce mercancía por un lugar no habilitado y omite la presentación de los documentos que la amparan. Si la mercancía tiene un valor FOB de 900.000.000 de pesos y un avalúo superior, ¿cuál es la sanción aplicable bajo el esquema de categorías del régimen sancionatorio aduanero?',
     options: [
-      'Amonestación, por ser la primera vez',
+      'Amonestación, por ser la primera vez que el usuario incurre en la conducta y tratarse de una infracción de menor afectación.',
       'Multa del 100 % del valor FOB o de su avalúo, el que sea mayor, sin que pueda ser inferior a 4.000 UVT por operación',
-      'Multa de 150 UVT, por tratarse de una infracción leve',
-      'Cierre del establecimiento de comercio por 30 días, sin multa',
+      'Multa de 150 UVT, por tratarse de una infracción leve de la categoría 4, tarifa que se gradúa según el valor de la mercancía.',
+      'Cierre del establecimiento de comercio por 30 días, sin multa, por ser la sanción accesoria aplicable a la introducción por lugar no habilitado.',
     ],
     correct: 1,
     justification:
@@ -293,10 +293,10 @@ export const QUESTIONS: Question[] = [
     kind: 'conceptual',
     statement: '¿En qué término queda en firme la declaración de importación y en qué plazo puede solicitarse la devolución o compensación del pago en exceso?',
     options: [
-      'La declaración queda en firme en 2 años y la devolución se solicita en 3 meses',
+      'La declaración queda en firme en 2 años y la devolución se solicita en 3 meses, plazos que se cuentan desde la presentación y desde el pago en exceso, respectivamente.',
       'La declaración queda en firme en 3 años y la devolución o compensación se solicita dentro de los 6 meses siguientes al pago en exceso o a la ejecutoria del acto',
-      'La declaración queda en firme en 5 años y la devolución se solicita en 1 año',
-      'La declaración queda en firme en 5 años y no hay término para solicitar la devolución',
+      'La declaración queda en firme en 5 años y la devolución se solicita en 1 año, término que se reduce a 6 meses cuando media acto de determinación.',
+      'La declaración queda en firme en 5 años y no hay término para solicitar la devolución, porque el derecho al reintegro no prescribe mientras exista pago en exceso.',
     ],
     correct: 1,
     justification:

@@ -35,15 +35,15 @@ export const QUESTIONS: Question[] = [
       '¿Cuáles son los tres grupos de normas de auditoría generalmente aceptadas según la Ley 43 de 1990?',
     options: [
       'Personales, de ejecución del trabajo y de rendición de informes.',
-      'Técnicas, administrativas y financieras.',
-      'De planeación, de supervisión y de control.',
-      'Internas, externas y mixtas.',
+      'Técnicas, administrativas y financieras, según el área de la auditoría.',
+      'De planeación, de supervisión y de control, que agrupan las etapas del trabajo.',
+      'Internas, externas y mixtas, según el origen del auditor.',
     ],
     correct: 0,
     justification:
       'El artículo 7 de la Ley 43 de 1990 clasifica las NAGA en normas personales, normas de ejecución del trabajo y normas de rendición de informes.',
     wrong: [
-      '', 'No es la clasificación de la ley; mezcla categorías que no corresponden a los grupos de NAGA.', 'Planeación y supervisión son normas de ejecución del trabajo, no grupos autónomos de la clasificación legal.', 'La clasificación legal no distingue entre auditoría interna y externa.'
+      '', 'No es la clasificación legal: mezcla categorías de áreas o materias y no corresponde a los tres grupos del artículo 7 de la Ley 43 de 1990.', 'Planeación y supervisión son normas de ejecución del trabajo, no grupos autónomos de la clasificación legal.', 'La clasificación legal no distingue entre auditoría interna, externa y mixta: esa es una clasificación de la auditoría, no de las NAGA.'
     ],
     source: 'Ley 43 de 1990, art. 7',
   },
@@ -192,16 +192,16 @@ export const QUESTIONS: Question[] = [
     statement:
       'Si en un encargo el riesgo inherente y el riesgo de control son altos, el auditor debe:',
     options: [
-      'Aumentar el riesgo de detección para compensar.',
+      'Aumentar el riesgo de detección para compensar, manteniendo así constante el riesgo global.',
       'Reducir el riesgo de detección, ampliando el alcance y la calidad de las pruebas sustantivas.',
-      'Abstenerse de opinar en todos los casos.',
-      'Trasladar el riesgo a la administración mediante una carta de salvaguarda.',
+      'Abstenerse de opinar en todos los casos, pues los riesgos altos impiden cualquier conclusión.',
+      'Trasladar el riesgo a la administración mediante una carta de salvaguarda firmada por la gerencia.',
     ],
     correct: 1,
     justification:
       'El riesgo de detección es el único componente que el auditor administra directamente: ante riesgos inherente y de control altos, debe reducirlo con más y mejor evidencia (mayor alcance, pruebas sustantivas ampliadas, confirmaciones), para mantener el riesgo global en un nivel aceptablemente bajo.',
     wrong: [
-      'Aumentar el riesgo de detección elevaría aún más el riesgo global: la relación es inversa.', '', 'La abstención de opinión no es automática: depende de si se puede obtener evidencia suficiente.', 'La carta de salvaguarda (de la administración) no transfiere el riesgo ni sustituye la evidencia.'
+      'Aumentar el riesgo de detección elevaría aún más el riesgo global: la relación entre ambos es inversa.', '', 'La abstención de opinión no es automática: depende de si, pese a los riesgos, se puede obtener evidencia suficiente y adecuada.', 'La carta de salvaguarda de la administración no transfiere el riesgo al auditor ni sustituye la evidencia necesaria.'
     ],
     source: 'NIA 330; marco conceptual de riesgo',
   },
@@ -260,15 +260,15 @@ export const QUESTIONS: Question[] = [
     statement: 'La diferencia entre pruebas de control y pruebas sustantivas es que:',
     options: [
       'Las de control evalúan la eficacia operativa de los controles; las sustantivas examinan directamente saldos y transacciones.',
-      'Las de control son obligatorias y las sustantivas opcionales.',
-      'Las de control verifican cifras y las sustantivas verifican procesos.',
-      'No existe diferencia: son sinónimos técnicos.',
+      'Las de control son obligatorias y las sustantivas opcionales, porque la NIA 330 exige probar todos los controles antes de mirar los saldos.',
+      'Las de control verifican cifras y las sustantivas verifican procesos, de modo que se aplican en etapas distintas del encargo.',
+      'No existe diferencia: son sinónimos técnicos, pues ambas buscan detectar errores en los estados financieros.',
     ],
     correct: 0,
     justification:
       'Las pruebas de control evalúan si los controles internos operan eficazmente; las pruebas sustantivas examinan directamente saldos, transacciones y revelaciones para detectar errores materiales. No son sinónimas ni una es opcional en abstracto: su uso depende de la estrategia de auditoría.',
     wrong: [
-      '', 'Ninguna es obligatoria en abstracto: depende de la estrategia y del riesgo evaluado.', 'Está invertido: las de control verifican controles/procesos y las sustantivas cifras.', 'Son categorías distintas con objetos diferentes.'
+      '', 'Ninguna es obligatoria en abstracto: su uso depende de la estrategia y del riesgo evaluado; la NIA 330 no exige probar todos los controles.', 'Está invertido: las pruebas de control verifican controles y procesos, y las sustantivas examinan cifras, saldos y transacciones.', 'Son categorías distintas con objetos diferentes: no son sinónimos técnicos.'
     ],
     source: 'NIA 330',
   },
@@ -281,16 +281,16 @@ export const QUESTIONS: Question[] = [
     kind: 'conceptual',
     statement: 'Los papeles de trabajo de una auditoría sirven principalmente para:',
     options: [
-      'Reemplazar los estados financieros de la entidad.',
+      'Reemplazar los estados financieros de la entidad, pues recogen toda la evidencia.',
       'Documentar la evidencia obtenida y el juicio del auditor: quién, qué, cuándo y por qué.',
-      'Ser entregados a los accionistas como informe final.',
-      'Cumplir un requisito formal sin valor probatorio.',
+      'Ser entregados a los accionistas como informe final del auditor.',
+      'Cumplir un requisito formal sin valor probatorio en un proceso.',
     ],
     correct: 1,
     justification:
       'Los papeles de trabajo documentan la evidencia y el juicio profesional (quién ejecutó, qué hizo, cuándo y por qué concluyó), y son el soporte del informe y de la defensa del trabajo realizado.',
     wrong: [
-      'No reemplazan la información financiera: la respaldan y documentan.', '', 'No se entregan como informe: el informe es el dictamen u opinión.', 'Tienen valor probatorio: sustentan las conclusiones y la responsabilidad profesional.'
+      'No reemplazan la información financiera: la respaldan y documentan; el informe es el dictamen u opinión.', '', 'No se entregan como informe final: el informe es el dictamen u opinión, y los papeles son el soporte interno del trabajo.', 'Tienen valor probatorio: sustentan las conclusiones, la evidencia y la responsabilidad profesional del auditor.'
     ],
     source: 'NIA 230; Ley 43 de 1990',
   },
@@ -372,16 +372,16 @@ export const QUESTIONS: Question[] = [
     statement:
       'La DIAN recibe información exógena que reporta ingresos de un contribuyente por $900 millones, mientras su declaración registra $400 millones. ¿Cuál es la secuencia de técnicas, en términos de auditoría, que sigue la fiscalización?',
     options: [
-      'Indagación al contador y archivo del caso si responde verbalmente.',
+      'Indagación al contador y archivo del caso si responde verbalmente, porque su explicación acredita el origen de los ingresos.',
       'Procedimiento analítico (comparación exógena vs. declarado), requerimiento de soportes (inspección documental), confirmación con terceros y recálculo de la base gravable.',
-      'Confirmación externa primero y, si no responde el tercero, cierre del caso.',
-      'Observación física de la bodega sin revisar documentos.',
+      'Confirmación externa primero y, si no responde el tercero, cierre del caso, pues sin esa respuesta no hay evidencia válida.',
+      'Observación física de la bodega sin revisar documentos, porque la existencia de inventarios explica los ingresos declarados.',
     ],
     correct: 1,
     justification:
       'La fiscalización sigue la lógica de la auditoría: detecta la inconsistencia con procedimientos analíticos (cruce de información), pide soportes (inspección), confirma con terceros y recalcula la base; con evidencia suficiente profiere el acto de determinación.',
     wrong: [
-      'La indagación verbal aislada es evidencia débil y no sustituye el cruce y los soportes.', '', 'La confirmación es una técnica complementaria; la inconsistencia detectada no se archiva por silencio del tercero.', 'La observación física sola no verifica ingresos declarados ni bases gravables.'
+      'La indagación verbal aislada es evidencia débil y no sustituye el cruce, los soportes ni el recálculo de la base.', '', 'La confirmación es una técnica complementaria; la inconsistencia detectada no se archiva por el silencio del tercero.', 'La observación física sola no verifica ingresos declarados ni bases gravables; debe complementarse con pruebas documentales y analíticas.'
     ],
     source: 'Estatuto Tributario, arts. 684 y ss.; técnicas de auditoría (NIA 500)',
   },

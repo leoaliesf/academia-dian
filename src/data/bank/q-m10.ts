@@ -38,9 +38,9 @@ export const QUESTIONS: Question[] = [
       'El material de formación cita profusamente la Resolución Externa 8 de 2000 del Banco de la República. ¿Cuál es hoy la norma que compila el régimen de cambios internacionales?',
     options: [
       'La Resolución Externa 1 de 2018 de la Junta Directiva del Banco de la República, que sustituyó a la Resolución Externa 8 de 2000',
-      'El Decreto 1735 de 1993, que sigue siendo la única norma cambiaria vigente',
-      'La Ley 9 de 1991, que compila directamente las operaciones de cambio',
-      'La Resolución Externa 8 de 2000, que continúa vigente sin modificaciones',
+      'El Decreto 1735 de 1993, que sigue siendo la única norma cambiaria vigente y no ha sido sustituido por la compilación de la Resolución Externa 1 de 2018.',
+      'La Ley 9 de 1991, que compila directamente las operaciones de cambio y fija los procedimientos aplicables a los intermediarios del mercado cambiario.',
+      'La Resolución Externa 8 de 2000, que continúa vigente sin modificaciones y es la norma que el material del curso cita como actual.',
     ],
     correct: 0,
     justification:
@@ -62,9 +62,9 @@ export const QUESTIONS: Question[] = [
     kind: 'conceptual',
     statement: '¿Cuál de las siguientes operaciones NO es de obligatoria canalización por el mercado cambiario?',
     options: [
-      'El pago de una importación de bienes al proveedor del exterior',
-      'El reintegro de divisas por una exportación de servicios',
-      'El desembolso de un crédito otorgado a un residente por un banco del exterior',
+      'El pago de una importación de bienes al proveedor del exterior, porque toda salida de divisas por comercio exterior debe canalizarse.',
+      'El reintegro de divisas por una exportación de servicios, incluidos sus gastos asociados, operación sujeta a canalización.',
+      'El desembolso de un crédito otorgado a un residente por un banco del exterior, por ser endeudamiento externo sujeto a registro.',
       'La compra de dólares en efectivo que un viajero residente realiza en una casa de cambio antes de salir del país',
     ],
     correct: 3,
@@ -88,9 +88,9 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un exportador facturó y declaró exportaciones por USD 100.000, pero solo canalizó USD 70.000 por intermedio de un IMC; los USD 30.000 restantes los mantuvo en una cuenta en el exterior sin declararlos. ¿Sobre qué monto se liquida la sanción por no canalización?',
     options: [
-      'Sobre USD 100.000, correspondientes al valor total de la operación',
+      'Sobre USD 100.000, correspondientes al valor total de la operación, porque la sanción se calcula sobre el monto facturado y declarado.',
       'Sobre USD 30.000, correspondientes al monto dejado de canalizar, expresados en moneda legal colombiana a la TRM certificada',
-      'Sobre USD 70.000, correspondientes al monto efectivamente canalizado',
+      'Sobre USD 70.000, correspondientes al monto efectivamente canalizado, que es la base que la DIAN puede verificar con los intermediarios.',
       'No hay sanción si el exportador declaró el ingreso para efectos del impuesto sobre la renta',
     ],
     correct: 1,
@@ -114,10 +114,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un exportador confiere mandato a un intermediario del mercado cambiario para canalizar el reintegro de sus divisas. ¿Quién responde por la veracidad de la declaración de cambio?',
     options: [
-      'El intermediario del mercado cambiario, porque es quien digita y presenta el formulario',
+      'El intermediario del mercado cambiario, porque es quien digita y presenta el formulario y, por tanto, responde por la exactitud de los datos consignados.',
       'El exportador, porque la declaración de cambio es una declaración juramentada del obligado y el mandato no traslada la titularidad de la obligación',
-      'Ambos responden solidariamente en todos los casos, salvo que el intermediario pruebe culpa del exportador',
-      'Ninguno, porque el mandato extingue la obligación cambiaria del exportador',
+      'Ambos responden solidariamente en todos los casos, salvo que el intermediario pruebe culpa del exportador, por aplicación de las reglas del mandato.',
+      'Ninguno, porque el mandato extingue la obligación cambiaria del exportador y traslada la responsabilidad al intermediario que actúa en su nombre.',
     ],
     correct: 1,
     justification:
@@ -140,10 +140,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una familia viaja al exterior y transporta conjuntamente US$ 24.000 en efectivo, distribuidos entre cuatro miembros del grupo familiar para que ninguno supere los US$ 10.000. ¿Cómo se aplica la obligación de declarar?',
     options: [
-      'No hay obligación de declarar, porque ninguno de los viajeros individualmente supera los US$ 10.000',
+      'No hay obligación de declarar, porque ninguno de los viajeros individualmente supera los US$ 10.000 y la norma se aplica por persona, no por grupo familiar.',
       'La obligación de declarar se determina por grupo familiar, de modo que el monto conjunto superior a US$ 10.000 debe declararse; la fragmentación no elude la obligación',
-      'Solo debe declarar el jefe de familia, por ser el titular de los recursos',
-      'La declaración solo aplica a los ingresos de efectivo, no a las salidas',
+      'Solo debe declarar el jefe de familia, por ser el titular de los recursos y quien ejerce la representación del grupo ante la autoridad aduanera.',
+      'La declaración solo aplica a los ingresos de efectivo, no a las salidas, porque el control se orienta a evitar el ingreso de divisas no justificadas.',
     ],
     correct: 1,
     justification:
@@ -241,10 +241,10 @@ export const QUESTIONS: Question[] = [
     kind: 'interpretacion',
     statement: '¿Cuál de las siguientes afirmaciones sobre el acto de formulación de cargos cambiario es correcta?',
     options: [
-      'Contra él procede recurso de reposición y, en subsidio, apelación ante el Director General',
+      'Contra él procede recurso de reposición y, en subsidio, apelación ante el Director General, como ocurre con los actos de determinación tributaria.',
       'Contra él no procede recurso alguno, y debe contener los hechos, las pruebas, las normas infringidas y la liquidación de la sanción en moneda legal colombiana',
-      'Debe ser aprobado previamente por el Comité de Defensa Judicial antes de su notificación',
-      'Se notifica únicamente de forma personal y su término de traslado es de 10 días hábiles',
+      'Debe ser aprobado previamente por el Comité de Defensa Judicial antes de su notificación, requisito sin el cual carece de eficacia.',
+      'Se notifica únicamente de forma personal y su término de traslado es de 10 días hábiles, contados desde la notificación.',
     ],
     correct: 1,
     justification:
@@ -266,10 +266,10 @@ export const QUESTIONS: Question[] = [
     kind: 'conceptual',
     statement: 'En la actuación administrativa cambiaria, ¿cuál es el término para practicar las pruebas?',
     options: [
-      'Dos meses en todos los casos',
-      'Cuatro meses si deben practicarse en el país y seis meses si deben practicarse en el exterior',
-      'Seis meses en el país y un año en el exterior',
-      'No hay término: las pruebas se practican antes de la decisión final',
+      'Dos meses en todos los casos, contados desde la ejecutoria del auto que decreta las pruebas, sin distinguir el lugar de práctica.',
+      'Cuatro meses si deben practicarse en el país y seis meses si deben practicarse en el exterior, contados a partir de la ejecutoria del auto que las decreta.',
+      'Seis meses en el país y un año en el exterior, plazos que se duplican por la complejidad de las pruebas cambiarias.',
+      'No hay término: las pruebas se practican antes de la decisión final y el funcionario conserva la facultad de decretarlas hasta el momento de resolver.',
     ],
     correct: 1,
     justification:
@@ -292,10 +292,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'La DIAN detecta que una sociedad no canalizó divisas por una exportación. El gerente firmó las declaraciones de cambio y el revisor fiscal certificó las operaciones sin objeción. Antes de que se notifique la resolución sancionatoria, la sociedad reconoce la infracción y paga la sanción. ¿Qué afirmaciones son correctas?',
     options: [
-      'Solo responde la sociedad, y el pago voluntario reduce la sanción en un 75 %',
+      'Solo responde la sociedad, y el pago voluntario reduce la sanción en un 75 %, porque la responsabilidad solidaria no comprende a los administradores por hechos ajenos.',
       'La sociedad, el representante legal y el revisor fiscal pueden ser responsables solidarios, y el reconocimiento y pago voluntario reduce la sanción en un 75 %',
-      'Solo responde el representante legal que firmó, y no existe reducción por pago voluntario',
-      'La responsabilidad es exclusiva de la sociedad y la reducción por pago voluntario es del 25 %',
+      'Solo responde el representante legal que firmó, y no existe reducción por pago voluntario, pues las infracciones cambiarias son objetivas.',
+      'La responsabilidad es exclusiva de la sociedad y la reducción por pago voluntario es del 25 %, porcentaje previsto para el reconocimiento tardío.',
     ],
     correct: 1,
     justification:

@@ -20,9 +20,9 @@ export const QUESTIONS: Question[] = [
       'De acuerdo con el Decreto 1165 de 2019, el importador que actúa directamente debe conservar los documentos soporte y los recibos oficiales de pago:',
     options: [
       'Por cinco (5) años, contados a partir de la presentación y aceptación de la declaración, a disposición de la autoridad aduanera.',
-      'Por dos (2) años, contados desde la nacionalización de la mercancía.',
-      'Por un (1) año, contado desde la visita de fiscalización.',
-      'De manera indefinida, mientras subsista la sociedad importadora.',
+      'Por dos (2) años, contados desde la nacionalización de la mercancía y a disposición de la autoridad aduanera.',
+      'Por un (1) año, contado desde la visita de fiscalización o desde el requerimiento de la autoridad.',
+      'De manera indefinida, mientras subsista la sociedad importadora y no se liquide el patrimonio.',
     ],
     correct: 0,
     justification:
@@ -45,10 +45,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'En una visita de fiscalización, un importador que actúa directamente no puede exhibir los documentos soporte de sus operaciones dentro del plazo otorgado. ¿Cómo debe proceder el funcionario de la DIAN?',
     options: [
-      'Archivar el hallazgo, porque se trata de un deber formal sin relevancia.',
-      'Tener por no presentadas las declaraciones de importación afectadas.',
+      'Archivar el hallazgo, porque se trata de un deber formal sin relevancia para la liquidación de los tributos aduaneros.',
+      'Tener por no presentadas las declaraciones de importación afectadas por la falta de exhibición.',
       'Documentar el hallazgo en el acta de visita y considerar la apertura del procedimiento sancionatorio por el incumplimiento de las obligaciones del importador.',
-      'Exigir de inmediato la destrucción de las mercancías importadas.',
+      'Exigir de inmediato la destrucción de las mercancías importadas, por carecer de soporte documental válido.',
     ],
     correct: 2,
     justification:
@@ -74,7 +74,7 @@ export const QUESTIONS: Question[] = [
       'Son permanentes e irrevocables una vez otorgada la autorización, porque la confianza legítima del operador no admite revocatoria de los beneficios.',
       'Pueden incluir la no constitución de garantías para respaldar el cumplimiento de sus obligaciones aduaneras, en los términos y condiciones definidos por la DIAN, y pueden revocarse o modificarse ante incumplimientos.',
       'Se otorgan automáticamente a cualquier importador inscrito en el RUT, sin necesidad de solicitud ni de evaluación previa de riesgo.',
-      'Solo consisten en la reducción de aranceles, pues la autorización OEA no contempla otras facilitaciones operativas.'
+      'Solo consisten en la reducción de aranceles, pues la autorización OEA no contempla otras facilitaciones operativas distintas de las arancelarias.'
     ],
     correct: 1,
     justification:
@@ -97,10 +97,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'En la modalidad de importación de viajeros, los tributos aduaneros aplicables son:',
     options: [
-      'Los vigentes en la fecha de presentación de la declaración.',
-      'Los vigentes el 1.º de enero del año de ingreso.',
+      'Los vigentes en la fecha de presentación y aceptación de la declaración de importación.',
+      'Los vigentes el 1.º de enero del año en que se produce el ingreso del viajero.',
       'Los vigentes en la fecha de llegada del viajero, conforme a lo indicado en el pasaporte.',
-      'Los del año anterior al viaje.',
+      'Los del año anterior al viaje, por corresponder al cierre fiscal del equipaje.',
     ],
     correct: 2,
     justification:
@@ -123,10 +123,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Para determinar el valor en aduana de mercancías importadas cuyo precio fue negociado en una moneda distinta del dólar estadounidense, el Decreto 1165 de 2019 establece que:',
     options: [
-      'El valor se determina directamente en pesos colombianos usando la TRM del día de la importación, sin pasar por la conversión a dólares que exige la norma.',
+      'El valor se determina directamente en pesos colombianos usando la TRM del día de la importación, sin pasar por la conversión a dólares que exige la norma, pues la TRM ya refleja esa conversión.',
       'El valor en aduana se determina en dólares de los Estados Unidos; el valor negociado en otra moneda se convierte a dólares con el tipo de cambio vigente el último día hábil de la semana anterior a la presentación y aceptación de la declaración, y luego se convierte a pesos con la TRM del mismo período.',
-      'El valor se determina en la moneda de negociación y se declara sin conversión, porque la base gravable admite cualquier divisa expresada en la factura comercial.',
-      'Se usa el promedio de la TRM de los últimos treinta días, como criterio que suaviza las fluctuaciones cambiarias para efectos de la liquidación.'
+      'El valor se determina en la moneda de negociación y se declara sin conversión, porque la base gravable admite cualquier divisa expresada en la factura comercial, siempre que el proveedor la certifique.',
+      'Se usa el promedio de la TRM de los últimos treinta días, como criterio que suaviza las fluctuaciones cambiarias para efectos de la liquidación de los tributos aduaneros y de las sanciones.'
     ],
     correct: 1,
     justification:
@@ -149,10 +149,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un importador detecta que declaró una subpartida arancelaria equivocada. Sobre la posibilidad de corregir:',
     options: [
-      'No es posible corregir, porque la subpartida arancelaria declarada es inmutable y la autoridad la toma como definitiva en todo caso.',
+      'No es posible corregir, porque la subpartida arancelaria declarada es inmutable y la autoridad la toma como definitiva en todo caso, sin excepción.',
       'Puede corregirla mediante declaración de corrección voluntaria dentro del término previsto, siempre que no se haya proferido liquidación oficial, liquidando los mayores tributos, intereses y la sanción correspondiente.',
-      'Solo puede corregirse mediante orden judicial, porque la declaración de importación es un acto de naturaleza jurisdiccional.',
-      'Puede corregirla en cualquier tiempo y sin sanción, porque el error involuntario no genera consecuencias para el declarante.'
+      'Solo puede corregirse mediante orden judicial, porque la declaración de importación es un acto de naturaleza jurisdiccional y no administrativa.',
+      'Puede corregirla en cualquier tiempo y sin sanción, porque el error involuntario no genera consecuencias para el declarante ni intereses.'
     ],
     correct: 1,
     justification:
@@ -176,7 +176,7 @@ export const QUESTIONS: Question[] = [
       'La obligación del transportador o del agente de carga internacional respecto del informe de descargue e inconsistencias es:',
     options: [
       'Presentarlo a la DIAN a través de los servicios informáticos electrónicos, dentro del término previsto.',
-      'Presentarlo en papel en la seccional de aduanas correspondiente.',
+      'Presentarlo en papel en la seccional de aduanas correspondiente dentro del mismo término.',
       'No presentar informe alguno: basta con el manifiesto de carga.',
       'Presentarlo únicamente cuando la DIAN lo solicite por escrito.',
     ],
@@ -202,9 +202,9 @@ export const QUESTIONS: Question[] = [
       'Sobre la obligación aduanera en el régimen de tránsito y la responsabilidad por los tributos si la mercancía no llega a destino, es correcto afirmar que:',
     options: [
       'La obligación comprende la presentación de la declaración de tránsito, la ejecución de la operación y la finalización del régimen dentro de los plazos; si la mercancía no llega, responde el declarante de la declaración de tránsito por los tributos aduaneros.',
-      'La obligación se limita al pago del flete y del seguro de la carga, pues los tributos aduaneros solo se causan en la importación definitiva.',
-      'Si la mercancía no llega a destino, responde exclusivamente el importador final, por ser el beneficiario económico de la operación.',
-      'No existe responsabilidad alguna por la mercancía en tránsito, porque los riesgos se trasladan al comprador desde el embarque.'
+      'La obligación se limita al pago del flete y del seguro de la carga, pues los tributos aduaneros solo se causan en la importación definitiva y no en el tránsito aduanero.',
+      'Si la mercancía no llega a destino, responde exclusivamente el importador final, por ser el beneficiario económico de la operación y quien recibe la mercancía en destino.',
+      'No existe responsabilidad alguna por la mercancía en tránsito, porque los riesgos se trasladan al comprador desde el embarque según las reglas comerciales internacionales.'
     ],
     correct: 0,
     justification:
@@ -227,10 +227,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Durante un control, un funcionario detecta mercancías en circulación hacia un depósito habilitado sin planilla de envío. El tratamiento correcto es:',
     options: [
-      'Permitir la circulación si el conductor muestra la factura comercial.',
+      'Permitir la circulación si el conductor muestra la factura comercial y el documento de transporte.',
       'Considerar la mercancía como mercancía en tránsito interno sin la debida amparabilidad documental, lo que puede dar lugar a su aprehensión.',
-      'Devolver la mercancía al lugar de origen sin consecuencias.',
-      'Exigir únicamente el pago del peaje correspondiente.',
+      'Devolver la mercancía al lugar de origen sin consecuencias, por tratarse de un error formal.',
+      'Exigir únicamente el pago del peaje correspondiente y continuar el control documental.',
     ],
     correct: 1,
     justification:
@@ -254,9 +254,9 @@ export const QUESTIONS: Question[] = [
       'Sobre el abandono legal de mercancías, el Decreto 1165 de 2019 establece que:',
     options: [
       'Opera cuando, vencido el término de permanencia establecido para cada régimen, la mercancía no ha sido sometida al régimen correspondiente; sin rescate oportuno, pasa a favor de la Nación.',
-      'Solo opera por renuncia escrita del importador.',
-      'Opera automáticamente al día siguiente de la llegada de la mercancía.',
-      'No tiene efectos jurídicos sobre la propiedad de la mercancía.',
+      'Solo opera por renuncia escrita y expresa del importador ante la autoridad aduanera competente, previa aceptación de la DIAN.',
+      'Opera automáticamente al día siguiente de la llegada de la mercancía al territorio aduanero nacional, sin trámite previo.',
+      'No tiene efectos jurídicos sobre la propiedad de la mercancía, que permanece en cabeza del importador hasta su venta.',
     ],
     correct: 0,
     justification:
@@ -279,10 +279,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un viajero ingresa al país con bienes que superan las franquicias previstas y, en el control aduanero, se niega a declararlos. El funcionario debe:',
     options: [
-      'Permitirle el ingreso por tratarse de bienes de uso personal.',
-      'Decomisar los bienes de inmediato, sin trámite adicional.',
+      'Permitirle el ingreso por tratarse de bienes de uso personal, aunque excedan la franquicia, por aplicación del principio de favorabilidad al viajero.',
+      'Decomisar los bienes de inmediato, sin trámite adicional, por tratarse de mercancía no declarada y de ingreso prohibido.',
       'Informar la obligación de declarar los bienes que exceden la franquicia; si se niega a declarar, procede la aprehensión de los bienes no declarados y el proceso correspondiente.',
-      'Cobrar únicamente una multa fija sin retener la mercancía.',
+      'Cobrar únicamente una multa fija sin retener la mercancía, por ser una infracción formal del viajero.',
     ],
     correct: 2,
     justification:
@@ -305,9 +305,9 @@ export const QUESTIONS: Question[] = [
     statement:
       'La obligación aduanera en la exportación definitiva comprende:',
     options: [
-      'Únicamente el pago del arancel de exportación.',
+      'Únicamente el pago del arancel de exportación y de los demás tributos que gravan la salida.',
       'La presentación de la solicitud de autorización de embarque, la ejecución del embarque y la finalización del régimen.',
-      'Solo la emisión de la factura comercial.',
+      'Solo la emisión de la factura comercial y la entrega de la mercancía al transportador.',
       'La obtención de una licencia previa del Ministerio de Comercio en todos los casos.',
     ],
     correct: 1,
@@ -332,9 +332,9 @@ export const QUESTIONS: Question[] = [
       'Sobre la habilitación de un depósito público cuyo término venció sin haberse renovado:',
     options: [
       'Queda sin efecto desde el vencimiento del plazo, y el depósito no puede recibir nuevas mercancías bajo esa figura.',
-      'Se renueva automáticamente por un período igual.',
-      'Continúa operando mientras no haya una orden expresa de cierre.',
-      'Solo se suspende si se comprueba un perjuicio al fisco.',
+      'Se renueva automáticamente por un período igual, salvo manifestación en contrario.',
+      'Continúa operando mientras no haya una orden expresa de cierre de la autoridad aduanera.',
+      'Solo se suspende si se comprueba un perjuicio al fisco o un incumplimiento grave.',
     ],
     correct: 0,
     justification:
@@ -358,7 +358,7 @@ export const QUESTIONS: Question[] = [
       'Un transportador oculta de manera reiterada parte de la carga para evitar su revisión. La DIAN, además de las sanciones por cada incumplimiento, puede:',
     options: [
       'Aumentar el nivel de riesgo asignado al transportador y justificar controles más intensos y frecuentes sobre sus operaciones.',
-      'Cancelar definitivamente el RUT del transportador como primera medida.',
+      'Cancelar definitivamente el RUT del transportador como primera medida, por reiteración de la conducta.',
       'Ignorar la reiteración, porque cada operación se juzga de forma aislada.',
       'Prohibir al transportador operar en todo el territorio nacional de forma automática.',
     ],
@@ -410,9 +410,9 @@ export const QUESTIONS: Question[] = [
       'En una visita a un depósito, el funcionario detecta mercancías que podrían estar en situación de aprehensión. La actuación correcta es:',
     options: [
       'Levantar acta de inspección o de hechos, aprehender la mercancía si corresponde y dar inicio al proceso administrativo previsto.',
-      'Retirar la mercancía de inmediato sin documentar el hallazgo.',
-      'Solicitar al depositario que oculte la mercancía hasta nueva orden.',
-      'Esperar la orden de un juez para cualquier actuación.',
+      'Retirar la mercancía de inmediato sin documentar el hallazgo, para evitar su deterioro y la congestión del depósito.',
+      'Solicitar al depositario que oculte la mercancía hasta nueva orden, mientras se define la situación jurídica.',
+      'Esperar la orden de un juez para cualquier actuación, por tratarse de una medida restrictiva de la propiedad.',
     ],
     correct: 0,
     justification:

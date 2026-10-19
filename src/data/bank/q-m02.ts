@@ -45,10 +45,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un contrato que se encuentra en la oficina que lo tramitó y que se consulta de manera continua para el cumplimiento de sus obligaciones está en la etapa del ciclo vital correspondiente a…',
     options: [
-      '…el archivo histórico, porque su conservación es permanente.',
+      '…el archivo histórico, porque todo documento que se conserva de manera permanente pertenece a esa etapa desde su producción.',
       '…el archivo de gestión, porque es objeto de continua utilización y consulta administrativa por la oficina productora.',
-      '…el archivo central, porque ya fue transferido y se consulta con menor frecuencia.',
-      '…la disposición final, porque el expediente ya fue cerrado.',
+      '…el archivo central, porque toda documentación que supera el primer año de gestión se transfiere automáticamente a ese archivo.',
+      '…la disposición final, porque el cierre del expediente obliga a decidir de inmediato sobre su conservación o eliminación.',
     ],
     correct: 1,
     justification:
@@ -71,10 +71,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una dependencia decide reorganizar su archivo agrupando todos los documentos por tema (contratos, resoluciones, facturas), sin importar la oficina que los produjo, y ordenándolos por fecha para facilitar la búsqueda. Frente a los principios archivísticos, esta decisión es:',
     options: [
-      'Correcta, porque la organización temática facilita la consulta y la eficiencia administrativa.',
-      'Correcta, porque los principios archivísticos solo se aplican a los archivos históricos.',
+      'Correcta, porque la organización temática por asuntos facilita la consulta de los funcionarios y constituye una aplicación válida del principio de orden original.',
+      'Correcta, porque los principios de procedencia y orden original solo se aplican a los archivos históricos, mientras el archivo de gestión admite criterios temáticos.',
       'Incorrecta, porque vulnera el principio de procedencia (respeto por el fondo y la oficina productora) y el principio de orden original (respeto por la secuencia del trámite).',
-      'Indiferente, porque la organización del archivo es una decisión discrecional de cada dependencia.',
+      'Indiferente, porque la organización del archivo de gestión es una decisión discrecional de cada dependencia y no genera responsabilidad disciplinaria.',
     ],
     correct: 2,
     justification:
@@ -97,10 +97,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Sobre las tablas de retención documental (TRD), la Ley 594 de 2000 establece que:',
     options: [
-      'Son de elaboración potestativa: cada entidad decide si las adopta según su tamaño.',
+      'Son de elaboración potestativa: cada entidad decide si las adopta según su tamaño y su nivel de producción documental, salvo las del sector financiero.',
       'Es obligatorio para las entidades del Estado elaborarlas y adoptarlas; son el instrumento que lista las series y tipos documentales con sus tiempos de retención.',
-      'Solo se exigen a las entidades del sector financiero y a las sociedades vigiladas.',
-      'Se elaboran únicamente en el archivo histórico, después de que el documento pierde valor administrativo.',
+      'Solo se exigen a las entidades del sector financiero y a las sociedades vigiladas por la Superintendencia Financiera, por su deber de conservación.',
+      'Se elaboran únicamente en el archivo histórico, una vez que el documento pierde su valor administrativo y antes de decidir su conservación permanente.',
     ],
     correct: 1,
     justification:
@@ -123,10 +123,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'El Decreto 1080 de 2015 (art. 2.8.2.5.8) enumera los instrumentos archivísticos con los que deben contar las entidades. ¿Cuál de los siguientes hace parte de esa lista junto con el cuadro de clasificación documental, las tablas de retención y valoración documental y el programa de gestión documental?',
     options: [
-      'El plan de desarrollo institucional y el plan de acción anual.',
+      'El plan de desarrollo institucional, el plan de acción anual y el plan anticorrupción, por ser los instrumentos que orientan la función archivística.',
       'La tabla de control de acceso, el banco terminológico de series y subseries (BANTER) y el modelo de requisitos para la gestión de documentos electrónicos (MoReQ).',
-      'El estado financiero consolidado y el informe de gestión anual.',
-      'El manual de funciones y el reglamento interno de trabajo.',
+      'El estado financiero consolidado, el informe de gestión anual y el informe de sostenibilidad, por su relación con la memoria institucional.',
+      'El manual de funciones, el reglamento interno de trabajo y el manual de procesos y procedimientos, por regular la producción documental.',
     ],
     correct: 1,
     justification:
@@ -279,10 +279,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'El cuadro de clasificación documental (CCD) cumple la función de:',
     options: [
-      'Determinar cuáles documentos se eliminan y cuáles se conservan permanentemente.',
+      'Determinar cuáles documentos se eliminan y cuáles se conservan permanentemente, según los valores primarios y secundarios de cada serie.',
       'Desarrollar jerárquicamente el fondo documental de la entidad, identificando sus dependencias productoras, sus series y subseries documentales.',
-      'Controlar el préstamo de expedientes a los funcionarios y su devolución oportuna.',
-      'Registrar la ubicación física de cada caja y carpeta en el depósito del archivo.',
+      'Controlar el préstamo de expedientes a los funcionarios, su devolución oportuna y la ubicación de las cajas en el depósito.',
+      'Registrar la ubicación física de cada caja y carpeta en el depósito y la fecha de las transferencias primarias y secundarias.',
     ],
     correct: 1,
     justification:
@@ -305,10 +305,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'En el archivo de una división de fiscalización se encuentra un expediente sancionatorio sin foliar, con documentos de dos contribuyentes distintos mezclados en una misma carpeta, sin hoja de control ni índice, y con una actuación notificada cuyo original no aparece. La consecuencia más grave desde el punto de vista de la gestión documental es que:',
     options: [
-      'El expediente ocupa más espacio del necesario en el archivo de gestión.',
+      'El expediente ocupa más espacio del necesario en el archivo de gestión, lo que obliga a transferirlo antes de tiempo al archivo central.',
       'Se compromete la integridad, la autenticidad y la trazabilidad del expediente, y con ellas su valor probatorio en el proceso administrativo y en eventuales actuaciones judiciales.',
-      'Se dificulta el cumplimiento de las metas de digitalización de la entidad.',
-      'Se incumple únicamente una formalidad estética, subsanable con una nueva carátula.',
+      'Se dificulta el cumplimiento de las metas de digitalización y de los indicadores de eficiencia administrativa fijados en el plan de acción de la entidad.',
+      'Se incumple únicamente una formalidad estética, subsanable con una nueva carátula y con la reimpresión del índice del expediente.',
     ],
     correct: 1,
     justification:

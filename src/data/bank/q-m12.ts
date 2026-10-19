@@ -46,10 +46,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una empresa exportadora ficticia recibe en su cuenta, en varios abonos en efectivo, dineros provenientes de la venta de estupefacientes. Con esos recursos paga proveedores en el país, y luego sobrevalora exportaciones a una sociedad vinculada en el exterior, que le gira las divisas. Finalmente, con esos giros compra tres inmuebles. La etapa de estratificación corresponde a:',
     options: [
-      'Los abonos en efectivo en la cuenta de la empresa.',
-      'El pago a proveedores nacionales con los recursos recibidos.',
+      'Los abonos en efectivo en la cuenta de la empresa, porque el dinero ilícito ingresa al sistema financiero y desde allí se dispersa hacia otros activos.',
+      'El pago a proveedores nacionales con los recursos recibidos, porque con esas compras se da apariencia de actividad comercial a los recursos.',
       'La sobrevaloración de las exportaciones y los giros recibidos desde el exterior, que separan los recursos de su origen rompiendo la trazabilidad.',
-      'La compra de los tres inmuebles.',
+      'La compra de los tres inmuebles, porque la adquisición de bienes duraderos separa los recursos de su origen ilícito.',
     ],
     correct: 2,
     justification:
@@ -73,9 +73,9 @@ export const QUESTIONS: Question[] = [
       'El artículo 323 del Código Penal (modificado por la Ley 1762 de 2015) describe la conducta de lavado de activos mediante un listado de verbos rectores. ¿Cuál de los siguientes grupos corresponde a esos verbos?',
     options: [
       'Adquirir, resguardar, invertir, transportar, transformar, almacenar, conservar, custodiar o administrar.',
-      'Ocultar, falsificar, sobornar, defraudar o evadir.',
-      'Importar, exportar, consignar, girar o endosar.',
-      'Planear, ordenar, inducir, coadyuvar o encubrir.',
+      'Ocultar, falsificar, sobornar, defraudar o evadir, que describen las formas de dar apariencia de legalidad a los bienes.',
+      'Importar, exportar, consignar, girar o endosar, operaciones típicas para cruzar fronteras con el dinero ilícito.',
+      'Planear, ordenar, inducir, coadyuvar o encubrir, modalidades de participación en el delito de lavado.',
     ],
     correct: 0,
     justification:
@@ -98,10 +98,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una persona es condenada por lavado de activos porque adquirió y transportó bienes producto del contrabando, y el juez acredita que realizó operaciones de cambio y de comercio exterior para darles apariencia de legalidad. Respecto de la pena, el juez debe:',
     options: [
-      'Imponer la pena mínima, porque el contrabando no es delito fuente del lavado de activos.',
+      'Imponer la pena mínima, porque el contrabando no es delito fuente del lavado de activos y la conducta solo podría sancionarse administrativamente.',
       'Aplicar la agravante prevista en el artículo 323 del Código Penal, aumentando la pena de una tercera parte a la mitad, precisamente por tratarse de operaciones de cambio o de comercio exterior.',
-      'Absolver al procesado, porque el lavado exige condena previa por el delito fuente.',
-      'Remitir el caso a la DIAN para que imponga la sanción, ya que la conducta ocurrió en comercio exterior.',
+      'Absolver al procesado, porque el lavado exige condena previa por el delito fuente y en el proceso no se aportó esa sentencia.',
+      'Remitir el caso a la DIAN para que imponga la sanción, ya que la conducta ocurrió en comercio exterior y escapa de la competencia penal.',
     ],
     correct: 1,
     justification:
@@ -124,10 +124,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Sobre la relación entre el lavado de activos y el delito que originó los bienes, es correcto afirmar que:',
     options: [
-      'El lavado solo puede investigarse después de que exista sentencia condenatoria en firme por el delito fuente.',
+      'El lavado solo puede investigarse después de que exista sentencia condenatoria en firme por el delito fuente, porque sin esa decisión no está probado el origen ilícito.',
       'El lavado de activos es un delito autónomo: puede configurarse sin condena previa por el delito subyacente, siempre que se acredite el origen ilícito de los bienes mediante las pruebas legalmente admisibles.',
-      'Los delitos fuente se limitan al tráfico de estupefacientes y a la financiación del terrorismo.',
-      'Basta con que el investigado no logre demostrar el origen lícito de su patrimonio para que se configure el delito.',
+      'Los delitos fuente se limitan al tráfico de estupefacientes y a la financiación del terrorismo, pues son los únicos expresamente mencionados en el artículo 323.',
+      'Basta con que el investigado no logre demostrar el origen lícito de su patrimonio para que se configure el delito, por aplicación de la inversión de la carga de la prueba.',
     ],
     correct: 1,
     justification:
@@ -150,10 +150,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'La diferencia esencial entre el lavado de activos y la financiación del terrorismo consiste en que:',
     options: [
-      'La financiación del terrorismo solo se configura cuando el delito previo es el narcotráfico.',
+      'La financiación del terrorismo solo se configura cuando el delito previo es el narcotráfico, porque los recursos deben provenir de una actividad ilícita.',
       'El lavado busca ocultar el origen ilícito de los bienes, mientras la financiación del terrorismo busca que los recursos lleguen a su destino, por lo que puede cometerse con recursos de origen lícito.',
-      'Ambos delitos son idénticos y solo se diferencian por la penalidad.',
-      'El lavado es un delito de competencia exclusiva de la UIAF.',
+      'Ambos delitos son idénticos y solo se diferencian por la penalidad, ya que en los dos casos se busca ocultar el origen de los recursos.',
+      'El lavado es un delito de competencia exclusiva de la UIAF, mientras que la financiación del terrorismo corresponde a la Fiscalía General de la Nación.',
     ],
     correct: 1,
     justification:
@@ -176,10 +176,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'La conducta de financiación del terrorismo está tipificada en el artículo 345 del Código Penal. Su pena es de:',
     options: [
-      'Prisión de cuatro a ocho años y multa de diez a cien salarios mínimos.',
+      'Prisión de cuatro a ocho años y multa de diez a cien salarios mínimos, escala prevista para los delitos de menor lesividad dentro del Código Penal.',
       'Prisión de trece a veintidós años y multa de mil trescientos a quince mil salarios mínimos legales mensuales vigentes.',
-      'Prisión de seis a doce años, sin multa.',
-      'Arresto y multa, por tratarse de un delito de menor lesividad.',
+      'Prisión de seis a doce años, sin multa, porque la ley excluyó la pena pecuniaria para este tipo penal y previó únicamente la pena privativa de la libertad.',
+      'Arresto y multa, por tratarse de un delito de menor lesividad que admite formas sustitutivas de la pena privativa de la libertad.',
     ],
     correct: 1,
     justification:
@@ -202,10 +202,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Conforme al artículo 3 de la Ley 526 de 1999 (modificado por la Ley 1762 de 2015), entre los objetivos de la UIAF se encuentra:',
     options: [
-      'Investigar y acusar a las personas que cometen el delito de lavado de activos.',
+      'Investigar y acusar a las personas que cometen el delito de lavado de activos, por ser la unidad especializada en su persecución penal y financiera.',
       'Prevenir, detectar y analizar las operaciones sospechosas de comercio exterior relacionadas con el contrabando y el fraude aduanero, como delitos autónomos o subyacentes al lavado de activos.',
-      'Imponer sanciones administrativas a las entidades que incumplen el deber de reporte.',
-      'Administrar el sistema de aduanas y el recaudo de los tributos aduaneros.',
+      'Imponer sanciones administrativas a las entidades que incumplen el deber de reporte, como supervisor del sistema antilavado y de sus sujetos obligados.',
+      'Administrar el sistema de aduanas y el recaudo de los tributos aduaneros, por su relación con el control del comercio exterior y de las operaciones sospechosas.',
     ],
     correct: 1,
     justification:
@@ -228,10 +228,10 @@ export const QUESTIONS: Question[] = [
     statement:
       '¿Cuál de las siguientes afirmaciones describe correctamente el Reporte de Operaciones Sospechosas (ROS)?',
     options: [
-      'Es un reporte periódico, sujeto a un umbral mínimo de cuantía, que se presenta ante la Fiscalía General de la Nación.',
+      'Es un reporte periódico, sujeto a un umbral mínimo de cuantía, que se presenta ante la Fiscalía General de la Nación para que inicie la investigación penal correspondiente.',
       'Es un reporte inmediato, sin umbrales de cuantía y reservado, que el sujeto obligado presenta a la UIAF cuando la operación se aparta de los parámetros de normalidad y carece de justificación razonable.',
-      'Es una denuncia penal que obliga a la UIAF a iniciar la investigación del delito.',
-      'Es un informe anual de gestión antilavado que se publica en la página web de la entidad.',
+      'Es una denuncia penal que obliga a la UIAF a iniciar la investigación del delito y a informar al reportado sobre el reporte presentado, sin necesidad de autorización judicial.',
+      'Es un informe anual de gestión antilavado que se publica en la página web de la entidad para conocimiento de los usuarios y del público en general.',
     ],
     correct: 1,
     justification:
@@ -254,10 +254,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una entidad pública detecta hechos que configuran, a la vez, una operación sospechosa de lavado de activos y un posible delito. Frente a la alternativa de presentar el ROS o denunciar, la actuación correcta es:',
     options: [
-      'Presentar el ROS y entender cumplida la obligación de denunciar, porque el ROS sustituye la denuncia.',
-      'Denunciar penalmente y omitir el ROS, para no duplicar actuaciones.',
+      'Presentar el ROS y entender cumplida la obligación de denunciar, porque el ROS sustituye la denuncia penal al poner los hechos en conocimiento del Estado.',
+      'Denunciar penalmente y omitir el ROS, para no duplicar actuaciones y evitar que la reserva del reporte se pierda en el proceso penal.',
       'Cumplir ambos deberes: reportar la operación sospechosa a la UIAF, de manera inmediata y reservada, y trasladar los hechos a la Fiscalía General de la Nación cuando tengan características de delito.',
-      'Consultar previamente al reportado para que explique la operación y, según su respuesta, decidir qué presentar.',
+      'Consultar previamente al reportado para que explique la operación y, según su respuesta, decidir qué presentar, con lo cual se evita un reporte injustificado.',
     ],
     correct: 2,
     justification:
@@ -280,10 +280,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'En una declaración de exportación se declara un valor de venta muy inferior al precio internacional del producto, el país de destino no tiene relación comercial conocida con ese producto, la mercancía se embarca con destino a un tercer país distinto del comprador y el pago se recibe desde una cuenta de otra persona en un cuarto país. La lectura correcta de estos hechos es que:',
     options: [
-      'Son inconsistencias sin importancia, porque el régimen aduanero autoriza cualquier ruta de embarque.',
+      'Son inconsistencias sin importancia, porque el régimen aduanero autoriza cualquier ruta de embarque y el pago puede provenir de un tercero autorizado.',
       'Configuran señales de alerta de lavado de activos: subvaloración de exportaciones, triangulación y pagos de terceros, que rompen la trazabilidad de los recursos.',
-      'Se trata de una simple operación de comercio exterior que solo puede generar sanción cambiaria.',
-      'Constituyen prueba plena del delito de lavado de activos.',
+      'Se trata de una simple operación de comercio exterior que solo puede generar sanción cambiaria por no canalizar las divisas en el plazo legal.',
+      'Constituyen prueba plena del delito de lavado de activos, suficiente para formular acusación sin necesidad de otras pruebas sobre el origen.',
     ],
     correct: 1,
     justification:
@@ -306,10 +306,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Respecto de las obligaciones de prevención de lavado de activos frente a la DIAN, ¿cuál afirmación es correcta?',
     options: [
-      'La DIAN está obligada a implementar el SAGRILAFT de la Circular Externa 100-000016 de 2020 de la Superintendencia de Sociedades.',
-      'La DIAN, como entidad pública, es fuente de información para la UIAF y está sujeta al deber de reportar operaciones sospechosas en los términos de la Ley 526 de 1999 y del artículo 2.14.2 del Decreto 1068 de 2015, además de su función misional de control y prevención de LA/FT en fiscalización.',
-      'La DIAN no tiene ninguna relación con la UIAF, porque sus competencias son exclusivamente tributarias, aduaneras y cambiarias.',
-      'La DIAN solo actúa como denunciante ante la Fiscalía y no puede reportar operaciones sospechosas.',
+      'La DIAN está obligada a implementar el SAGRILAFT de la Circular Externa 100-000016 de 2020 de la Superintendencia de Sociedades, por ser una entidad del sector público con exposición al riesgo de lavado en sus procesos de fiscalización.',
+      'La DIAN, como entidad pública, es fuente de información para la UIAF y está sujeta al deber de reportar operaciones sospechosas conforme a la Ley 526 de 1999 y al artículo 2.14.2 del Decreto 1068 de 2015, además de su función de control y prevención de LA/FT.',
+      'La DIAN no tiene ninguna relación con la UIAF, porque sus competencias son exclusivamente tributarias, aduaneras y cambiarias y no incluyen la prevención del lavado de activos.',
+      'La DIAN solo actúa como denunciante ante la Fiscalía y no puede reportar operaciones sospechosas, porque el ROS está reservado a los sujetos obligados del sector financiero.',
     ],
     correct: 1,
     justification:

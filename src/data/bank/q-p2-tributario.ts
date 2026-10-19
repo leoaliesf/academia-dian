@@ -19,10 +19,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'De acuerdo con la Resolución 000227 de 2025 de la DIAN, la vigencia del Instrumento de Firma Electrónica (IFE) es de:',
     options: [
-      'Un (1) año, renovable automáticamente mientras el RUT esté activo.',
+      'Un (1) año, renovable automáticamente mientras el RUT permanezca activo y sin necesidad de trámite.',
       'Tres (3) años, contados a partir de la culminación del procedimiento de generación del instrumento.',
-      'Cinco (5) años, prorrogables por períodos iguales.',
-      'Vigencia indefinida, salvo cancelación del RUT.',
+      'Cinco (5) años, prorrogables por períodos iguales, conforme al término general de conservación.',
+      'Vigencia indefinida mientras el RUT esté activo, porque el instrumento se entiende incorporado al registro.',
     ],
     correct: 1,
     justification:
@@ -45,10 +45,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un contribuyente obligado presenta su declaración anual de activos en el exterior (Formulario 160) impresa y firmada de manera autógrafa, enviada por correo certificado a la seccional, alegando fallas de internet. Conforme a la Resolución 000227 de 2025, la DIAN debe:',
     options: [
-      'Aceptarla, porque la falla de internet constituye fuerza mayor.',
+      'Aceptarla, porque la falla de internet constituye fuerza mayor y habilita la presentación física como medio alternativo.',
       'Tenerla por no presentada, porque el único medio válido de presentación es el electrónico con instrumento de firma autorizado.',
-      'Aceptarla con una sanción reducida por extemporaneidad.',
-      'Devolverla para que se presente en físico ante la entidad bancaria autorizada.',
+      'Aceptarla con una sanción reducida por extemporaneidad, en aplicación del principio de favorabilidad al contribuyente.',
+      'Devolverla para que se presente en físico ante la entidad bancaria autorizada, que actúa como recaudadora de los tributos.',
     ],
     correct: 1,
     justification:
@@ -71,10 +71,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un contribuyente tenía plazo para presentar una declaración informativa hasta el 20 de mayo de 2026 y solicitó la activación de su Instrumento de Firma Electrónica (IFE) apenas el 19 de mayo, por lo que no alcanzó a presentar a tiempo. Frente a su solicitud de justificación de la extemporaneidad, la DIAN debe:',
     options: [
-      'Aceptarla, porque la solicitud del IFE se hizo antes del vencimiento.',
+      'Aceptarla, porque la solicitud del IFE se hizo antes del vencimiento y ello demuestra diligencia del contribuyente.',
       'Rechazarla, porque la falta de activación del IFE con la antelación debida no es causal de justificación de la extemporaneidad.',
-      'Aceptarla con la condición de que presente al día siguiente hábil.',
-      'Conceder un plazo de gracia de cinco días hábiles.',
+      'Aceptarla con la condición de que presente la declaración al día siguiente hábil, previa autorización del superior.',
+      'Conceder un plazo de gracia de cinco días hábiles, por aplicación del término supletivo de la notificación electrónica.',
     ],
     correct: 1,
     justification:
@@ -149,10 +149,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una persona natural obtiene ingresos de $50 millones por comercio de autopartes, $120 millones por servicios de asesoría contable y $80 millones por arrendamiento de inmuebles. La actividad económica principal (AEP) que debe registrar en el RUT es:',
     options: [
-      'El arrendamiento de inmuebles, por ser renta pasiva.',
+      'El arrendamiento de inmuebles, por tratarse de una renta pasiva y ser la actividad más estable.',
       'Los servicios de asesoría contable, porque la AEP es la actividad que genera el mayor valor de ingresos.',
-      'El comercio de autopartes, por ser la actividad más antigua.',
-      'Cualquiera de las tres, a elección del contribuyente.',
+      'El comercio de autopartes, por ser la actividad más antigua y la de mayor tradición en el negocio.',
+      'Cualquiera de las tres, porque el contribuyente puede elegir libremente la actividad principal.',
     ],
     correct: 1,
     justification:
@@ -175,10 +175,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un adquirente recibe una factura electrónica de venta a crédito, la paga oportunamente, pero nunca generó el mensaje electrónico de confirmación del recibido de la factura y de los bienes. ¿Puede tomar la factura como soporte de costos y deducciones en su declaración de renta?',
     options: [
-      'Sí, porque el pago de la factura es prueba suficiente para la deducción.',
+      'Sí, porque el pago oportuno de la factura es prueba suficiente del gasto y la confirmación electrónica solo tiene efectos de acuse de recibo.',
       'No, porque la factura a crédito no se constituye en soporte de costos y deducciones si el adquirente no confirma el recibido mediante mensaje electrónico remitido al emisor.',
-      'Sí, siempre que la factura incluya el CUFE y el código QR.',
-      'No, porque las facturas a crédito nunca sirven de soporte fiscal.',
+      'Sí, siempre que la factura incluya el CUFE y el código QR, que acreditan su validación y autenticidad ante la DIAN.',
+      'No, porque las facturas electrónicas a crédito nunca sirven como soporte fiscal, a diferencia de las de contado.',
     ],
     correct: 1,
     justification:
@@ -230,7 +230,7 @@ export const QUESTIONS: Question[] = [
       'Que el documento soporte se genere en formato XML con el Código Único de Documento Soporte (CUDS).',
       'Acreditar que se practicó la respectiva retención en la fuente a título de IVA, conforme al artículo 437-2, numeral 3, del Estatuto Tributario.',
       'Que el no residente haya presentado la declaración de IVA de prestadores desde el exterior.',
-      'Que la operación conste en escritura pública o documento equivalente.',
+      'Que la operación conste en escritura pública o documento equivalente, por exigencia de solemnidad del contrato.',
     ],
     correct: 1,
     justification:
@@ -256,7 +256,7 @@ export const QUESTIONS: Question[] = [
       'Aceptarlo, porque el documento equivalente electrónico P.O.S. es soporte de costos y descontables.',
       'Rechazarlo, porque para servir de soporte debe identificar al adquirente con nombre o razón social y número de identificación.',
       'Requerir que se anule y se expida una factura electrónica de venta.',
-      'Aceptarlo únicamente si el valor de la compra es inferior a 5 UVT.',
+      'Aceptarlo únicamente si el valor de la compra es inferior a cinco (5) UVT, por tratarse de consumidor final.',
     ],
     correct: 1,
     justification:
@@ -279,10 +279,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un obligado a reportar información exógena no presentó a tiempo el Formato 1001 del año gravable 2024. Dos meses después del vencimiento presenta la información completa y la DIAN aún no ha proferido pliego de cargos. Para beneficiarse de la sanción reducida, el contribuyente debe:',
     options: [
-      'Presentar la información y esperar el pliego de cargos para solicitar la reducción.',
+      'Presentar la información y esperar el pliego de cargos para solicitar la reducción, pues la sanción mínima solo se reconoce en esa etapa.',
       'Liquidar y pagar la sanción reducida, porque subsanar voluntariamente antes del pliego de cargos permite aplicar los artículos 651 y 640 del Estatuto Tributario.',
-      'Pagar la sanción plena, porque la presentación extemporánea no admite gradualidad.',
-      'Solicitar una condonación ante la Subdirección de Recaudo.',
+      'Pagar la sanción plena, porque la presentación extemporánea de información exógena no admite gradualidad alguna, pues esta solo cubre las declaraciones tributarias.',
+      'Solicitar una condonación ante la Subdirección de Recaudo, por tratarse de un primer incumplimiento sin requerimiento previo.',
     ],
     correct: 1,
     justification:
@@ -305,10 +305,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una sociedad realiza una serie de operaciones legalmente constituidas cuyo único resultado es extender un beneficio tributario a un tercero que de otra manera no lo habría obtenido, sin justificación económica aparente. Si la DIAN inicia el procedimiento por abuso tributario y lo comprueba, debe:',
     options: [
-      'Anular de plano los negocios jurídicos celebrados.',
+      'Anular de plano los negocios jurídicos celebrados y dejar sin efectos sus inscripciones.',
       'Recaracterizar o reconfigurar la operación, estableciendo los efectos tributarios que se hubieran generado.',
-      'Imponer de inmediato la sanción por evasión, que es un hecho sancionable.',
-      'Suspender la personería jurídica de la sociedad.',
+      'Imponer de inmediato la sanción por evasión, porque el abuso tributario es un hecho sancionable autónomo.',
+      'Suspender la personería jurídica de la sociedad hasta que regularice su situación fiscal.',
     ],
     correct: 1,
     justification:
@@ -357,10 +357,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un empresario solicita la inscripción en el RUT a través del portal virtual de la Cámara de Comercio, con autenticación mediante Firma Electrónica. El funcionario de la Cámara le exige además fotocopia escaneada de su documento de identidad. ¿Es correcta esa exigencia?',
     options: [
-      'Sí, porque la Cámara siempre debe verificar la identidad con copia del documento.',
+      'Sí, porque la Cámara siempre debe verificar la identidad con copia del documento, incluso en los trámites virtuales.',
       'No, porque en el trámite virtual con Firma Electrónica no se exige la presentación de originales o fotocopias del documento de identificación.',
-      'Sí, pero solo cuando la Cámara no cuente con autenticación biométrica.',
-      'No, porque la identidad la verifica exclusivamente la Registraduría Nacional.',
+      'Sí, pero solo cuando la Cámara no cuente con autenticación biométrica que supla la verificación presencial.',
+      'No, porque la identidad la verifica exclusivamente la Registraduría Nacional del Estado Civil.',
     ],
     correct: 1,
     justification:
@@ -383,10 +383,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un ciudadano colombiano que también tiene nacionalidad española ingresa al país con su pasaporte español y solicita la devolución del IVA prevista para turistas extranjeros. La DIAN debe:',
     options: [
-      'Aceptar la solicitud, porque ingresó con pasaporte extranjero y tiene estatus de turista.',
+      'Aceptar la solicitud, porque ingresó con pasaporte extranjero y registra estatus de turista ante Migración Colombia.',
       'Rechazarla, porque los nacionales colombianos que ostenten doble nacionalidad no se consideran turistas extranjeros para este beneficio.',
-      'Suspenderla hasta que presente certificado de Migración Colombia.',
-      'Aceptarla únicamente si demuestra residencia fiscal en España.',
+      'Suspenderla hasta que presente certificado de Migración Colombia que acredite su condición migratoria.',
+      'Aceptarla únicamente si demuestra residencia fiscal en España mediante certificado oficial.',
     ],
     correct: 1,
     justification:
@@ -435,10 +435,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un contribuyente que YA estaba obligado a facturar electrónicamente opta por el Régimen Simple de Tributación y alega tener derecho a un plazo de dos meses para usar factura de talonario según las reglas del régimen. La DIAN debe:',
     options: [
-      'Aceptar, porque las reglas del SIMPLE otorgan ese beneficio a todos sus contribuyentes.',
+      'Aceptar, porque las reglas del SIMPLE otorgan ese beneficio a todos sus contribuyentes sin distinción de su historial de facturación.',
       'Rechazar, porque la facultad de usar factura de talonario por dos meses aplica solo a quienes no estaban obligados a facturar electrónicamente antes de optar por el régimen.',
-      'Aceptar, siempre que el contribuyente se someta a las reglas del inconveniente tecnológico.',
-      'Suspender su inscripción en el SIMPLE hasta que defina su sistema de facturación.',
+      'Aceptar, siempre que el contribuyente se someta a las reglas del inconveniente tecnológico y reporte la novedad al IMC.',
+      'Suspender su inscripción en el SIMPLE hasta que defina su sistema de facturación ante la Cámara de Comercio.',
     ],
     correct: 1,
     justification:
@@ -461,10 +461,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un contador público, persona natural no responsable de IVA (no superó los umbrales), presta servicios profesionales y entrega a su cliente un documento de cobro informal. Frente a la obligación de expedir factura de venta o documento equivalente:',
     options: [
-      'Está obligado, porque todas las personas que ejercen profesiones liberales deben expedir factura.',
+      'Está obligado, porque todas las personas que ejercen profesiones liberales deben expedir factura, sin importar su responsabilidad de IVA.',
       'No está obligado, si cumple la totalidad de las condiciones previstas en la norma para los no obligados (no responsable de IVA e ingresos inferiores a 3.500 UVT, entre otras).',
-      'Está obligado únicamente si el cliente la solicita formalmente.',
-      'Está obligado a expedir factura de talonario o de papel, no electrónica.',
+      'Está obligado únicamente si el cliente la solicita formalmente y acredita su condición de responsable de IVA.',
+      'Está obligado a expedir factura de talonario o de papel, porque la electrónica se reserva a las personas jurídicas.',
     ],
     correct: 1,
     justification:
@@ -513,10 +513,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Durante una inspección tributaria virtual, al finalizar la diligencia el contribuyente informa que no puede firmar el acta digitalizada por una falla en su escáner. Para formalizar el acta, el funcionario debe:',
     options: [
-      'Exigir la firma en físico al día siguiente, porque la firma virtual no es obligatoria.',
+      'Exigir la firma en físico al día siguiente, porque la firma virtual no es obligatoria cuando falla el escáner del contribuyente.',
       'Remitir el acta en formato PDF firmada por el funcionario al correo del contribuyente, para que la devuelva firmada a más tardar al día siguiente hábil de su remisión.',
-      'Dejar constancia de la negativa del contribuyente a firmar y proceder con la notificación.',
-      'Suspender la diligencia hasta que el contribuyente repare su escáner.',
+      'Dejar constancia de la negativa del contribuyente a firmar y proceder con la notificación por aviso del acta, sin más trámite.',
+      'Suspender la diligencia hasta que el contribuyente repare su escáner y pueda firmar el acta digitalizada en la misma sesión.',
     ],
     correct: 1,
     justification:
@@ -617,10 +617,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Respecto del convenio suscrito con la Empresa Operadora de Pagos (EOP) autorizada por la DIAN para la devolución del IVA a turistas extranjeros, su vigencia es de:',
     options: [
-      'Un (1) año, prorrogable tácitamente.',
-      'Dos (2) años, prorrogables por un año más.',
+      'Un (1) año, prorrogable tácitamente por un período igual, salvo aviso en contrario.',
+      'Dos (2) años, prorrogables por un año más mediante solicitud presentada ante la DIAN.',
       'Tres (3) años, prorrogables hasta por otro período igual por decisión de la DIAN.',
-      'Cinco (5) años, no prorrogables.',
+      'Cinco (5) años, no prorrogables, por ser el término máximo de los convenios.',
     ],
     correct: 2,
     justification:

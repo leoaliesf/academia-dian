@@ -84,9 +84,9 @@ export const QUESTIONS: Question[] = [
     statement:
       'En una reunión de área usted sostiene que una validación manual es indispensable para el control. Un superior presenta los datos de los últimos seis meses, que muestran que el sistema automatizado detecta los mismos casos y reduce el tiempo de respuesta. El equipo está dividido. ¿Qué conducta corresponde al nivel 2 de Adaptabilidad?',
     options: [
-      'Mantener su posición, porque los datos de seis meses no cubren todos los escenarios posibles y el control no admite riesgos.',
-      'Aceptar el cambio sin analizarlo, para no generar discusión con el superior.',
-      'Solicitar que el tema se decida en otra reunión y abstenerse de pronunciarse.',
+      'Mantener su posición, porque los datos de seis meses no cubren todos los escenarios posibles y el control tributario no admite ningún riesgo.',
+      'Aceptar el cambio sin analizarlo, para no generar discusión con el superior y evitar que el equipo se divida.',
+      'Solicitar que el tema se decida en otra reunión y abstenerse de pronunciarse, para no comprometer su posición ante el equipo.',
       'Reconocer los datos, revaluar su propia certeza y apoyar la implementación del cambio, aportando para que el control se mantenga donde efectivamente se requiere.',
     ],
     correct: 3,
@@ -138,10 +138,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Su superior le pide agilizar un trámite que aún no cuenta con la totalidad de los soportes exigidos por la norma, indicándole que el interesado es una persona confiable y que los documentos llegarán después. ¿Qué conducta corresponde al nivel 1 de Comportamiento ético?',
     options: [
-      'Tramitar el caso como se lo piden, dejando constancia en el sistema de que actuó por instrucción del superior.',
-      'Negarse de manera terminada a realizar cualquier gestión relacionada con el caso.',
+      'Tramitar el caso como se lo piden, dejando constancia en el sistema de que actuó por instrucción del superior, porque la responsabilidad recaería en quien dio la orden.',
+      'Negarse de manera terminada a realizar cualquier gestión relacionada con el caso, porque sin todos los soportes exigidos no existe actuación posible.',
       'Realizar la parte de la gestión que es procedente con los soportes existentes y, si falta un requisito de ley, señalarle la situación al superior y buscar orientación en las instancias competentes antes de resolver.',
-      'Comentarle la situación a un compañero para que sea él quien advierta al superior.',
+      'Comentarle la situación a un compañero para que sea él quien advierta al superior, y así evitar un conflicto directo con quien dio la instrucción.',
     ],
     correct: 2,
     justification:
@@ -192,9 +192,9 @@ export const QUESTIONS: Question[] = [
     statement:
       'En su equipo se ha generalizado el uso compartido de credenciales de acceso al sistema, con el argumento de no bloquear el servicio cuando alguien se ausenta. Usted no participa en esa práctica, pero el mecanismo se usa abiertamente. ¿Qué conducta corresponde al nivel 4 de Comportamiento ético?',
     options: [
-      'Abstenerse de usar credenciales ajenas y no referirse al tema, para no entrometerse en la forma de trabajar de los demás.',
-      'Reportar ante la oficina de control a cada compañero que haya usado credenciales ajenas.',
-      'Pedir al jefe inmediato que prohíba por escrito la práctica y esperar la instrucción para el equipo.',
+      'Abstenerse de usar credenciales ajenas y no referirse al tema, para no entrometerse en la forma de trabajar de los demás, pues cada funcionario responde por sus propios accesos.',
+      'Reportar ante la oficina de control a cada compañero que haya usado credenciales ajenas, para que la entidad determine las responsabilidades individuales y aplique las sanciones que correspondan.',
+      'Pedir al jefe inmediato que prohíba por escrito la práctica y esperar la instrucción para el equipo, pues la decisión sobre las prácticas del equipo corresponde a la jefatura.',
       'Promover en el equipo la adopción de una práctica de custodia de credenciales (uso individual, solicitud de permisos por los canales definidos y plan de contingencia para ausencias), sustentarla en el código de integridad y sostenerla con su ejemplo.',
     ],
     correct: 3,
@@ -219,10 +219,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'En la ventanilla explica a un ciudadano un procedimiento de tres pasos para completar su trámite. Al terminar, el ciudadano asiente con la cabeza y se dispone a retirarse, pero usted advierte que no tomó nota de nada. ¿Qué conducta corresponde al nivel 1 de Comunicación efectiva?',
     options: [
-      'Dar por cumplida la atención, porque la información fue entregada de forma clara.',
+      'Dar por cumplida la atención, porque la información fue entregada de forma clara y el ciudadano afirmó haber entendido.',
       'Antes de que se retire, pedirle que le repita los pasos principales o confirmar con él los dos datos críticos del trámite, para asegurarse de que comprendió.',
-      'Entregarle un folleto con los pasos y continuar con el siguiente usuario de la fila.',
-      'Repetirle la explicación en voz más alta, por si no escuchó bien.',
+      'Entregarle un folleto con los pasos y continuar con el siguiente usuario de la fila, para no retrasar la atención de los demás.',
+      'Repetirle la explicación en voz más alta, por si no escuchó bien, cuidando que el resto de la fila también pueda oírla.',
     ],
     correct: 1,
     justification:
@@ -246,10 +246,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Necesita información de otra área para resolver un caso, pero el correo que envió hace tres días no obtuvo respuesta y el término está próximo a vencer. ¿Qué conducta corresponde al nivel 1 de Comunicación efectiva?',
     options: [
-      'Escalar el caso al jefe inmediato para que el área responda por conducto jerárquico.',
-      'Reenviar el mismo correo, marcándolo como urgente.',
+      'Escalar el caso al jefe inmediato para que el área responda por conducto jerárquico, dado que ya pasaron tres días sin respuesta.',
+      'Reenviar el mismo correo, marcándolo como urgente y solicitando confirmación de lectura, para dejar constancia del segundo intento.',
       'Dirigirse al área y formular las preguntas concretas sobre la información que necesita, precisando para qué la requiere y el término que debe atender.',
-      'Aplazar la tarea hasta recibir la información solicitada.',
+      'Aplazar la tarea hasta recibir la información solicitada, informando del aplazamiento para que el término no se dé por vencido.',
     ],
     correct: 2,
     justification:
@@ -273,9 +273,9 @@ export const QUESTIONS: Question[] = [
     statement:
       'Debe informar a un funcionario de otra área que su solicitud de información será negada. Es un par suyo y sabe que la respuesta le resultará incómoda. ¿Qué conducta corresponde al nivel 2 de Comunicación efectiva?',
     options: [
-      'Posponer la comunicación hasta encontrar una alternativa que permita darle una respuesta favorable.',
-      'Comunicarle la decisión por un chat informal, para que el tema no trascienda en el área.',
-      'Delegar la comunicación en un tercero, para preservar la relación de trabajo.',
+      'Posponer la comunicación hasta encontrar una alternativa que permita darle una respuesta favorable, para no deteriorar la relación de trabajo.',
+      'Comunicarle la decisión por un chat informal, para que el tema no trascienda en el área y no exponga al funcionario ante sus compañeros.',
+      'Delegar la comunicación en un tercero, para preservar la relación de trabajo y evitar que el desacuerdo se convierta en un conflicto personal.',
       'Comunicarle la decisión con claridad y fundamento, escuchar sus argumentos e indicarle el canal previsto para revisar el caso si surge nueva evidencia.',
     ],
     correct: 3,
@@ -301,9 +301,9 @@ export const QUESTIONS: Question[] = [
       'Le asignan tres tareas con el mismo plazo de entrega y con recursos limitados. A mitad de semana advierte que no podrá terminarlas todas con la calidad exigida. ¿Qué conducta corresponde al nivel 1 de Orientación al logro?',
     options: [
       'Priorizar según los objetivos asignados, reorganizar su tiempo y los recursos, aprovechar las herramientas tecnológicas disponibles y, si algún plazo está en riesgo, informarlo oportunamente a quien corresponda.',
-      'Esperar hasta la fecha de entrega y reportar las tareas que no pudo terminar.',
-      'Entregar las tres tareas por debajo del estándar, con tal de cumplir con la fecha.',
-      'Pedir a un compañero que asuma una de las tareas para no incumplir.',
+      'Esperar hasta la fecha de entrega y reportar las tareas que no pudo terminar, para que la jefatura decida cómo redistribuirlas y se deje constancia de la carga asignada.',
+      'Entregar las tres tareas por debajo del estándar, con tal de cumplir con la fecha, pues la puntualidad es el criterio principal que evalúa la competencia.',
+      'Pedir a un compañero que asuma una de las tareas para no incumplir, comprometiéndose a asumir una de las suyas en la siguiente oportunidad.',
     ],
     correct: 0,
     justification:
@@ -327,10 +327,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'A mitad de la jornada el sistema de gestión presenta una falla general. Usted tiene diez solicitudes pendientes de respuesta cuyos términos vencen en dos días y varias de ellas requieren consultar el sistema. ¿Qué conducta corresponde al nivel 1 de Orientación al logro?',
     options: [
-      'Esperar a que el sistema se restablezca para retomar las labores, porque sin él no es posible avanzar.',
+      'Esperar a que el sistema se restablezca para retomar las labores, porque sin él no es posible avanzar y cualquier gestión quedaría incompleta.',
       'Reportar la falla por el canal interno, adelantar el trabajo que no depende del sistema, llevar el control de lo pendiente y preparar las respuestas para registrarlas cuando el servicio se restablezca.',
-      'Solicitar que se suspendan los términos de las solicitudes mientras dure la falla.',
-      'Trabajar horas adicionales al día siguiente, sin informar a nadie la situación.',
+      'Solicitar que se suspendan los términos de las solicitudes mientras dure la falla, para no incurrir en incumplimientos ajenos a su voluntad.',
+      'Trabajar horas adicionales al día siguiente, sin informar a nadie la situación, para recuperar el tiempo perdido y no afectar los términos pendientes.',
     ],
     correct: 1,
     justification:
@@ -354,10 +354,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un ciudadano que vive en un municipio lejano llega con un documento incompleto y solicita que se le reciba de todas formas, porque el término vence ese día. Se muestra visiblemente alterado. ¿Qué conducta corresponde al nivel 1 de Orientación al usuario y al ciudadano?',
     options: [
-      'Recibir el documento incompleto para evitar que el ciudadano pierda el viaje, dejando constancia de la situación.',
-      'Indicarle que debe leer los requisitos publicados en la página web y continuar con el siguiente turno.',
+      'Recibir el documento incompleto para evitar que el ciudadano pierda el viaje, dejando constancia de la situación y de que los soportes faltantes se aportarán después.',
+      'Indicarle que debe leer los requisitos publicados en la página web y continuar con el siguiente turno, para no retrasar la fila de atención.',
       'Explicarle con claridad que en esas condiciones no es posible recibirlo, indicarle qué debe completar, los canales disponibles para hacerlo y el efecto real del término, atendiéndolo con disposición y respeto.',
-      'Sugerirle que presente una queja por la demora en la atención, para que quede constancia de su situación.',
+      'Sugerirle que presente una queja por la demora en la atención, para que quede constancia de su situación y la entidad revise el procedimiento.',
     ],
     correct: 2,
     justification:
@@ -381,10 +381,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un ciudadano llama visiblemente alterado y, en su reclamo por una demora, eleva el tono y usa palabras ofensivas. El caso que plantea tiene fundamento parcial. ¿Qué conducta corresponde al nivel 1 de Orientación al usuario y al ciudadano?',
     options: [
-      'Advertirle que si continúa con ese tono la llamada será terminada.',
+      'Advertirle que si continúa con ese tono la llamada será terminada, porque la atención debe prestarse en un marco de respeto mutuo.',
       'Escuchar sin interrumpir, reconocer la molestia, explicarle con lenguaje claro las opciones que el procedimiento permite y señalarle los canales para escalar el caso si lo considera necesario.',
-      'Responder en el mismo tono para que entienda que será atendido cuando se calme.',
-      'Transferir la llamada a otro funcionario para que la atienda.',
+      'Responder en el mismo tono para que entienda que será atendido cuando se calme, sin aceptar que un ciudadano trate así a un servidor público.',
+      'Transferir la llamada a otro funcionario para que la atienda, dado que el caso genera una carga emocional que afecta la objetividad.',
     ],
     correct: 1,
     justification:
@@ -435,10 +435,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un compañero recién incorporado le pide ayuda para entender un procedimiento, en un momento en que usted está atrasado con sus propias tareas. ¿Qué conducta corresponde al nivel 1 de Trabajo en equipo?',
     options: [
-      'Indicarle que no puede ayudarlo en ese momento porque tiene trabajo atrasado.',
+      'Indicarle que no puede ayudarlo en ese momento porque tiene trabajo atrasado, y sugerirle que vuelva cuando la carga de ambos lo permita.',
       'Dedicarle un tiempo acorde con sus posibilidades para explicarle lo que necesita, y señalarle dónde está la información y a quién más puede consultar.',
-      'Sugerirle que consulte al coordinador, porque no es su responsabilidad entrenarlo.',
-      'Realizarle el trabajo para que el equipo no se atrase.',
+      'Sugerirle que consulte al coordinador, porque no es su responsabilidad entrenarlo y esa función corresponde a la jefatura del área.',
+      'Realizarle el trabajo para que el equipo no se atrase, aunque ello implique dejar de lado sus propias tareas por un tiempo.',
     ],
     correct: 1,
     justification:
@@ -462,10 +462,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'El equipo lleva dos semanas de retraso en una meta conjunta. En la reunión, un integrante afirma que el problema son dos compañeros que no están aportando y propone asignarles menos tareas. Usted integra el equipo y participa en la reunión. ¿Qué conducta corresponde al nivel 3 de Trabajo en equipo?',
     options: [
-      'Respaldar la propuesta, para que la meta se cumpla con quienes efectivamente están trabajando.',
-      'Evitar pronunciarse para no afectar el ambiente de trabajo.',
+      'Respaldar la propuesta, para que la meta se cumpla con quienes efectivamente están trabajando y no se retrase aún más el equipo.',
+      'Evitar pronunciarse para no afectar el ambiente de trabajo, confiando en que la jefatura advertirá la desviación por los reportes.',
       'Verificar con datos el avance del equipo, revisar con todos los obstáculos que explican las desviaciones y orientar la reorganización del trabajo, reconociendo el aporte de cada integrante.',
-      'Informar reservadamente al jefe que dos integrantes no están aportando, para que intervenga.',
+      'Informar reservadamente al jefe que dos integrantes no están aportando, para que intervenga y reasigne sus tareas sin exponerlos ante el equipo.',
     ],
     correct: 2,
     justification:
@@ -516,10 +516,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Mientras tramitan solicitudes de rutina, un compañero comenta en voz alta que ese trabajo «no le cambia la vida a nadie» y que la entidad funcionaría igual sin su oficina. ¿Qué conducta corresponde al valor de Compromiso?',
     options: [
-      'Darle la razón para evitar una discusión y continuar con el trabajo en silencio.',
-      'Recordarle que ese tipo de comentarios puede acarrearle una sanción disciplinaria.',
+      'Darle la razón para evitar una discusión y continuar con el trabajo en silencio, pues la actitud del compañero no afecta el cumplimiento de las tareas.',
+      'Recordarle que ese tipo de comentarios puede acarrearle una sanción disciplinaria, para que mida el efecto de sus palabras en el equipo.',
       'Reconocer que la tarea parece menor, explicarle con un ejemplo concreto el efecto del trámite para el ciudadano y mantener el mismo cuidado en la atención, sin descalificar al compañero.',
-      'Informar el comentario al jefe inmediato, para que ubique al compañero en otro contexto de trabajo.',
+      'Informar el comentario al jefe inmediato, para que ubique al compañero en otro contexto de trabajo donde valore mejor su función.',
     ],
     correct: 2,
     justification:
@@ -543,10 +543,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Está a punto de vencer el término legal para resolver una solicitud y tiene tres casos más en la misma situación. Sabe que no alcanzará a resolverlos todos con el análisis completo que cada uno requiere. ¿Qué conducta corresponde al valor de Diligencia?',
     options: [
-      'Dejar vencer los términos en silencio, a la espera de que la situación no genere consecuencias.',
-      'Resolver los casos a la carrera, con el análisis que alcance en el tiempo disponible.',
+      'Dejar vencer los términos en silencio, a la espera de que la situación no genere consecuencias, pues la sobrecarga permite priorizar otros casos.',
+      'Resolver los casos a la carrera, con el análisis que alcance en el tiempo disponible, para que al menos queden atendidos dentro del término.',
       'Priorizar conforme a los términos, informar la situación a quien corresponda y adelantar la gestión de todos los casos para que ninguno quede sin atención.',
-      'Solicitar una prórroga general de los términos, alegando sobrecarga de trabajo.',
+      'Solicitar una prórroga general de los términos, alegando sobrecarga de trabajo, mientras se resuelven los casos con el análisis completo.',
     ],
     correct: 2,
     justification:
@@ -570,10 +570,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Debe entregar hoy un informe de gestión. Le falta verificar una cifra, lo que tomaría aproximadamente dos horas de trabajo en los sistemas disponibles, y no hay otra persona que pueda hacerlo. ¿Qué conducta corresponde al valor de Diligencia?',
     options: [
-      'Entregar el informe con la cifra sin verificar, dejando una nota interna que indique que el dato está pendiente.',
-      'Presentar el informe a tiempo con la cifra tomada del informe del período anterior.',
+      'Entregar el informe con la cifra sin verificar, dejando una nota interna que indique que el dato está pendiente, para no incumplir la fecha de entrega.',
+      'Presentar el informe a tiempo con la cifra tomada del informe del período anterior, suponiendo que no habrá variaciones significativas.',
       'Verificar la cifra con los medios disponibles, entregar el informe completo y actualizado en el menor tiempo posible e informar a quien corresponda el ajuste del momento de entrega.',
-      'Dejar el informe para el día siguiente, sin informar la situación.',
+      'Dejar el informe para el día siguiente, sin informar la situación, para disponer del tiempo necesario y verificar la cifra con calma.',
     ],
     correct: 2,
     justification:
@@ -597,10 +597,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un vecino suyo se acerca a su lugar de trabajo para pedirle que su solicitud sea tramitada «con prioridad», recordándole la relación personal que los une. ¿Qué conducta corresponde al valor de Honestidad?',
     options: [
-      'Ayudarlo a radicar su solicitud con prioridad, porque conocerlo no constituye ningún beneficio indebido.',
+      'Ayudarlo a radicar su solicitud con prioridad, porque conocerlo no constituye ningún beneficio indebido y la relación personal no altera el trámite.',
       'Indicarle que no puede darle trato preferencial y explicarle los canales ordinarios para presentar su solicitud, atendiéndolo con la misma diligencia que a cualquier ciudadano.',
-      'Abstenerse de atenderlo y pedir a un compañero que lo haga en su lugar.',
-      'Tramitar su solicitud sin mencionar a nadie la relación personal que existe.',
+      'Abstenerse de atenderlo y pedir a un compañero que lo haga en su lugar, para que la relación personal no influya en la decisión.',
+      'Tramitar su solicitud sin mencionar a nadie la relación personal que existe, para evitar suspicacias y no perjudicar al vecino.',
     ],
     correct: 1,
     justification:
@@ -651,10 +651,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Durante la atención al público, un compañero hace comentarios burlones sobre la forma de hablar y la apariencia de una ciudadana que acaba de salir, y espera la complicidad del grupo. ¿Qué conducta corresponde al valor de Respeto?',
     options: [
-      'Reírse del comentario para no generar tensión con el compañero y continuar con la jornada.',
+      'Reírse del comentario para no generar tensión con el compañero y continuar con la jornada, pues se trata de una broma sin mayor trascendencia.',
       'Señalarle en privado que ese tipo de comentarios resulta ofensivo y recordarle que el trato debe ser digno para todas las personas, absteniéndose de continuar esa conversación.',
-      'Responderle con dureza delante del grupo, para que entienda la gravedad de lo que dijo.',
-      'Informar el comentario a la oficina de control disciplinario sin decirle nada al compañero.',
+      'Responderle con dureza delante del grupo, para que entienda la gravedad de lo que dijo y el equipo no repita ese tipo de comentarios.',
+      'Informar el comentario a la oficina de control disciplinario sin decirle nada al compañero, para que la entidad investigue y aplique una sanción.',
     ],
     correct: 1,
     justification:
@@ -704,10 +704,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un usuario, agradecido por la atención que usted le prestó en un trámite, le deja en su escritorio una caja de obsequios «para que comparta con el equipo». Usted no participó en ninguna decisión que favoreciera al usuario. ¿Qué conducta corresponde al nivel 1 de Comportamiento ético?',
     options: [
-      'Aceptar el obsequio y compartirlo con el equipo, porque es una muestra de agradecimiento sin contraprestación.',
+      'Aceptar el obsequio y compartirlo con el equipo, porque es una muestra de agradecimiento sin contraprestación y rechazarlo podría ofender al usuario.',
       'Rechazar amablemente el obsequio, explicar que los servidores públicos no aceptan este tipo de beneficios y dejar constancia del hecho por los canales institucionales si resulta pertinente.',
-      'Aceptar el obsequio y reportarlo formalmente a la oficina de control interno para que quede registrado.',
-      'Devolver el obsequio sin dar explicaciones para no incomodar al usuario.',
+      'Aceptar el obsequio y reportarlo formalmente a la oficina de control interno para que quede registrado, de modo que la entidad conozca el hecho.',
+      'Devolver el obsequio sin dar explicaciones para no incomodar al usuario, aunque ello impida que conozca la regla que se aplica.',
     ],
     correct: 1,
     justification:
@@ -730,10 +730,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'En su área se ha instalado la práctica de «agilizar» de manera informal algunos trámites de personas conocidas por los integrantes del equipo, sin alterar los expedientes pero saltándose turnos internos. Usted no participa de esa práctica. ¿Qué conducta corresponde al nivel 4 de Comportamiento ético?',
     options: [
-      'Limitarse a no participar y a resolver con estricta sujeción a las reglas los casos que le corresponden.',
+      'Limitarse a no participar y a resolver con estricta sujeción a las reglas los casos que le corresponden, para no inmiscuirse en la conducta de los demás integrantes del equipo.',
       'Promover en el equipo un acuerdo expreso sobre trato igualitario y estricto orden de trámite, explicar el fundamento ético y normativo, y sostener con el ejemplo la práctica, de modo que el equipo deje la conducta informal.',
-      'Denunciar a los compañeros ante la oficina de control disciplinario antes de hablar con el equipo.',
-      'Dejar constancia individual en cada expediente suyo de que usted no participa en esas prácticas.',
+      'Denunciar a los compañeros ante la oficina de control disciplinario antes de hablar con el equipo, para que la entidad investigue la práctica informal y determine responsabilidades.',
+      'Dejar constancia individual en cada expediente suyo de que usted no participa en esas prácticas, para protegerse de cualquier cuestionamiento posterior sobre su actuar.',
     ],
     correct: 1,
     justification:
@@ -756,10 +756,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Por teléfono, usted da a un compañero de otra ciudad las instrucciones para registrar un trámite en el sistema: son cinco pasos con nombres técnicos. El compañero dice que entendió, pero usted nota dudas en su tono. ¿Qué conducta corresponde al nivel 1 de Comunicación efectiva?',
     options: [
-      'Dar por terminada la llamada, porque el compañero afirmó que entendió.',
+      'Dar por terminada la llamada, porque el compañero afirmó que entendió y insistir podría hacerle sentir que se duda de su capacidad.',
       'Pedirle que le repita los pasos clave o que confirme con sus palabras lo que debe hacer, y aclarar las dudas antes de terminar la llamada.',
-      'Enviarle el manual completo del sistema por correo para que lo estudie por su cuenta.',
-      'Sugerirle que pida ayuda a un compañero que esté cerca de su puesto.',
+      'Enviarle el manual completo del sistema por correo para que lo estudie por su cuenta, y continuar con sus propias tareas pendientes.',
+      'Sugerirle que pida ayuda a un compañero que esté cerca de su puesto, para que le explique los pasos mientras usted atiende otros asuntos.',
     ],
     correct: 1,
     justification:
@@ -782,10 +782,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'El mismo día debe presentar una decisión técnica al comité directivo y explicarla al equipo operativo que la ejecutará. El comité necesita el análisis y los fundamentos; el equipo necesita instrucciones claras de aplicación. ¿Qué conducta corresponde al nivel 2 de Comunicación efectiva?',
     options: [
-      'Preparar una única presentación técnica completa y usarla en ambas audiencias para no duplicar trabajo.',
+      'Preparar una única presentación técnica completa y usarla en ambas audiencias para no duplicar trabajo, aunque el nivel de detalle no se ajuste a cada una.',
       'Adaptar el discurso, el nivel de detalle y el canal a cada interlocutor: análisis y fundamentos para el comité, e instrucciones operativas y espacio de preguntas para el equipo.',
-      'Presentar solo al comité directivo y enviar al equipo las diapositivas por correo.',
-      'Redactar un oficio formal con la decisión y enviarlo a ambas audiencias, evitando reuniones.',
+      'Presentar solo al comité directivo y enviar al equipo las diapositivas por correo, para que cada audiencia revise la información que necesita.',
+      'Redactar un oficio formal con la decisión y enviarlo a ambas audiencias, evitando reuniones y dejando constancia escrita de la comunicación.',
     ],
     correct: 1,
     justification:
@@ -808,10 +808,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'El equipo acuerda una norma común: cada integrante registrará el avance diario de sus casos en una tabla compartida, antes de las 4:00 p. m. Usted considera que registrar el avance le resta tiempo al trabajo de fondo. ¿Qué conducta corresponde al nivel 1 de Trabajo en equipo?',
     options: [
-      'Registrar su avance solo los días en que tenga tiempo disponible.',
+      'Registrar su avance solo los días en que tenga tiempo disponible, para no restar horas al trabajo de fondo que considera prioritario.',
       'Cumplir el registro diario según lo acordado y colaborar con el equipo en el uso de la tabla, planteando su observación en el espacio del equipo para evaluarla colectivamente.',
-      'No registrar su avance y explicar que su tiempo debe destinarse al trabajo de fondo.',
-      'Registrar su avance en su propio archivo y enviarlo por correo al final de la semana.',
+      'No registrar su avance y explicar que su tiempo debe destinarse al trabajo de fondo, pues la tabla no aporta valor a su gestión individual.',
+      'Registrar su avance en su propio archivo y enviarlo por correo al final de la semana, para que el equipo lo consolide cuando lo requiera.',
     ],
     correct: 1,
     justification:
@@ -834,10 +834,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'El equipo acaba de cumplir una meta exigente. En la reunión de cierre, un integrante, que aportó poco durante el proceso, celebra el resultado como propio; otro, que resolvió los casos más difíciles, permanece en silencio y su trabajo pasó inadvertido. ¿Qué conducta corresponde al nivel 3 de Trabajo en equipo?',
     options: [
-      'Limitarse a felicitar al equipo en general, sin entrar en detalles.',
+      'Limitarse a felicitar al equipo en general, sin entrar en detalles, para que nadie se sienta excluido y el reconocimiento se reparta por igual entre todos.',
       'Reconocer públicamente los aportes concretos de cada integrante, incluido el trabajo silencioso que sostuvo el resultado, y orientar la conversación para que todos se sientan parte del logro, cuidando el clima del equipo.',
-      'Señalar a quien celebró sin aportar lo suficiente, para que el equipo sepa la verdad.',
-      'Comentar en privado, con quien resolvió los casos difíciles, que su trabajo no fue reconocido.',
+      'Señalar a quien celebró sin aportar lo suficiente, para que el equipo sepa la verdad sobre el esfuerzo real de cada integrante y ajuste sus expectativas.',
+      'Comentar en privado, con quien resolvió los casos difíciles, que su trabajo no fue reconocido, para que reclame por su cuenta el reconocimiento que merece.',
     ],
     correct: 1,
     justification:
@@ -860,10 +860,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Faltan diez minutos para terminar su jornada cuando un ciudadano de la tercera edad llega visiblemente confundido con un requerimiento que no comprende. El ciudadano no sabe a quién acudir. ¿Qué conducta corresponde al valor de Compromiso?',
     options: [
-      'Indicarle que el horario de atención está por terminar y que regrese al día siguiente.',
+      'Indicarle que el horario de atención está por terminar y que regrese al día siguiente, para que sea atendido con el tiempo que el caso requiere.',
       'Atenderlo con disposición plena, escuchar sin distracciones su situación, orientarlo con claridad sobre el requerimiento y asegurarse de que sepa qué debe hacer y a quién dirigirse.',
-      'Resolver el requerimiento por él, para que no tenga que volver.',
-      'Remitirlo al punto de información sin verificar que allí le puedan orientar.',
+      'Resolver el requerimiento por él, para que no tenga que volver, aunque ello implique asumir funciones que corresponden al ciudadano.',
+      'Remitirlo al punto de información sin verificar que allí le puedan orientar, para que reciba atención de una dependencia especializada.',
     ],
     correct: 1,
     justification:
@@ -886,10 +886,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Le asignan un expediente de fiscalización y advierte que el contribuyente es una empresa de la que su cónyuge es socio. El caso no está relacionado con las gestiones de su cónyuge, pero usted conoce a los directivos de la empresa. ¿Qué conducta corresponde al valor de Honestidad?',
     options: [
-      'Tramitar el caso con especial rigor para demostrar imparcialidad, sin mencionar la relación.',
+      'Tramitar el caso con especial rigor para demostrar imparcialidad, sin mencionar la relación, porque la rigurosidad garantiza una decisión objetiva.',
       'Informar de inmediato el conflicto de interés a su superior o a la instancia competente y apartarse del conocimiento o decisión del asunto, conforme a los canales institucionales.',
-      'Tramitar el caso normalmente, porque la relación es con su cónyuge y no con usted.',
-      'Solicitar que le cambien el caso sin explicar la razón, para evitar comentarios.',
+      'Tramitar el caso normalmente, porque la relación es con su cónyuge y no con usted, y no existe un interés personal directo en el resultado.',
+      'Solicitar que le cambien el caso sin explicar la razón, para evitar comentarios y preservar la reserva sobre la situación familiar.',
     ],
     correct: 1,
     justification:
@@ -912,10 +912,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Tiene sobre su escritorio dos casos idénticos en sus hechos: uno pertenece a una empresa grande, representada por una firma que lo ha tratado con cordialidad; el otro, a un pequeño comerciante que ha sido insistente y algo descortés en sus solicitudes. Ambos vencen el mismo día. ¿Qué conducta corresponde al valor de Justicia?',
     options: [
-      'Resolver primero el caso del comerciante, para que deje de insistir.',
+      'Resolver primero el caso del comerciante, para que deje de insistir y pueda continuar con la atención de los demás casos pendientes.',
       'Resolver ambos casos con base en los hechos y la norma, en igualdad de condiciones y sin dejarse influir por simpatías, antipatías ni presiones, aplicando el mismo criterio a los dos.',
-      'Resolver primero el caso de la empresa grande, porque su apoderado ha sido cordial.',
-      'Delegar uno de los casos para no tener que decidir entre los dos.',
+      'Resolver primero el caso de la empresa grande, porque su apoderado ha sido cordial y la relación facilita el intercambio de información.',
+      'Delegar uno de los casos para no tener que decidir entre los dos, y así evitar que cualquier preferencia personal influya en la decisión.',
     ],
     correct: 1,
     justification:
@@ -938,10 +938,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un ciudadano, alterado por una sanción que considera injusta, lo insulta y alza la voz frente a otras personas en la oficina. Usted debe explicarle la decisión y los recursos que proceden. ¿Qué conducta corresponde al valor de Respeto?',
     options: [
-      'Responderle en el mismo tono para que entienda la autoridad de la entidad.',
+      'Responderle en el mismo tono para que entienda la autoridad de la entidad y no vuelva a dirigirse así a un servidor público frente a los demás.',
       'Mantener la calma y el trato digno, no devolver la agresión verbal, exponer con argumentos y lenguaje respetuoso la decisión y explicarle los recursos a los que tiene derecho, sin ironías ni burlas.',
-      'Negarse a atenderlo hasta que se disculpe por su comportamiento.',
-      'Solicitar a seguridad que lo retire de inmediato, sin darle ninguna explicación.',
+      'Negarse a atenderlo hasta que se disculpe por su comportamiento, para preservar la dignidad del servidor y del resto de las personas presentes.',
+      'Solicitar a seguridad que lo retire de inmediato, sin darle ninguna explicación, para proteger el orden y evitar que la situación escale.',
     ],
     correct: 1,
     justification:

@@ -19,10 +19,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'En una visita de supervisión a un Intermediario del Mercado Cambiario (IMC), un funcionario de la DIAN observa que varias declaraciones de cambio carecen de la descripción del concepto de la operación y del país de procedencia de las divisas, aunque incluyen valor y fecha. El IMC alega que transmitió la información al Banco de la República dentro del plazo. El funcionario debe:',
     options: [
-      'Considerar suficiente la transmisión oportuna, porque la circular solo exige valor y fecha.',
+      'Considerar suficiente la transmisión oportuna, porque la circular solo exige el valor y la fecha como datos mínimos de la operación.',
       'Requerir al IMC ajustar sus mecanismos de recepción para exigir siempre la información completa de los datos mínimos de las operaciones de cambio y verificar su transmisión al Banco de la República.',
-      'Solicitar únicamente a los residentes que actualicen sus datos de identificación.',
-      'Imponer de inmediato la sanción máxima por infracción cambiaria.',
+      'Solicitar únicamente a los residentes que actualicen sus datos de identificación, por ser los únicos obligados a suministrarlos.',
+      'Imponer de inmediato la sanción máxima por infracción cambiaria, dado que la omisión afecta el registro de la balanza cambiaria.',
     ],
     correct: 1,
     justification:
@@ -45,10 +45,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un residente registró por error su operación como "ingreso" cuando en realidad era un "egreso" de divisas, y el IMC pretende enmendar la naturaleza mediante el mecanismo de correcciones. El funcionario de la DIAN debe indicar que:',
     options: [
-      'La corrección procede siempre que exista solicitud escrita del cliente.',
+      'La corrección procede siempre que exista solicitud escrita del cliente y se acredite el error en la operación.',
       'La naturaleza de ingreso, egreso o devolución no puede ser objeto de corrección: debe tramitarse la anulación de la declaración y la posterior transmisión de una nueva.',
-      'La declaración debe mantenerse sin cambio alguno, porque la circular prohíbe toda modificación posterior.',
-      'La corrección procede únicamente si el valor de la operación supera cierta cuantía.',
+      'La declaración debe mantenerse sin cambio alguno, porque la circular prohíbe toda modificación posterior a la transmisión.',
+      'La corrección procede únicamente si el valor de la operación supera la cuantía mínima fijada por el Banco de la República.',
     ],
     correct: 1,
     justification:
@@ -71,10 +71,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un no residente desea reemplazar una declaración de cambio por tres declaraciones separadas que reflejen con mayor precisión cada servicio, manteniendo el mismo valor total. El procedimiento correcto es:',
     options: [
-      'Anular la declaración inicial sin permitir nuevas declaraciones.',
+      'Anular la declaración inicial sin permitir nuevas declaraciones, porque el reemplazo por varias declaraciones solo opera dentro del mismo mes calendario.',
       'Usar el procedimiento de "cambios de declaración de cambio", reemplazando la inicial por varias del mismo o diferente tipo, siempre que la sumatoria de los valores de negociación sea igual al valor original.',
-      'Presentar una solicitud formal de devolución de divisas y registrar las nuevas como ingresos.',
-      'Modificar directamente los valores mediante correcciones sucesivas.',
+      'Presentar una solicitud formal de devolución de divisas ante el IMC y registrar las nuevas declaraciones como ingresos para compensar el valor total.',
+      'Modificar directamente los valores mediante correcciones sucesivas autorizadas por el IMC, sin necesidad de anular la declaración.',
     ],
     correct: 1,
     justification:
@@ -97,10 +97,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una sociedad importadora recibe maquinaria cuyo documento de transporte tiene fecha 5 de marzo y paga al proveedor extranjero a través de un IMC el 25 de marzo, es decir, dentro de un plazo igual o inferior a un mes. El numeral cambiario aplicable y la regla sobre compensación son:',
     options: [
-      'Numeral 2022; la compensación con cuentas por cobrar del mismo proveedor es admisible.',
+      'Numeral 2022; la compensación con cuentas por cobrar del mismo proveedor es admisible en este caso.',
       'Numeral 2015, y la compensación de obligaciones no es admisible en operaciones de comercio exterior: debe canalizarse la totalidad del pago.',
-      'Numeral 2017, por tratarse de un pago anticipado.',
-      'Numeral 2026, por tratarse de una dación en pago.',
+      'Numeral 2017, por tratarse de un pago anticipado dentro del plazo de un mes desde el documento de transporte.',
+      'Numeral 2026, por tratarse de una dación en pago de la obligación con el proveedor extranjero.',
     ],
     correct: 1,
     justification:
@@ -126,7 +126,7 @@ export const QUESTIONS: Question[] = [
       'Nada, porque el pago se realiza íntegramente en moneda legal y el proveedor tiene cuenta local.',
       'El suministro de los datos mínimos de la Declaración de Cambio por importaciones de bienes al IMC desde el cual se realiza el pago, aplicando el numeral 2015.',
       'La Declaración de Cambio con el numeral 2022, porque el pago en moneda legal siempre se registra como financiación.',
-      'La anulación de la operación, por pagarse por fuera del mercado cambiario.',
+      'La anulación de la operación, por considerarse un pago efectuado por fuera del mercado cambiario.',
     ],
     correct: 1,
     justification:
@@ -176,9 +176,9 @@ export const QUESTIONS: Question[] = [
       'Una entidad financiera vigilada por la Superintendencia Financiera desea operar como IMC. El funcionario de la DIAN debe explicar que:',
     options: [
       'Basta con su licencia de funcionamiento para iniciar operaciones de cambio, porque la vigilancia de la Superintendencia Financiera cubre también el control cambiario.',
-      'La inscripción como IMC se entiende automática con la primera operación reportada, pues la circular no exige un trámite previo de autorización.',
+      'La inscripción como IMC se entiende automática con la primera operación reportada, pues la circular no exige un trámite previo de autorización ante el Banco de la República.',
       'Previo a realizar operaciones de cambio, la entidad debe solicitar al DCIP del Banco de la República su inscripción como IMC, con solicitud suscrita por el representante legal indicando el último patrimonio técnico reportado a la Superintendencia Financiera.',
-      'Debe esperar a que el Banrep la inscriba de oficio, una vez verifique que la entidad cumple los requisitos patrimoniales y operativos.'
+      'Debe esperar a que el Banrep la inscriba de oficio, una vez verifique que la entidad cumple los requisitos patrimoniales y operativos exigidos por la circular.'
     ],
     correct: 2,
     justification:
@@ -201,10 +201,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Tras la cancelación del código de operación de un IMC por orden de la autoridad competente, las operaciones de cambio anteriores pendientes de reporte:',
     options: [
-      'Quedan exentas de reporte, porque la entidad perdió la condición de IMC.',
+      'Quedan exentas de reporte, porque la entidad perdió la condición de IMC y ya no está sujeta a la circular.',
       'Deben transmitirse electrónicamente al Banrep en el término señalado en el numeral 9 del Anexo 3 de la circular, pese a la cancelación.',
-      'Quedan al arbitrio de la entidad, porque la circular guarda silencio.',
-      'Deben reportarse únicamente si la autoridad las requiere expresamente.',
+      'Quedan al arbitrio de la entidad, porque la circular guarda silencio sobre las operaciones anteriores.',
+      'Deben reportarse únicamente si la autoridad competente las requiere de manera expresa.',
     ],
     correct: 1,
     justification:
@@ -227,10 +227,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Respecto al código CIIU en las operaciones cambiarias, la DCIP-83 establece que:',
     options: [
-      'Es un dato opcional que solo se informa si la empresa lo considera útil.',
+      'Es un dato opcional que solo se informa si la empresa lo considera útil para su clasificación interna.',
       'Cuando se requiera como dato mínimo de la operación de cambio, los titulares deben informarlo de acuerdo con los lineamientos del DANE.',
-      'Solo es exigible a las personas naturales, no a las jurídicas.',
-      'Solo es exigible a las entidades financieras.',
+      'Solo es exigible a las personas naturales, no a las personas jurídicas ni a sus representantes.',
+      'Solo es exigible a las entidades financieras y a los intermediarios del mercado cambiario.',
     ],
     correct: 1,
     justification:
@@ -253,10 +253,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un exportador recibió divisas por sus exportaciones, pero un ataque cibernético al banco del exterior impidió jurídicamente su reintegro dentro del plazo de seis meses. El funcionario de la DIAN debe:',
     options: [
-      'Sancionar de todas formas, porque el reintegro dentro de seis meses es una obligación de resultado que no admite eximentes de ninguna clase.',
+      'Sancionar de todas formas, porque el reintegro dentro de seis meses es una obligación de resultado que no admite eximentes de ninguna clase ni valoración de las circunstancias del exportador.',
       'Verificar si los hechos constituyen una situación que impidió jurídicamente el cumplimiento (fuerza mayor, caso fortuito o inexigibilidad) y, de acreditarse, reconocer que en esos eventos no es exigible la canalización, exigiendo la conservación de los soportes.',
-      'Conceder de oficio una prórroga de seis meses adicionales, prorrogables por otros seis a solicitud motivada del exportador.',
-      'Exigir el reintegro con intereses de mora, sin admitir justificación alguna, porque las contingencias tecnológicas del exterior no son oponibles a la DIAN.'
+      'Conceder de oficio una prórroga de seis meses adicionales, prorrogables por otros seis a solicitud motivada del exportador, sin exigir prueba de la imposibilidad.',
+      'Exigir el reintegro con intereses de mora, sin admitir justificación alguna, porque las contingencias tecnológicas del exterior no son oponibles a la DIAN ni al Banco de la República.'
     ],
     correct: 1,
     justification:
@@ -279,10 +279,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un exportador propone no canalizar las divisas de sus exportaciones porque pretende compensarlas con las obligaciones que tiene con el mismo proveedor extranjero por importaciones. El funcionario debe:',
     options: [
-      'Aceptar la compensación si las partes la documentan por escrito.',
-      'Aceptarla únicamente por el saldo neto entre exportaciones e importaciones.',
+      'Aceptar la compensación si las partes la documentan por escrito y la registran ante el IMC, por ser una práctica comercial admitida en comercio exterior.',
+      'Aceptarla únicamente por el saldo neto entre exportaciones e importaciones, siempre que las divisas provengan del mismo proveedor y se informen al Banrep.',
       'Indicar que la compensación de obligaciones no es admisible en operaciones de comercio exterior y exigir la canalización de las divisas por el mercado cambiario, con la presentación de los datos mínimos correspondientes.',
-      'Aceptarla si el monto compensado no supera el 50% del valor exportado.',
+      'Aceptarla si el monto compensado no supera el 50% del valor exportado y se acredita con la factura comercial y el documento de transporte correspondiente.',
     ],
     correct: 2,
     justification:
@@ -305,10 +305,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una empresa exportó bienes, reintegró las divisas y presentó su declaración de cambio. Meses después el comprador devuelve parte de la mercancía y la empresa gira al exterior una fracción de las divisas. El registro cambiario apropiado es:',
     options: [
-      'Un nuevo egreso ordinario de divisas por servicios, sin referencia a la declaración anterior.',
-      'No registrar ninguna declaración nueva, porque las divisas ya fueron informadas.',
+      'Un nuevo egreso ordinario de divisas por servicios, sin referencia a la declaración de cambio anterior.',
+      'No registrar ninguna declaración nueva, porque las divisas ya fueron informadas en el reintegro original.',
       'Una nueva declaración de cambio indicando que corresponde a una "Devolución", utilizando el mismo numeral cambiario de la operación inicial.',
-      'Un cambio de declaración de cambio que sustituya la original.',
+      'Un cambio de declaración de cambio que sustituya la declaración original por su valor total.',
     ],
     correct: 2,
     justification:
@@ -357,10 +357,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Cuando una operación de cambio se canaliza a través de cuentas de compensación, el tratamiento correcto es:',
     options: [
-      'Exigir además una Declaración de Cambio ante un IMC en Colombia.',
+      'Exigir además una Declaración de Cambio ante un IMC en Colombia, por el mismo valor de la operación.',
       'El Informe de Movimientos de Cuenta de Compensación hace las veces de Declaración de Cambio y debe ser transmitido por el titular de la cuenta.',
-      'No se requiere informe ni declaración alguna.',
-      'Exigir la declaración únicamente si el titular es persona jurídica.',
+      'No se requiere informe ni declaración alguna, porque la cuenta de compensación ya está registrada.',
+      'Exigir la declaración únicamente si el titular es persona jurídica y supera el umbral de operaciones.',
     ],
     correct: 1,
     justification:
@@ -383,10 +383,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un banco comercial inscrito como IMC recibe la instrucción de un importador de girar divisas al exterior a favor de un proveedor en Europa. El procedimiento operativo aplicable es:',
     options: [
-      'Exclusivamente el Capítulo 2 de la DCIP-83, sin remisión a otras circulares.',
-      'El que defina libremente el IMC, sin sujeción a circulares específicas.',
+      'Exclusivamente el Capítulo 2 de la DCIP-83, sin remisión a otras circulares del Banco de la República.',
+      'El que defina libremente el IMC, sin sujeción a circulares específicas del Banco de la República.',
       'La reglamentación contenida en la Circular Externa Operativa y de Servicios DCIN-76, conforme lo señala el numeral 2.1 de la DCIP-83.',
-      'El procedimiento previsto en el Capítulo 8 de la DCIP-83.',
+      'El procedimiento previsto en el Capítulo 8 de la DCIP-83 para las cuentas de compensación.',
     ],
     correct: 2,
     justification:
@@ -409,10 +409,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un importador de insumos decide pagar por anticipado a su proveedor extranjero, con recursos propios, antes del embarque de la mercancía. La operación debe canalizarse:',
     options: [
-      'Con el numeral 2015, por tratarse de importaciones de bienes.',
-      'Con el numeral 2022, por tratarse de financiación.',
+      'Con el numeral 2015, por tratarse de importaciones de bienes ya embarcadas.',
+      'Con el numeral 2022, por tratarse de una operación de financiación con el proveedor externo.',
       'Con el numeral 2017, informando los datos mínimos de la Declaración de Cambio por importaciones de bienes.',
-      'Sin declaración, hasta que la mercancía sea embarcada.',
+      'Sin declaración, hasta que la mercancía sea embarcada y se inicie el trámite de importación.',
     ],
     correct: 2,
     justification:
@@ -436,9 +436,9 @@ export const QUESTIONS: Question[] = [
       'Un exportador recibió el pago de sus exportaciones en moneda legal colombiana, abonado en su cuenta a través de un IMC el día 10 del mes. La información de los datos mínimos debe suministrarse:',
     options: [
       'Dentro de los cinco (5) días hábiles siguientes al abono en cuenta, con el numeral cambiario 1060.',
-      'Dentro del mismo mes del abono, con el numeral 1040.',
-      'Al final del año gravable, con el numeral 1043.',
-      'No debe suministrarse, porque el pago fue en moneda legal.',
+      'Dentro del mismo mes del abono en cuenta, con el numeral cambiario 1040.',
+      'Al final del año gravable, con el numeral cambiario 1043 y la declaración de renta.',
+      'No debe suministrarse, porque el pago se realizó en moneda legal colombiana.',
     ],
     correct: 0,
     justification:
@@ -461,10 +461,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un IMC reconoce que transmitió hace cuatro años una declaración de cambio por una operación de ingreso de divisas que nunca se perfeccionó. El funcionario de la DIAN debe concluir que:',
     options: [
-      'Solo pueden anularse declaraciones dentro de los dos días hábiles siguientes a su transmisión.',
-      'Por el paso del tiempo la declaración queda consolidada y no procede ajuste alguno.',
+      'Solo pueden anularse declaraciones dentro de los dos días hábiles siguientes a su transmisión al Banco de la República.',
+      'Por el paso del tiempo la declaración queda consolidada y no procede ajuste alguno ante el IMC.',
       'La anulación puede tramitarse en cualquier tiempo, de acuerdo con el procedimiento previsto para las declaraciones transmitidas por los IMC.',
-      'La anulación solo procede por orden de un juez.',
+      'La anulación solo procede por orden de un juez de la República, previa demanda del interesado.',
     ],
     correct: 2,
     justification:
@@ -487,10 +487,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'En la dación en pago de obligaciones derivadas de la financiación de importaciones de bienes, el tratamiento correcto es:',
     options: [
-      'Aplicar los procedimientos ordinarios de corrección y cambios de declaración.',
+      'Aplicar los procedimientos ordinarios de corrección y de cambios de declaración, por tratarse de una operación de importación de bienes.',
       'Informar los datos mínimos de la Declaración de Cambio por importaciones con el numeral 2026, sin que procedan corrección, cambios de declaración ni devolución, salvo el procedimiento de anulación.',
-      'No informar operación alguna, por no existir pago en divisas.',
-      'Registrar la operación como un crédito externo con propósito 59.',
+      'No informar operación alguna, por no existir pago en divisas, pues la dación extingue la obligación sin flujo cambiario.',
+      'Registrar la operación como un crédito externo con el propósito 59, por sustituir la obligación original con el proveedor.',
     ],
     correct: 1,
     justification:
@@ -513,10 +513,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una empresa financia una importación temporal bajo la modalidad de leasing o arrendamiento financiero contratado con un no residente. El tratamiento cambiario correcto es:',
     options: [
-      'No constituye crédito externo y no requiere informe.',
+      'No constituye crédito externo y no requiere informe, porque el leasing se rige por las normas propias de la importación temporal.',
       'Debe informarse antes del primer pago mediante el Informe de Crédito Externo Otorgado a Residentes con propósito 2, y los pagos posteriores mediante Declaración de Cambio por crédito externo.',
-      'Se informa únicamente al terminar el contrato de leasing.',
-      'Se informa con la declaración de importaciones, sin informe adicional.',
+      'Se informa únicamente al terminar el contrato de leasing, cuando ya se conoce el valor total financiado.',
+      'Se informa con la declaración de importaciones, sin que sea necesario un informe adicional de crédito externo ante el Banco de la República.',
     ],
     correct: 1,
     justification:

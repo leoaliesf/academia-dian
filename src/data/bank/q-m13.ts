@@ -26,9 +26,9 @@ export const QUESTIONS: Question[] = [
     statement:
       'De las siguientes premisas: «Todos los gestores de la DIAN son servidores públicos» y «algunos servidores públicos son contadores públicos», ¿qué conclusión se sigue necesariamente?',
     options: [
-      'Algunos gestores de la DIAN son contadores públicos.',
-      'Todos los contadores públicos son servidores públicos.',
-      'Ningún gestor de la DIAN es contador público.',
+      'Algunos gestores de la DIAN son contadores públicos, porque ambos grupos están incluidos entre los servidores públicos.',
+      'Todos los contadores públicos son servidores públicos, porque la primera premisa lo garantiza.',
+      'Ningún gestor de la DIAN es contador público, porque la segunda premisa no menciona a los gestores.',
       'Ninguna conclusión se sigue necesariamente sobre la relación entre gestores y contadores públicos.',
     ],
     correct: 3,
@@ -78,10 +78,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Se afirma: «Si un contribuyente presenta la declaración de forma extemporánea, entonces debe pagar una sanción». Se sabe que un contribuyente pagó una sanción. ¿Qué se concluye necesariamente?',
     options: [
-      'El contribuyente presentó la declaración de forma extemporánea.',
-      'El contribuyente no presentó la declaración de forma extemporánea.',
+      'El contribuyente presentó la declaración de forma extemporánea, porque toda sanción de la entidad se origina en esa conducta.',
+      'El contribuyente no presentó la declaración de forma extemporánea, porque la sanción solo procede en otros supuestos.',
       'No puede concluirse que presentó la declaración de forma extemporánea, porque la sanción pudo deberse a otra causa.',
-      'La sanción fue impuesta por error.',
+      'La sanción fue impuesta por error, porque la entidad sancionó sin que existiera una declaración extemporánea.',
     ],
     correct: 2,
     justification:
@@ -191,10 +191,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un informe afirma: «Los tiempos de respuesta del proceso mejoraron porque se implementó el nuevo sistema de radicación». ¿Cuál es el supuesto que sostiene esa afirmación?',
     options: [
-      'El nuevo sistema de radicación fue costoso.',
+      'El nuevo sistema de radicación fue costoso, lo que demuestra que la entidad estaba decidida a mejorar los tiempos.',
       'No hubo otros factores distintos de la implementación del sistema que expliquen la mejora de los tiempos.',
-      'Todos los funcionarios están de acuerdo con el nuevo sistema.',
-      'El sistema anterior era más lento en todos los procesos de la entidad.',
+      'Todos los funcionarios están de acuerdo con el nuevo sistema, porque sin su aceptación la herramienta no podría funcionar.',
+      'El sistema anterior era más lento en todos los procesos de la entidad, y por eso debía ser reemplazado cuanto antes.',
     ],
     correct: 1,
     justification:
@@ -285,10 +285,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un auditor revisa diez expedientes de una dependencia y encuentra que tres tienen errores de digitación. Con base en esa revisión concluye: «el 30 por ciento de todos los expedientes de la entidad presenta errores de digitación». ¿Cuál es la objeción más fuerte a esa conclusión?',
     options: [
-      'Que el porcentaje debería expresarse en números absolutos.',
+      'Que el porcentaje debería expresarse en números absolutos, porque así se evitaría exagerar el alcance de los tres hallazgos.',
       'Que la muestra es demasiado pequeña y de una sola dependencia, por lo que no permite generalizar a toda la entidad.',
-      'Que los errores de digitación no son un problema relevante.',
-      'Que el auditor debería haber revisado los mismos diez expedientes dos veces.',
+      'Que los errores de digitación no son un problema relevante para la entidad, de modo que la conclusión no aporta a la gestión.',
+      'Que el auditor debería haber revisado los mismos diez expedientes dos veces, para descartar errores en la propia revisión.',
     ],
     correct: 1,
     justification:

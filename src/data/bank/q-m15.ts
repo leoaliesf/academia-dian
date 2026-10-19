@@ -29,10 +29,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un ciudadano pregunta cuál es la finalidad de la DIAN. ¿Cuál respuesta recoge el objeto de la entidad y, a la vez, es coherente con la orientación al usuario y al ciudadano?',
     options: [
-      'Recaudar la mayor cantidad de impuestos posible, con independencia de la atención que reciban los ciudadanos.',
+      'Recaudar la mayor cantidad de impuestos posible, con independencia de la atención que reciban los ciudadanos, porque el recaudo es la razón de ser de la entidad.',
       'Administrar y controlar el cumplimiento de las obligaciones tributarias, aduaneras y cambiarias y facilitar las operaciones de comercio exterior, prestando un servicio que permita al ciudadano cumplir sus obligaciones.',
-      'Ejercer la vigilancia del sistema financiero y del mercado de valores en nombre del Estado.',
-      'Administrar los tributos territoriales que las entidades subnacionales le deleguen.',
+      'Ejercer la vigilancia del sistema financiero y del mercado de valores en nombre del Estado, por tratarse de una función propia de la DIAN como entidad adscrita al Ministerio de Hacienda.',
+      'Administrar los tributos territoriales que las entidades subnacionales le deleguen, mediante convenios con departamentos y municipios, para unificar la gestión tributaria del Estado.',
     ],
     correct: 1,
     justification:
@@ -55,10 +55,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un funcionario debe explicar en una capacitación qué tipo de entidad es la DIAN dentro de la estructura del Estado. ¿Cuál afirmación es correcta?',
     options: [
-      'Es una superintendencia con funciones de inspección, vigilancia y control sobre los contribuyentes.',
-      'Es un establecimiento público del orden territorial, con autonomía plena frente al Gobierno nacional.',
+      'Es una superintendencia con funciones de inspección, vigilancia y control sobre los contribuyentes, dada su naturaleza de autoridad tributaria.',
+      'Es un establecimiento público del orden territorial, con autonomía plena frente al Gobierno nacional, por su carácter descentralizado.',
       'Es una Unidad Administrativa Especial del orden nacional, con personería jurídica, autonomía administrativa y presupuestal y patrimonio propio, adscrita al Ministerio de Hacienda y Crédito Público.',
-      'Es un ministerio con funciones administrativas delegadas por la Presidencia de la República.',
+      'Es un ministerio con funciones administrativas delegadas por la Presidencia de la República, por su dependencia del Gobierno central.',
     ],
     correct: 2,
     justification:
@@ -81,10 +81,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'En una revisión se advierte que un expediente no permite reconstruir el orden de las actuaciones: hay documentos sin folio, anexos sin fecha de incorporación y versiones duplicadas del mismo oficio. Desde la lógica de la gestión documental, ¿cuál es la consecuencia más importante de esa situación?',
     options: [
-      'El expediente ocupa más espacio físico del necesario.',
+      'El expediente ocupa más espacio físico del necesario, porque los documentos sin folio y los duplicados aumentan su volumen sin aportar información.',
       'No es posible establecer con certeza qué actuación se produjo primero ni qué documento sirvió de base a cada decisión, lo que afecta la trazabilidad de la actuación administrativa.',
-      'El funcionario encargado deberá volver a redactar todos los oficios.',
-      'La entidad deberá digitalizar el expediente y destruir el original.',
+      'El funcionario encargado deberá volver a redactar todos los oficios, porque las versiones duplicadas impiden identificar cuál es la vigente.',
+      'La entidad deberá digitalizar el expediente y destruir el original, porque la copia digital sustituye al documento físico para todos los efectos.',
     ],
     correct: 1,
     justification:
@@ -133,10 +133,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'En el desarrollo de una actuación de verificación, un contribuyente se muestra alterado, interrumpe la diligencia y afirma que la entidad «ya decidió sancionarlo». Usted debe continuar con la actuación conforme al procedimiento. ¿Qué conducta integra correctamente el cumplimiento del procedimiento con los principios de la actuación administrativa?',
     options: [
-      'Suspender la diligencia para evitar que el contribuyente siga alterando el orden.',
+      'Suspender la diligencia para evitar que el contribuyente siga alterando el orden, y fijar una nueva fecha cuando el contribuyente se encuentre más calmado y pueda colaborar.',
       'Continuar la actuación conforme a las etapas previstas, permitiendo que el contribuyente exponga sus argumentos y explicándole en lenguaje claro en qué consiste la actuación, qué se espera de él y qué derechos puede ejercer.',
-      'Informarle que, si insiste en su actitud, la sanción será mayor.',
-      'Dar por terminada la diligencia y dejar constancia de que el contribuyente se negó a colaborar.',
+      'Informarle que, si insiste en su actitud, la sanción será mayor, para que entienda las consecuencias de obstaculizar la actuación y reconsidere su actitud.',
+      'Dar por terminada la diligencia y dejar constancia de que el contribuyente se negó a colaborar, para que la entidad decida con esa prueba y continúe el procedimiento sin su participación.',
     ],
     correct: 1,
     justification:
@@ -159,10 +159,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'En plena temporada de alta demanda, la entidad implementa un nuevo aplicativo para consultar el estado de los trámites, con un tiempo de aprendizaje de varios días. Los ciudadanos ya están en la fila. ¿Qué conducta integra la adaptabilidad al cambio con el compromiso de servicio?',
     options: [
-      'Pedir a los ciudadanos que regresen cuando los funcionarios dominen el nuevo aplicativo.',
-      'Usar la herramienta anterior mientras se aprende la nueva, para no hacer esperar a los ciudadanos.',
-      'Implementar el aplicativo, y mientras se alcanza destreza en su uso, apoyarse en las alternativas disponibles y en el trabajo del equipo para atender a los ciudadanos dentro de los tiempos, informando con claridad cuando una consulta tome más tiempo.',
-      'Atender solo los casos urgentes hasta que la transición termine.',
+      'Pedir a los ciudadanos que regresen cuando los funcionarios dominen el nuevo aplicativo, para evitar demoras y errores en la atención durante la curva de aprendizaje.',
+      'Usar la herramienta anterior mientras se aprende la nueva, para no hacer esperar a los ciudadanos y mantener la continuidad del servicio durante la transición.',
+      'Implementar el aplicativo y, mientras se alcanza destreza en su uso, apoyarse en las alternativas disponibles y en el equipo para atender a los ciudadanos dentro de los tiempos, informando con claridad cuando una consulta tome más tiempo.',
+      'Atender solo los casos urgentes hasta que la transición termine, para concentrar los esfuerzos del equipo en el aprendizaje del aplicativo y no dispersarlo.',
     ],
     correct: 2,
     justification:
@@ -185,10 +185,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Se acerca a la ventanilla una persona de edad avanzada que manifiesta dificultades para leer y para desplazarse, y que debe realizar un trámite que habitualmente se adelanta en línea. ¿Qué conducta corresponde a la orientación al usuario y al ciudadano?',
     options: [
-      'Indicarle que el trámite solo se realiza en línea y que debe pedir ayuda a un familiar.',
-      'Adelantar el trámite en el punto de atención aun cuando el procedimiento exija el canal virtual, para no someter a la persona a un desplazamiento adicional.',
+      'Indicarle que el trámite solo se realiza en línea y que debe pedir ayuda a un familiar, porque la entidad no puede atender presencialmente ese tipo de solicitudes.',
+      'Adelantar el trámite en el punto de atención aun cuando el procedimiento exija el canal virtual, para no someter a la persona a un desplazamiento adicional, dado que su condición de vulnerabilidad justifica la excepción.',
       'Explicarle con paciencia y lenguaje sencillo cuál es el canal dispuesto, acompañarla en lo que esté al alcance para que pueda completar el trámite y señalarle los canales de atención disponibles para personas en su condición.',
-      'Sugerirle que presente un derecho de petición para que se le autorice el trámite presencial.',
+      'Sugerirle que presente un derecho de petición para que se le autorice el trámite presencial, y acompañarla en la redacción de la solicitud.',
     ],
     correct: 2,
     justification:
@@ -211,10 +211,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un contribuyente de un municipio pequeño recibe un requerimiento con lenguaje técnico y llama para preguntar qué debe hacer. No conoce la terminología tributaria y el término está corriendo. ¿Qué conducta corresponde al nivel 2 de Comunicación efectiva?',
     options: [
-      'Leerle el requerimiento en voz alta para que identifique por sí mismo las instrucciones.',
-      'Indicarle que contrate un contador, porque la entidad no presta asesoría personalizada.',
+      'Leerle el requerimiento en voz alta para que identifique por sí mismo las instrucciones, deteniéndose en los términos técnicos que resulten más difíciles y esperando que los comprenda por su cuenta.',
+      'Indicarle que contrate un contador, porque la entidad no presta asesoría personalizada y el contribuyente necesita asistencia especializada para interpretar el requerimiento correctamente.',
       'Adaptar su discurso al interlocutor: explicarle en lenguaje sencillo qué se le solicita, para qué se requiere, qué plazo tiene y cómo puede responder, confirmando al final que comprendió y ofreciéndole los canales de atención disponibles.',
-      'Remitirle un oficio con la misma información técnica, para que quede constancia escrita de la respuesta.',
+      'Remitirle un oficio con la misma información técnica, para que quede constancia escrita de la respuesta y pueda consultarla con calma cuando haya aclarado sus dudas.',
     ],
     correct: 2,
     justification:
@@ -237,10 +237,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un proveedor que contrata con la entidad ofrece al equipo de trabajo una capacitación gratuita con refrigerio en sus instalaciones, en vísperas de la evaluación de un contrato en curso. Un compañero considera que no hay problema porque es «solo una capacitación». ¿Qué conducta corresponde al nivel 4 de Comportamiento ético?',
     options: [
-      'Aceptar la invitación, dejando constancia de que se trata de una actividad académica sin relación con la evaluación del contrato.',
-      'Guardar silencio para no contrariar al equipo y no asistir personalmente a la actividad.',
+      'Aceptar la invitación, dejando constancia de que se trata de una actividad académica sin relación con la evaluación del contrato, para que no se interprete como un beneficio.',
+      'Guardar silencio para no contrariar al equipo y no asistir personalmente a la actividad, dejando que cada integrante decida por su cuenta.',
       'Plantear al equipo que la aceptación puede comprometer la apariencia de imparcialidad, proponer que la capacitación se reciba por los canales institucionales o se realice sin patrocinio del contratista, y sostener esa práctica en el grupo.',
-      'Informar a la Oficina de Control Interno que un compañero pretende recibir un beneficio indebido.',
+      'Informar a la Oficina de Control Interno que un compañero pretende recibir un beneficio indebido, para que sea la oficina la que evalúe el caso.',
     ],
     correct: 2,
     justification:
@@ -263,10 +263,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'En una reunión de equipo se adopta, por mayoría, una decisión sobre la distribución de tareas con la que usted no está de acuerdo. La decisión es procedente y no vulnera ninguna norma. ¿Qué conducta corresponde al nivel 3 de Trabajo en equipo?',
     options: [
-      'Acatar la decisión, pero dejar constancia por escrito de que no la comparte, para proteger su responsabilidad.',
+      'Acatar la decisión, pero dejar constancia por escrito de que no la comparte, para proteger su responsabilidad y dejar claro que no avaló el criterio.',
       'Adoptar una actitud proactiva, receptiva y abierta frente a la decisión, y aportar para que se implemente bien, dejando sus observaciones en el espacio del equipo si más adelante resultan útiles.',
-      'Solicitar que la decisión se someta a votación nuevamente en la siguiente reunión.',
-      'Cumplir su parte sin involucrarse en el seguimiento, para no asumir responsabilidad por un resultado que no comparte.',
+      'Solicitar que la decisión se someta a votación nuevamente en la siguiente reunión, para que los integrantes reconsideren su posición con más información.',
+      'Cumplir su parte sin involucrarse en el seguimiento, para no asumir responsabilidad por un resultado que no comparte y que atribuye a la mayoría.',
     ],
     correct: 1,
     justification:
@@ -315,10 +315,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Dos usuarios presentan solicitudes equivalentes el mismo día. Uno es una empresa reconocida de la región, con un representante que insiste en la urgencia; el otro es un pequeño comerciante que presentó su solicitud sin acompañamiento profesional. ¿Qué conducta corresponde al valor de Justicia?',
     options: [
-      'Atender primero la solicitud de la empresa, porque su caso tiene mayor impacto económico en la región.',
-      'Atender primero la solicitud del pequeño comerciante, para compensar la desventaja en que se encuentra.',
+      'Atender primero la solicitud de la empresa, porque su caso tiene mayor impacto económico en la región y su representante insiste en la urgencia.',
+      'Atender primero la solicitud del pequeño comerciante, para compensar la desventaja en que se encuentra frente a una empresa con asesoría profesional.',
       'Aplicar a ambas solicitudes los mismos criterios de análisis, oportunidad y respuesta, sin que el tamaño, la capacidad económica o la presión del interesado alteren el orden ni el contenido de las decisiones.',
-      'Solicitar al jefe inmediato un criterio de priorización para decidir cuál atender primero.',
+      'Solicitar al jefe inmediato un criterio de priorización para decidir cuál atender primero, y así no asumir personalmente la decisión.',
     ],
     correct: 2,
     justification:
@@ -342,9 +342,9 @@ export const QUESTIONS: Question[] = [
       'En una reunión de trabajo un compañero expone una propuesta que, en su criterio, es equivocada y puede generar retrasos. Él ha escuchado con atención su posición. ¿Qué conducta corresponde al valor de Respeto?',
     options: [
       'Expresar su desacuerdo con argumentos y buen trato, sin descalificar a la persona ni su trabajo, y buscar con el equipo la alternativa que mejor sirva al objetivo.',
-      'Señalar ante el grupo que la propuesta demuestra falta de experiencia.',
-      'Abstenerse de opinar para no generar conflicto y acatar lo que decida la mayoría.',
-      'Solicitar que la propuesta se evalúe por el jefe, dado que el compañero no tiene la formación necesaria para valorarla.',
+      'Señalar ante el grupo que la propuesta demuestra falta de experiencia, para que el equipo considere ese antecedente antes de apoyarla.',
+      'Abstenerse de opinar para no generar conflicto y acatar lo que decida la mayoría, aun cuando la propuesta pueda generar retrasos.',
+      'Solicitar que la propuesta se evalúe por el jefe, dado que el compañero no tiene la formación necesaria para valorarla, y esperar su decisión.',
     ],
     correct: 0,
     justification:
@@ -367,10 +367,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Al iniciar la jornada usted tiene cuatro actuaciones pendientes: una con término que vence hoy y requiere dos horas; una con término que vence mañana y requiere tres horas; una solicitud de un compañero que no tiene término asociado; y una reunión convocada por su jefe para la última hora de la jornada. ¿Qué distribución es coherente con el valor de Diligencia?',
     options: [
-      'Atender en el orden en que llegaron las actuaciones, para no alterar el turno.',
-      'Comenzar por la más extensa, para asegurarse de terminarla, y dejar la más urgente para el final.',
+      'Atender en el orden en que llegaron las actuaciones, para no alterar el turno y respetar el criterio de igualdad que rige la atención de las solicitudes.',
+      'Comenzar por la más extensa, para asegurarse de terminarla, y dejar la más urgente para el final, cuando ya no haya interrupciones y pueda trabajarse sin presión.',
       'Priorizar la actuación cuyo término vence hoy, programar la del día siguiente y la reunión en el horario previsto, y atender la solicitud sin término en los espacios disponibles o acordar con el compañero un momento para revisarla.',
-      'Delegar la actuación urgente en un compañero, para atender personalmente la reunión convocada.',
+      'Delegar la actuación urgente en un compañero, para atender personalmente la reunión convocada y no desatender el compromiso adquirido con el jefe.',
     ],
     correct: 2,
     justification:
@@ -393,10 +393,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'A tres días del cierre del trimestre, usted tiene pendientes de verificación ocho casos y la meta del área es verificar doce. La verificación de cada caso toma aproximadamente una jornada. ¿Qué conducta corresponde al nivel 1 de Orientación al logro?',
     options: [
-      'Registrar la verificación de los ocho casos sin completarla, para que la meta del área se cumpla.',
-      'Informar que no alcanzará la meta y esperar instrucciones.',
+      'Registrar la verificación de los ocho casos sin completarla, para que la meta del área se cumpla y no se afecten los indicadores del trimestre ni la evaluación del equipo.',
+      'Informar que no alcanzará la meta y esperar instrucciones, para que la jefatura decida cómo redistribuir los casos pendientes y asumir la responsabilidad.',
       'Organizar y controlar su trabajo para verificar los casos que efectivamente alcance en el tiempo disponible, asegurando la calidad de cada verificación, e informar con antelación a quien corresponda el avance real y las razones del faltante.',
-      'Solicitar apoyo a un compañero para que verifique los casos que no alcance a atender.',
+      'Solicitar apoyo a un compañero para que verifique los casos que no alcance a atender, y así cumplir la meta del área entre los dos sin que ello afecte la calidad de las verificaciones.',
     ],
     correct: 2,
     justification:

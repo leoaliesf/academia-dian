@@ -19,10 +19,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'En virtud del principio de legalidad y de la reserva de ley que rigen el régimen sancionatorio tributario, la sanción por no declarar del artículo 643 del Estatuto Tributario no puede aplicarse…',
     options: [
-      '…a la declaración de renta de las sociedades extranjeras.',
+      '…a la declaración de renta de las sociedades extranjeras, porque el numeral 1 solo describe a las personas naturales y no a las sociedades constituidas fuera del país.',
       '…al impuesto CREE ni al impuesto unificado bajo el régimen simple de tributación (SIMPLE), porque no están descritos en sus numerales y la analogía está prohibida.',
-      '…a los agentes retenedores, porque la norma solo vincula a los contribuyentes.',
-      '…cuando el obligado sea una entidad sin ánimo de lucro.',
+      '…a los agentes retenedores, porque la norma solo vincula a los contribuyentes y la omisión de retenciones se castiga con la sanción por no enviar información.',
+      '…cuando el obligado sea una entidad sin ánimo de lucro, pues el régimen tributario especial la exonera de presentar declaración de renta.',
     ],
     correct: 1,
     justification:
@@ -70,10 +70,10 @@ export const QUESTIONS: Question[] = [
     kind: 'conceptual',
     statement: 'Sobre la sanción mínima del artículo 639 del Estatuto Tributario, ¿cuál afirmación es correcta?',
     options: [
-      'Es de 20 UVT y no aplica a las sanciones reducidas.',
+      'Es de 20 UVT y no se aplica a las sanciones reducidas, porque el artículo 639 del ET toma como referencia la sanción plena antes de cualquier beneficio.',
       'Es de 10 UVT, aplica también a las sanciones reducidas, y se exceptúan los intereses de mora y las sanciones de los numerales 1 y 3 del artículo 658-3.',
-      'Es de 10 UVT y se liquida con la UVT vigente al momento de la imposición de la sanción.',
-      'Es de 5 UVT para personas naturales y de 10 UVT para sociedades.',
+      'Es de 10 UVT y se liquida con la UVT vigente al momento de la imposición de la sanción, pues se toma el valor de la UVT de la fecha del acto que la determina.',
+      'Es de 5 UVT para personas naturales y de 10 UVT para sociedades, en razón de la capacidad contributiva que el legislador presume en cada tipo de sujeto.',
     ],
     correct: 1,
     justification:
@@ -96,10 +96,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un contribuyente presentó su declaración de renta cinco meses después del vencimiento del plazo. El impuesto a cargo es de $80.000.000. ¿Cuál es el valor de la sanción plena por extemporaneidad, sin reducciones?',
     options: [
-      '$4.000.000, equivalente al 5% del impuesto.',
+      '$4.000.000, equivalente a aplicar una sola vez el 5% sobre el impuesto a cargo, sin acumularlo por cada mes de retardo.',
       '$20.000.000, equivalente al 5% por cada mes o fracción de retardo sobre el impuesto a cargo: 5 x 5% = 25% x $80.000.000.',
-      '$80.000.000, equivalente al 100% del impuesto.',
-      '$40.000.000, equivalente al 50% del impuesto.',
+      '$80.000.000, equivalente al 100% del impuesto a cargo, tope que se alcanza cuando el retardo supera los veinte meses.',
+      '$40.000.000, equivalente al 50% del impuesto, que resultaría de tomar el tope del artículo 641 como una tarifa fija para cualquier retardo inferior a un año.',
     ],
     correct: 1,
     justification:
@@ -200,10 +200,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Con ocasión del emplazamiento para corregir, un contribuyente corrige su declaración de renta y determina un mayor valor a pagar de $90.000.000. ¿A cuánto asciende la sanción por corrección?',
     options: [
-      '$9.000.000 (10%).',
-      '$18.000.000 (20%), porque la corrección se realiza con ocasión del emplazamiento para corregir.',
-      '$45.000.000 (50%).',
-      'No hay sanción cuando la corrección la provoca la propia DIAN.',
+      '$9.000.000, equivalentes al 10% del mayor valor a pagar, tarifa propia de la corrección voluntaria sin emplazamiento previo.',
+      '$18.000.000, equivalentes al 20% del mayor valor a pagar ($90.000.000), porque la corrección se realiza con ocasión del emplazamiento para corregir.',
+      '$45.000.000, equivalentes al 50% del mayor valor a pagar, tarifa que se aplicaría por tratarse de una corrección provocada por la DIAN.',
+      'No hay sanción, porque la corrección obedece al emplazamiento de la propia DIAN y no a una iniciativa voluntaria del contribuyente.',
     ],
     correct: 1,
     justification:
@@ -225,10 +225,10 @@ export const QUESTIONS: Question[] = [
     kind: 'interpretacion',
     statement: 'Sobre la reducción de sanciones del artículo 640 del Estatuto Tributario, ¿cuál afirmación es correcta?',
     options: [
-      'Cuando la sanción la liquida el obligado, se reduce al 80% con dos años de buen comportamiento; cuando la determina la DIAN, al 60%.',
-      'Cuando la sanción la liquida el obligado, se reduce al 50% si no cometió la misma conducta en los dos años anteriores y no hubo pliego de cargos, requerimiento especial o emplazamiento previo por no declarar, y al 75% con solo un año; cuando la determina la DIAN, al 50% con cuatro años y al 75% con dos, con aceptación de la sanción y subsanación de la infracción.',
-      'La reducción es siempre del 50% y no depende de períodos de buen comportamiento.',
-      'La reducción solo aplica a las sanciones que determina la DIAN, nunca a las autoliquidadas.',
+      'Cuando la sanción la liquida el obligado, se reduce al 80% con dos años de buen comportamiento; cuando la determina la DIAN, al 60%, porcentajes que se gradúan según la cuantía de la sanción y el tiempo transcurrido desde la conducta.',
+      'Cuando la liquida el obligado, se reduce al 50% si no cometió la misma conducta en los dos años anteriores y no hubo pliego de cargos, requerimiento especial o emplazamiento previo por no declarar, y al 75% con solo un año; cuando la determina la DIAN, al 50% con cuatro años y al 75% con dos, con aceptación y subsanación.',
+      'La reducción es siempre del 50% y no depende de períodos de buen comportamiento, porque el artículo 640 del ET consagra una única tarifa aplicable por igual a las sanciones autoliquidadas y a las determinadas por la DIAN.',
+      'La reducción solo aplica a las sanciones que determina la DIAN, nunca a las autoliquidadas, ya que el propio obligado carece de competencia para calificar su buen comportamiento tributario, labor que corresponde de manera exclusiva a la Administración.',
     ],
     correct: 1,
     justification:
@@ -251,10 +251,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una sociedad fue sancionada por no suministrar información mediante resolución que quedó en firme el 20 de mayo de 2025. En agosto de 2026 incurre de nuevo en la misma conducta y la DIAN propone una sanción plena de $40.000.000. ¿Cuál es el valor de la sanción?',
     options: [
-      '$40.000.000, porque la reincidencia solo aplica en materia penal.',
+      '$40.000.000, porque la reincidencia solo está prevista en materia penal y no en el régimen sancionatorio tributario, que carece de una norma que agrave la reiteración.',
       '$80.000.000, porque hay reincidencia: la misma infracción se cometió dentro de los dos años siguientes a la firmeza del acto sancionatorio y el monto se aumenta en un 100%.',
-      '$20.000.000, porque la reincidencia reduce la sanción a la mitad.',
-      '$60.000.000, porque el incremento por reincidencia es de una tercera parte.',
+      '$20.000.000, porque la reincidencia se castiga reduciendo la sanción a la mitad, en aplicación del principio de favorabilidad frente a quien ya fue sancionado.',
+      '$60.000.000, porque el incremento por reincidencia es de una tercera parte sobre la sanción propuesta, conforme a la agravante general del artículo 640 del ET.',
     ],
     correct: 1,
     justification:
@@ -305,8 +305,8 @@ export const QUESTIONS: Question[] = [
     options: [
       '$192.000.000, porque se mantiene la tarifa del 160% vigente al momento de la conducta.',
       '$120.000.000, porque la ley posterior más favorable reduce la tarifa al 100%, con un ahorro de $72.000.000.',
-      '$60.000.000, porque la favorabilidad reduce la sanción a la mitad.',
-      '$72.000.000, equivalente al ahorro obtenido.',
+      '$60.000.000, porque la favorabilidad reduce la sanción a la mitad de la tarifa del 160%, es decir, al 80% de la diferencia.',
+      '$72.000.000, equivalentes al ahorro obtenido entre la sanción del 160% y la del 100%, monto que se devolvería al contribuyente.',
     ],
     correct: 1,
     justification:
@@ -328,10 +328,10 @@ export const QUESTIONS: Question[] = [
     kind: 'conceptual',
     statement: 'Sobre la omisión del agente retenedor o recaudador (artículo 402 del Código Penal), ¿cuál afirmación es correcta?',
     options: [
-      'La pena es de prisión de 36 a 60 meses, y el pago de lo adeudado extingue tanto la acción penal como las sanciones administrativas de manera automática, sin necesidad de trámite adicional.',
+      'La pena es de prisión de 36 a 60 meses, y el pago de lo adeudado extingue tanto la acción penal como las sanciones administrativas de manera automática, sin necesidad de trámite adicional, pues la extinción de la obligación borra todos los efectos de la conducta, lo contrario obligaría a repetir el proceso penal.',
       'Incurre en prisión de 48 a 108 meses y multa equivalente al doble de lo no consignado (sin superar 1.020.000 UVT) quien, dentro de los dos meses siguientes a la fecha fijada por el Gobierno, no consigna las sumas retenidas o recaudadas; el pago o compensación con intereses da lugar a resolución inhibitoria, preclusión o cesación de procedimiento, sin perjuicio de las sanciones administrativas.',
-      'Solo se configura cuando el monto no consignado supere 5.000 SMLMV, umbral que fijaría un mínimo de cuantía que el tipo penal no contempla.',
-      'La acción penal exige como presupuesto previo una sentencia de la jurisdicción de lo contencioso administrativo que anule la declaración tributaria, requisito que el artículo 402 no establece.'
+      'Solo se configura cuando el monto no consignado supere 5.000 SMLMV, umbral que fijaría un mínimo de cuantía que el tipo penal no contempla, pues el delito se consuma con la simple falta de consignación dentro del plazo legal, sin atender a la cuantía de lo retenido ni al monto efectivamente consignado.',
+      'La acción penal exige como presupuesto previo una sentencia de la jurisdicción de lo contencioso administrativo que anule la declaración tributaria, requisito que el artículo 402 no establece, pues sin esa decisión no podría probarse la existencia del recaudo dejado de consignar ni la de una resolución sanción.'
     ],
     correct: 1,
     justification:
@@ -354,10 +354,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Según el artículo 869 del Estatuto Tributario y el procedimiento de abuso en materia tributaria, ¿cuál afirmación es correcta?',
     options: [
-      'La Administración puede desconocer los efectos de una operación abusiva, pero solo después de proferir el requerimiento especial.',
+      'La Administración puede desconocer los efectos de una operación abusiva, pero solo después de proferir el requerimiento especial, pues el emplazamiento especial constituye una garantía que debe surtirse dentro de la discusión de fondo y no antes.',
       'Constituye abuso el uso de actos o negocios jurídicos artificiosos, sin razón o propósito económico o comercial aparente, con el fin de obtener provecho tributario; antes de proferir el requerimiento especial o el emplazamiento por no declarar se debe surtir el emplazamiento especial por abuso, con tres meses para responder y visto bueno previo.',
-      'El abuso se configura únicamente cuando existe intención subjetiva de evadir, que la DIAN debe probar plenamente.',
-      'El emplazamiento especial por abuso se notifica después de la liquidación oficial y solo para efectos de la sanción.',
+      'El abuso se configura únicamente cuando existe intención subjetiva de evadir, que la DIAN debe probar plenamente con documentos, testimonios y dictámenes periciales, pues sin ánimo de evadir no puede hablarse de abuso ni de provecho tributario.',
+      'El emplazamiento especial por abuso se notifica después de la liquidación oficial y solo para efectos de la sanción, una vez definida la deuda tributaria en la vía administrativa y agotada la discusión probatoria, sin que sea necesaria una etapa previa.',
     ],
     correct: 1,
     justification:
