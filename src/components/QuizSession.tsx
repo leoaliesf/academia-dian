@@ -65,7 +65,7 @@ function buildRuntime(questions: Question[], shuffleOpts: boolean, shuffleQs: bo
 export default function QuizSession(props: QuizSessionProps) {
   const { dispatch } = useApp()
   const [runtime] = useState<RuntimeQ[]>(() =>
-    buildRuntime(props.questions, !!props.shuffleOptions, !!props.shuffleQuestions),
+    buildRuntime(props.questions, props.shuffleOptions ?? true, !!props.shuffleQuestions),
   )
   const [current, setCurrent] = useState(0)
   const [answers, setAnswers] = useState<Record<string, number | null>>({})

@@ -71,10 +71,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Respecto de los tratamientos especiales del Operador Económico Autorizado (OEA), es correcto afirmar que:',
     options: [
-      'Son permanentes e irrevocables una vez otorgada la autorización.',
+      'Son permanentes e irrevocables una vez otorgada la autorización, porque la confianza legítima del operador no admite revocatoria de los beneficios.',
       'Pueden incluir la no constitución de garantías para respaldar el cumplimiento de sus obligaciones aduaneras, en los términos y condiciones definidos por la DIAN, y pueden revocarse o modificarse ante incumplimientos.',
-      'Se otorgan automáticamente a cualquier importador inscrito.',
-      'Solo consisten en la reducción de aranceles.',
+      'Se otorgan automáticamente a cualquier importador inscrito en el RUT, sin necesidad de solicitud ni de evaluación previa de riesgo.',
+      'Solo consisten en la reducción de aranceles, pues la autorización OEA no contempla otras facilitaciones operativas.'
     ],
     correct: 1,
     justification:
@@ -123,10 +123,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Para determinar el valor en aduana de mercancías importadas cuyo precio fue negociado en una moneda distinta del dólar estadounidense, el Decreto 1165 de 2019 establece que:',
     options: [
-      'El valor se determina en pesos colombianos usando la TRM del día de la importación.',
+      'El valor se determina directamente en pesos colombianos usando la TRM del día de la importación, sin pasar por la conversión a dólares que exige la norma.',
       'El valor en aduana se determina en dólares de los Estados Unidos; el valor negociado en otra moneda se convierte a dólares con el tipo de cambio vigente el último día hábil de la semana anterior a la presentación y aceptación de la declaración, y luego se convierte a pesos con la TRM del mismo período.',
-      'El valor se determina en la moneda de negociación y se declara sin conversión.',
-      'Se usa el promedio de la TRM de los últimos treinta días.',
+      'El valor se determina en la moneda de negociación y se declara sin conversión, porque la base gravable admite cualquier divisa expresada en la factura comercial.',
+      'Se usa el promedio de la TRM de los últimos treinta días, como criterio que suaviza las fluctuaciones cambiarias para efectos de la liquidación.'
     ],
     correct: 1,
     justification:
@@ -149,10 +149,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un importador detecta que declaró una subpartida arancelaria equivocada. Sobre la posibilidad de corregir:',
     options: [
-      'No es posible corregir: la subpartida declarada es inmutable.',
+      'No es posible corregir, porque la subpartida arancelaria declarada es inmutable y la autoridad la toma como definitiva en todo caso.',
       'Puede corregirla mediante declaración de corrección voluntaria dentro del término previsto, siempre que no se haya proferido liquidación oficial, liquidando los mayores tributos, intereses y la sanción correspondiente.',
-      'Solo puede corregirse mediante orden judicial.',
-      'Puede corregirla en cualquier tiempo y sin sanción.',
+      'Solo puede corregirse mediante orden judicial, porque la declaración de importación es un acto de naturaleza jurisdiccional.',
+      'Puede corregirla en cualquier tiempo y sin sanción, porque el error involuntario no genera consecuencias para el declarante.'
     ],
     correct: 1,
     justification:
@@ -202,9 +202,9 @@ export const QUESTIONS: Question[] = [
       'Sobre la obligación aduanera en el régimen de tránsito y la responsabilidad por los tributos si la mercancía no llega a destino, es correcto afirmar que:',
     options: [
       'La obligación comprende la presentación de la declaración de tránsito, la ejecución de la operación y la finalización del régimen dentro de los plazos; si la mercancía no llega, responde el declarante de la declaración de tránsito por los tributos aduaneros.',
-      'La obligación se limita al pago del flete y el seguro.',
-      'Si la mercancía no llega a destino, responde exclusivamente el importador final.',
-      'No existe responsabilidad alguna por la mercancía en tránsito.',
+      'La obligación se limita al pago del flete y del seguro de la carga, pues los tributos aduaneros solo se causan en la importación definitiva.',
+      'Si la mercancía no llega a destino, responde exclusivamente el importador final, por ser el beneficiario económico de la operación.',
+      'No existe responsabilidad alguna por la mercancía en tránsito, porque los riesgos se trasladan al comprador desde el embarque.'
     ],
     correct: 0,
     justification:

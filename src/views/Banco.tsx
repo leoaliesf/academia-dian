@@ -4,6 +4,67 @@ import { MODULES, QUESTIONS, QUESTION_BY_ID } from '../data/content'
 import { INDICATORS, indicatorLabel } from '../data/indicators'
 import { useApp } from '../store/AppContext'
 import { DataTable } from '../components/ui'
+import type { Question } from '../data/types'
+
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr]
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
+
+/**
+ * Muestra la pregunta con las opciones en orden aleatorio: la letra
+ * de la respuesta correcta y las explicaciones se recalculan con la
+ * misma permutación, para que la respuesta no quede siempre en la
+ * misma posición al estudiar.
+ */
+function ShuffledQuestionView({ q }: { q: Question }) {
+  const [view] = useState(() => {
+    const perm = shuffle(q.options.map((_, i) => i))
+    return {
+      options: perm.map((i) => q.options[i]),
+      correct: perm.indexOf(q.correct),
+      wrong: perm.map((i) => q.wrong[i]),
+    }
+  })
+
+  return (
+    <div style={{ marginTop: 12 }}>
+      <p>
+        <strong>{q.statement}</strong>
+      </p>
+      <DataTable
+        data={{
+          headers: ['Opción', 'Respuesta'],
+          rows: view.options.map((o, i) => [String.fromCharCode(65 + i), o]),
+        }}
+      />
+      <details className="detail">
+        <summary>Ver respuesta correcta y justificación</summary>
+        <div className="detail-body">
+          <p>
+            <strong>Respuesta correcta: {String.fromCharCode(65 + view.correct)}.</strong>{' '}
+            {view.options[view.correct]}
+          </p>
+          <p>{q.justification}</p>
+          <h4>¿Por qué las demás opciones son incorrectas?</h4>
+          <ul>
+            {view.options.map((_, i) =>
+              i === view.correct ? null : (
+                <li key={i}>
+                  <strong>{String.fromCharCode(65 + i)}.</strong> {view.wrong[i]}
+                </li>
+              ),
+            )}
+          </ul>
+        </div>
+      </details>
+    </div>
+  )
+}
 
 // ============================================================
 // Banco de preguntas tipo ABCD: explorar, filtrar por
@@ -135,36 +196,8 @@ export default function Banco() {
             </div>
 
             {open ? (
-              <div style={{ marginTop: 12 }}>
-                <p>
-                  <strong>{q.statement}</strong>
-                </p>
-                <DataTable
-                  data={{
-                    headers: ['Opción', 'Respuesta'],
-                    rows: q.options.map((o, i) => [String.fromCharCode(65 + i), o]),
-                  }}
-                />
-                <details className="detail">
-                  <summary>Ver respuesta correcta y justificación</summary>
-                  <div className="detail-body">
-                    <p>
-                      <strong>Respuesta correcta: {String.fromCharCode(65 + q.correct)}.</strong>{' '}
-                      {q.options[q.correct]}
-                    </p>
-                    <p>{q.justification}</p>
-                    <h4>¿Por qué las demás opciones son incorrectas?</h4>
-                    <ul>
-                      {q.options.map((_, i) =>
-                        i === q.correct ? null : (
-                          <li key={i}>
-                            <strong>{String.fromCharCode(65 + i)}.</strong> {q.wrong[i]}
-                          </li>
-                        ),
-                      )}
-                    </ul>
-                  </div>
-                </details>
+              <>
+                <ShuffledQuestionView q={q} />
                 <label style={{ display: 'block', marginTop: 12 }}>
                   <strong style={{ fontSize: 'var(--fs-sm)' }}>Tu nota sobre esta pregunta:</strong>
                   <textarea
@@ -176,7 +209,7 @@ export default function Banco() {
                     style={{ marginTop: 6, resize: 'vertical' }}
                   />
                 </label>
-              </div>
+              </>
             ) : (
               <p style={{ margin: '12px 0 0', fontSize: 'var(--fs-sm)' }}>{q.statement}</p>
             )}

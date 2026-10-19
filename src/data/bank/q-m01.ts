@@ -107,10 +107,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'A la Dirección de Gestión de Fiscalización de la DIAN le corresponde, entre otras funciones:',
     options: [
-      'Administrar las devoluciones de impuestos y el recaudo voluntario.',
+      'Administrar las devoluciones de impuestos y gestionar el recaudo voluntario, funciones que corresponden a la Dirección de Gestión de Ingresos dentro del nivel central.',
       'Dirigir, administrar, supervisar y controlar las acciones de prevención, investigación, penalización, determinación, aplicación y liquidación de los tributos nacionales, derechos de aduana y comercio exterior, y aplicar sanciones por infracciones a los regímenes tributario, aduanero y cambiario.',
-      'Expedir el régimen cambiario aplicable a residentes y no residentes.',
-      'Representar judicialmente a la Nación en los procesos tributarios.',
+      'Expedir el régimen cambiario aplicable a residentes y no residentes, competencia que la Constitución atribuye a la Junta Directiva del Banco de la República.',
+      'Representar judicialmente a la Nación en los procesos tributarios, función que en el ordenamiento corresponde a la Agencia Nacional de Defensa Jurídica del Estado.'
     ],
     correct: 1,
     justification:

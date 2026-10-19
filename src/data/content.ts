@@ -19,9 +19,47 @@ export const MODULES: ModuleDef[] = Object.values(moduleFiles)
   .map((m) => m.MODULE)
   .sort((a, b) => a.order - b.order)
 
-export const QUESTIONS: Question[] = Object.values(questionFiles)
-  .flatMap((m) => m.QUESTIONS)
-  .sort((a, b) => a.id.localeCompare(b.id))
+/** Hash estable del id de una pregunta (para distribuir posiciones) */
+function hashId(id: string): number {
+  let h = 0
+  for (let i = 0; i < id.length; i++) {
+    h = (h * 31 + id.charCodeAt(i)) >>> 0
+  }
+  return h
+}
+
+function rotate<T>(arr: T[], k: number): T[] {
+  const n = arr.length
+  if (n === 0) return arr
+  const kk = ((k % n) + n) % n
+  return [...arr.slice(kk), ...arr.slice(0, kk)]
+}
+
+/**
+ * Distribuye la posición de la respuesta correcta: rota opciones,
+ * correct y wrong[] (alineado por índice de opción) con un
+ * desplazamiento estable derivado del id. Así la respuesta correcta
+ * no queda siempre en la misma posición de autoría, y la barajada
+ * aleatoria de cada sesión añade otra capa de variación.
+ */
+function spreadCorrectPositions(qs: Question[]): Question[] {
+  return qs.map((q) => {
+    const k = hashId(q.id) % 4
+    if (k === 0) return q
+    return {
+      ...q,
+      options: rotate(q.options, k),
+      correct: (q.correct - k + 4) % 4,
+      wrong: rotate(q.wrong, k),
+    }
+  })
+}
+
+export const QUESTIONS: Question[] = spreadCorrectPositions(
+  Object.values(questionFiles)
+    .flatMap((m) => m.QUESTIONS)
+    .sort((a, b) => a.id.localeCompare(b.id)),
+)
 
 export const FLASHCARDS: Flashcard[] = Object.values(flashcardFiles).flatMap((m) => m.CARDS)
 

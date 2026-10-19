@@ -19,9 +19,9 @@ export const QUESTIONS: Question[] = [
       'En una entidad pública, las Tablas de Retención Documental (TRD) son el instrumento que:',
     options: [
       'Lista las series documentales con sus tiempos de retención y disposición final, elaborado con la metodología del Archivo General de la Nación y aprobado por la instancia competente.',
-      'Registra únicamente los documentos históricos de la entidad.',
-      'Autoriza la eliminación inmediata de documentos sin inventario.',
-      'Es opcional para las entidades del orden nacional.',
+      'Registra únicamente los documentos históricos de la entidad, dejando por fuera los archivos de gestión y central, que se manejan con instrumentos internos informales.',
+      'Autoriza la eliminación inmediata de documentos sin inventario, porque la tabla opera como una orden general de destrucción una vez vencidos los plazos.',
+      'Es opcional para las entidades del orden nacional, que pueden acogerse a la metodología del AGN solo si su volumen documental lo justifica.'
     ],
     correct: 0,
     justification:
@@ -226,10 +226,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'El equipo lleva dos semanas de retraso. En la reunión, un integrante afirma que el problema son dos compañeros "que no aportan" y propone quitarles tareas. ¿Qué conducta corresponde al nivel 3 de Trabajo en equipo?',
     options: [
-      'Respaldar la propuesta para corregir el retraso cuanto antes.',
+      'Respaldar la propuesta para corregir el retraso cuanto antes, porque reducir la carga de los atrasados es la salida más rápida y práctica para la meta conjunta.',
       'Verificar el avance con datos concretos antes de opinar, revisar con el equipo dónde están las desviaciones reales y encauzar la conversación hacia la reorganización del trabajo, cuidando el clima laboral.',
-      'Evitar el tema para no generar tensión en el equipo.',
-      'Imponer un plan de trabajo individual y llamar la atención a los atrasados.',
+      'Evitar el tema para no generar tensión en el equipo, confiando en que el retraso se corregirá solo en las próximas semanas.',
+      'Imponer un plan de trabajo individual y llamar la atención a los atrasados, ejerciendo el control directo que la meta exige.'
     ],
     correct: 1,
     justification:

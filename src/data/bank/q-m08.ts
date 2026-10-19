@@ -122,19 +122,19 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una sociedad no declaró el impuesto sobre las ventas de un período. La DIAN la emplazó y, 24 meses después del vencimiento del plazo, la sociedad presentó la declaración con un impuesto a cargo de $50.000.000. ¿Cuál es la sanción por extemporaneidad?',
     options: [
-      '$60.000.000.',
+      '$60.000.000, que resultaría de aplicar una tarifa del 5% mensual durante 24 meses, propia del régimen general del artículo 641.',
       '$100.000.000, porque al ser posterior al emplazamiento la tarifa es del 10% mensual, con tope del 200% del impuesto.',
-      '$50.000.000.',
-      '$120.000.000.',
+      '$50.000.000, que equivaldría al 100% del impuesto a cargo, límite aplicable a la sanción por no declarar del artículo 643.',
+      '$120.000.000, que resultaría de acumular el 10% mensual por 24 meses (240%) sin aplicar el tope legal del 200%.',
     ],
     correct: 1,
     justification:
       'Al presentarse la declaración con posterioridad al emplazamiento aplica el artículo 642 del ET: 10% del impuesto a cargo por cada mes o fracción de retardo, sin exceder del 200%. La tarifa acumulada sería 24 x 10% = 240%, que supera el tope; por tanto la sanción es del 200% x $50.000.000 = $100.000.000.',
     wrong: [
-      'Corresponde a 12 meses de retardo al 10%, cuando el retardo fue de 24 meses.',
+      'La tarifa del 5% mensual es la del artículo 641, que aplica a la presentación extemporánea sin emplazamiento previo; aquí rige el artículo 642.',
       'Opción correcta: 10% x 24 meses = 240%, limitado al tope del 200% del impuesto: $100.000.000.',
-      'Los $50.000.000 equivaldrían al 100% del impuesto, que es el tope del artículo 641 del ET, no del artículo 642.',
-      'Los $120.000.000 resultarían de aplicar el 240% x $50.000.000 sin respetar el tope del 200%.',
+      'El 100% del impuesto corresponde al tope del artículo 643 (no declarar), no al régimen del artículo 642.',
+      'El 240% acumulado no puede superar el tope del 200% que fija el propio artículo 642.',
     ],
     source: 'Estatuto Tributario, artículo 642 (MATERIAL TOTAL, págs. 418-419)',
   },
@@ -148,10 +148,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'En una liquidación oficial de revisión la DIAN determinó un saldo a pagar de $312.000.000, mientras el contribuyente había declarado $250.000.000. ¿A cuánto asciende la sanción por inexactitud, sin reducciones?',
     options: [
-      '$250.000.000.',
+      '$250.000.000, que correspondería a la sanción si se tomara como base el saldo declarado, sin atender la base legal del artículo 647.',
       '$62.000.000, equivalente al 100% de la diferencia entre el saldo determinado oficialmente y el declarado.',
-      '$124.000.000.',
-      '$312.000.000.',
+      '$124.000.000, que resultaría de aplicar el doble de la tarifa legal del 100% sobre la misma diferencia.',
+      '$312.000.000, que confunde la sanción con el saldo a pagar determinado en la liquidación oficial.',
     ],
     correct: 1,
     justification:
@@ -174,10 +174,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un obligado suministró de forma extemporánea, antes de que se profiera pliego de cargos, información exógena por $800.000.000. Si aplica la reducción del artículo 651 del Estatuto Tributario, ¿cuál es el valor a pagar por sanción?',
     options: [
-      '$24.000.000.',
+      '$24.000.000, que es la sanción plena del 3% antes de aplicar la reducción por subsanación voluntaria.',
       '$4.800.000, porque la sanción plena es el 3% de $800.000.000 ($24.000.000) y, al subsanar antes del pliego de cargos, se reduce al 20%.',
-      '$12.000.000.',
-      '$40.000.000.',
+      '$12.000.000, que resultaría de aplicar una reducción al 50% sobre la sanción plena, beneficio que no corresponde a este supuesto.',
+      '$40.000.000, que resultaría de usar una tarifa del 5% sobre la base de la información extemporánea.'
     ],
     correct: 1,
     justification:
@@ -277,10 +277,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'La reducción del 40% de las sanciones derivadas de la liquidación provisional (artículo 764-3 del ET) exige aceptar y pagar dentro del mes siguiente a la notificación y NO aplica a…',
     options: [
-      '…las sanciones por inexactitud.',
+      '…las sanciones por inexactitud del artículo 647, pues el artículo 764-3 guarda silencio sobre ellas y la lectura correcta exige leer el texto completo de la exclusión.',
       '…las sanciones generadas por la omisión o corrección de las declaraciones tributarias, ni a las derivadas del incumplimiento de obligaciones formales que puedan subsanarse voluntariamente antes de proferido el pliego de cargos.',
-      '…las sanciones por no informar cuando la información ya se suministró.',
-      '…ninguna sanción: es una reducción general e incondicionada.',
+      '…las sanciones por no informar del artículo 651 cuando la información ya se hubiere suministrado de forma extemporánea, supuesto que la norma no contempla.',
+      '…ninguna sanción, porque el 40% opera como una reducción general e incondicionada frente a todo el régimen sancionatorio del Estatuto Tributario.'
     ],
     correct: 1,
     justification:
@@ -328,10 +328,10 @@ export const QUESTIONS: Question[] = [
     kind: 'conceptual',
     statement: 'Sobre la omisión del agente retenedor o recaudador (artículo 402 del Código Penal), ¿cuál afirmación es correcta?',
     options: [
-      'La pena es de prisión de 36 a 60 meses y el pago de lo adeudado extingue también las sanciones administrativas.',
+      'La pena es de prisión de 36 a 60 meses, y el pago de lo adeudado extingue tanto la acción penal como las sanciones administrativas de manera automática, sin necesidad de trámite adicional.',
       'Incurre en prisión de 48 a 108 meses y multa equivalente al doble de lo no consignado (sin superar 1.020.000 UVT) quien, dentro de los dos meses siguientes a la fecha fijada por el Gobierno, no consigna las sumas retenidas o recaudadas; el pago o compensación con intereses da lugar a resolución inhibitoria, preclusión o cesación de procedimiento, sin perjuicio de las sanciones administrativas.',
-      'Solo se configura si el monto no consignado supera 5.000 SMLMV.',
-      'La acción penal requiere sentencia previa de la jurisdicción de lo contencioso administrativo que anule la declaración.',
+      'Solo se configura cuando el monto no consignado supere 5.000 SMLMV, umbral que fijaría un mínimo de cuantía que el tipo penal no contempla.',
+      'La acción penal exige como presupuesto previo una sentencia de la jurisdicción de lo contencioso administrativo que anule la declaración tributaria, requisito que el artículo 402 no establece.'
     ],
     correct: 1,
     justification:

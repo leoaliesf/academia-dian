@@ -175,10 +175,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Una entidad financiera vigilada por la Superintendencia Financiera desea operar como IMC. El funcionario de la DIAN debe explicar que:',
     options: [
-      'Basta con su licencia de funcionamiento para iniciar operaciones de cambio.',
-      'La inscripción como IMC se entiende automática con la primera operación reportada.',
+      'Basta con su licencia de funcionamiento para iniciar operaciones de cambio, porque la vigilancia de la Superintendencia Financiera cubre también el control cambiario.',
+      'La inscripción como IMC se entiende automática con la primera operación reportada, pues la circular no exige un trámite previo de autorización.',
       'Previo a realizar operaciones de cambio, la entidad debe solicitar al DCIP del Banco de la República su inscripción como IMC, con solicitud suscrita por el representante legal indicando el último patrimonio técnico reportado a la Superintendencia Financiera.',
-      'Debe esperar a que el Banrep la inscriba de oficio.',
+      'Debe esperar a que el Banrep la inscriba de oficio, una vez verifique que la entidad cumple los requisitos patrimoniales y operativos.'
     ],
     correct: 2,
     justification:
@@ -253,10 +253,10 @@ export const QUESTIONS: Question[] = [
     statement:
       'Un exportador recibió divisas por sus exportaciones, pero un ataque cibernético al banco del exterior impidió jurídicamente su reintegro dentro del plazo de seis meses. El funcionario de la DIAN debe:',
     options: [
-      'Sancionar de todas formas, porque el reintegro dentro de seis meses es una obligación de resultado.',
+      'Sancionar de todas formas, porque el reintegro dentro de seis meses es una obligación de resultado que no admite eximentes de ninguna clase.',
       'Verificar si los hechos constituyen una situación que impidió jurídicamente el cumplimiento (fuerza mayor, caso fortuito o inexigibilidad) y, de acreditarse, reconocer que en esos eventos no es exigible la canalización, exigiendo la conservación de los soportes.',
-      'Conceder de oficio una prórroga de seis meses adicionales.',
-      'Exigir el reintegro con intereses de mora, sin admitir justificación alguna.',
+      'Conceder de oficio una prórroga de seis meses adicionales, prorrogables por otros seis a solicitud motivada del exportador.',
+      'Exigir el reintegro con intereses de mora, sin admitir justificación alguna, porque las contingencias tecnológicas del exterior no son oponibles a la DIAN.'
     ],
     correct: 1,
     justification:
