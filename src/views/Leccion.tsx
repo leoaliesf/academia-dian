@@ -59,7 +59,7 @@ export default function Leccion() {
           title={`Cuestionario — ${lesson.title}`}
           type="cuestionario"
           questions={quizQuestions}
-          timeLimitSeconds={Math.min(900, quizQuestions.length * 60)}
+          timeLimitSeconds={quizQuestions.length * 60}
           onFinish={() => {
             dispatch({ type: 'lesson/done', id: lesson.id })
           }}

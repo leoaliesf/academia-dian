@@ -41,7 +41,7 @@ export default function Simulacros() {
         title={`Simulacro · ${questions.length} preguntas`}
         type="simulacro"
         questions={questions}
-        timeLimitSeconds={minutes * 60}
+        timeLimitSeconds={Math.max(minutes * 60, questions.length * 60)}
         shuffleOptions
         onExit={() => setRunning(false)}
       />
@@ -85,7 +85,17 @@ export default function Simulacros() {
         <div className="grid grid-3">
           <label>
             <strong style={{ fontSize: 'var(--fs-sm)' }}>Cantidad de preguntas</strong>
-            <select className="search-input" value={count} onChange={(e) => setCount(Number(e.target.value))}>
+            <select
+              className="search-input"
+              value={count}
+              onChange={(e) => {
+                const c = Number(e.target.value)
+                setCount(c)
+                // mínimo 1 minuto por pregunta: sube el tiempo si queda corto
+                const minimo = [10, 15, 20, 30, 45, 60, 90, 120].find((n) => n >= c) ?? 120
+                if (minutes < minimo) setMinutes(minimo)
+              }}
+            >
               {[5, 10, 15, 20, 25, 30, 40, 50].map((n) => (
                 <option key={n} value={n}>
                   {n}
@@ -105,7 +115,9 @@ export default function Simulacros() {
           <label>
             <strong style={{ fontSize: 'var(--fs-sm)' }}>Tiempo (minutos)</strong>
             <select className="search-input" value={minutes} onChange={(e) => setMinutes(Number(e.target.value))}>
-              {[10, 15, 20, 30, 45, 60, 90, 120].map((n) => (
+              {[10, 15, 20, 30, 45, 60, 90, 120]
+                .filter((n) => n >= count)
+                .map((n) => (
                 <option key={n} value={n}>
                   {n}
                 </option>
