@@ -1,4 +1,6 @@
-# Despliegue automático a GitHub Pages
+# Despliegue automático a GitHub Pages (rama gh-pages)
+# Pages está configurado como "Deploy from a branch" (gh-pages),
+# así que el build se compila y se publica empujando a esa rama.
 name: Deploy a GitHub Pages
 
 on:
@@ -7,9 +9,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
@@ -30,18 +30,10 @@ jobs:
         run: npm ci
       - name: Compilar
         run: npm run build
-      - name: Subir artefacto
-        uses: actions/upload-pages-artifact@v3
+      - name: Publicar en gh-pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Publicar
-        id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          publish_branch: gh-pages
+          commit_message: 'Updates: ${{ github.event.head_commit.message }}'
